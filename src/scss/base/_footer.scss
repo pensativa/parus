@@ -1,0 +1,94 @@
+.footer {
+  background-color: #F6F6F6;
+}
+
+.footer__nav {
+  width: 100%;
+  background: #17457C;
+  color: #fff;
+
+  & > .container {
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+}
+
+.footer__contacts {
+  max-width: 190px;
+
+  & .navbar-brand {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+}
+
+.footer__tel {
+  margin-top: 17px;
+
+  & a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url('../../img/tel.svg') no-repeat center/contain;
+      margin-right: 10px;
+    }
+  }
+
+  & .small {
+    font-size: 14px;
+  }
+}
+
+.footer__link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer__nav-item .nav-link {
+  color: #fff;
+  font-size: 13px;
+  max-width: 140px;
+}
+
+.footer__copyright {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: right;
+
+  & p {
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+}
+
+.partner__item {
+  max-width: 170px;
+
+  &:first-of-type {
+    max-width: 115px;
+  }
+}
+
+.partner__title {
+  font-weight: 500;
+  font-size: 16px;
+  color: $prime-color;
+  margin-bottom: 10px;
+  flex: 1 1 100%;
+}

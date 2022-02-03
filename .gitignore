@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+package.json
+yarn.lock
+process.json
+tasks/
+folders.txt
+gulpfile.js
+.vscode
+build/

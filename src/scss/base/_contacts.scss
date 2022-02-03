@@ -1,0 +1,28 @@
+.contacts {
+  padding-top: 70px;
+}
+
+.contacts__map {
+  width: 100%;
+  height: auto;
+}
+
+.map.nav-pills {
+  margin-bottom: 0;
+}
+
+.map .nav-link {
+  background: #0E417D;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  padding: 15px 17px;
+  min-width: 136px;
+  margin-right: 2px;
+
+  &.active {
+    font-weight: 600;
+    background: #5EA5F8;
+  }
+}

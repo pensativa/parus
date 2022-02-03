@@ -1,0 +1,25 @@
+<div class="catalog-item">
+  <div class="catalog__btns">
+    <button class="catalog__sr">
+      @@include('_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+    </button>
+    <button class="catalog__like-list">
+      @@include('_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+    </button>
+  </div>
+  <a href="#">
+    <img class="catalog-item__img" src="@@src" alt="@@alt">
+  </a>
+  <div class="catalog-item__disc">
+    <p class="catalog-item__name">Опис товару:</p>
+    <p>@@text</p>
+  </div>
+  <div class="catalog-item__price">
+    <span class="catalog-item__name">Ціна:</span>
+    <span class="catalog-item__value">@@price</span>
+  </div>
+  <div class="catalog-item__buttons">
+    <a href="#" class="button catalog-item__button">Придбати</a>
+    <a href="#" class="catalog-item__link">Отримати знижку</a>
+  </div>
+</div>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Ломбард Парус",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section class="banner">
+			<div class="container">
+				@@include('components/bem-blocks/_nav-side.html')
+				<div class="main-carusel">
+					<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/slide-full.webp" class="d-block w-100" alt="Слайд">
+							</div>
+							<div class="carousel-item">
+								<img src="img/slide-full.webp" class="d-block w-100" alt="Слайд">
+							</div>
+							<div class="carousel-item">
+								<img src="img/slide-full.webp" class="d-block w-100" alt="Слайд">
+							</div>
+							<div class="carousel-item">
+								<img src="img/slide-full.webp" class="d-block w-100" alt="Слайд">
+							</div>
+							<div class="carousel-item">
+								<img src="img/slide-full.webp" class="d-block w-100" alt="Слайд">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Предыдущий</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Следующий</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-new">
+			<div class="container">
+				<h2 class="front-title">Нові надходження</h2>
+				<div class="catalog-items catalog-new">
+					@@loop('components/bem-blocks/_catalog-items.html', 'components/bem-blocks/_catalog-new.json')
+					<a href="#" class="catalog-new__link">Переглянути усі товари</a>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-sell">
+			<div class="container">
+				<h2 class="front-title accent">Розпродаж</h2>
+				<div class="catalog-sell__box">
+					<div class="catalog-sell__banner">
+						<img src="img/banner-sell.webp" alt="розпродаж до 70%" width="329"
+						height="616">
+					</div>
+					<div class="catalog-sell__list">
+						<div class="catalog-sell__item">
+							<div class="catalog__btns">
+								<button class="catalog__sr">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+								</button>
+								<button class="catalog__like-list">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+								</button>
+							</div>
+							<a href="#"><img class="catalog-sell__img" src="img/iphone.webp" alt="Мобільний телефон IPhone 11"></a>
+							<h4 class="catalog-sell__title"><a href="#">Мобільний телефон IPhone 11</a></h4>
+							<div class="catalog-sell__percent">-10 %</div>
+							<div class="catalog-sell__price">
+								<span class="catalog-sell__name">Ціна:</span>
+								<span class="catalog-sell__value">2399 грн.</span>
+								<span class="catalog-sell__oldprice">2599 грн.</span>
+							</div>
+						</div>
+						<div class="catalog-sell__item">
+							<div class="catalog__btns">
+								<button class="catalog__sr">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+								</button>
+								<button class="catalog__like-list">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+								</button>
+							</div>
+							<a href="#"><img class="catalog-sell__img" src="img/iphone.webp" alt="Мобільний телефон IPhone 11"></a>
+							<h4 class="catalog-sell__title"><a href="#">Мобільний телефон IPhone 11</a></h4>
+							<div class="catalog-sell__percent">-10 %</div>
+							<div class="catalog-sell__price">
+								<span class="catalog-sell__name">Ціна:</span>
+								<span class="catalog-sell__value">2399 грн.</span>
+								<span class="catalog-sell__oldprice">2599 грн.</span>
+							</div>
+						</div>
+						<div class="catalog-sell__item">
+							<div class="catalog__btns">
+								<button class="catalog__sr">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+								</button>
+								<button class="catalog__like-list">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+								</button>
+							</div>
+							<a href="#"><img class="catalog-sell__img" src="img/iphone.webp" alt="Мобільний телефон IPhone 11"></a>
+							<h4 class="catalog-sell__title"><a href="#">Мобільний телефон IPhone 11</a></h4>
+							<div class="catalog-sell__percent">-10 %</div>
+							<div class="catalog-sell__price">
+								<span class="catalog-sell__name">Ціна:</span>
+								<span class="catalog-sell__value">2399 грн.</span>
+								<span class="catalog-sell__oldprice">2599 грн.</span>
+							</div>
+						</div>
+						<div class="catalog-sell__item">
+							<div class="catalog__btns">
+								<button class="catalog__sr">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+								</button>
+								<button class="catalog__like-list">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+								</button>
+							</div>
+							<a href="#"><img class="catalog-sell__img" src="img/iphone.webp" alt="Мобільний телефон IPhone 11"></a>
+							<h4 class="catalog-sell__title"><a href="#">Мобільний телефон IPhone 11</a></h4>
+							<div class="catalog-sell__percent">-10 %</div>
+							<div class="catalog-sell__price">
+								<span class="catalog-sell__name">Ціна:</span>
+								<span class="catalog-sell__value">2399 грн.</span>
+								<span class="catalog-sell__oldprice">2599 грн.</span>
+							</div>
+						</div>
+						<div class="catalog-sell__item">
+							<div class="catalog__btns">
+								<button class="catalog__sr">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+								</button>
+								<button class="catalog__like-list">
+									@@include('components/bem-blocks/_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+								</button>
+							</div>
+							<a href="#"><img class="catalog-item__img" src="img/iphone.webp" alt="Мобільний телефон IPhone 11"></a>
+							<h4 class="catalog-sell__title"><a href="#">Мобільний телефон IPhone 11</a></h4>
+							<div class="catalog-sell__percent">-10 %</div>
+							<div class="catalog-sell__price">
+								<span class="catalog-sell__name">Ціна:</span>
+								<span class="catalog-sell__value">2399 грн.</span>
+								<span class="catalog-sell__oldprice">2599 грн.</span>
+							</div>
+						</div>
+						<div class="catalog-sell__item catalog-sell__item--all">
+							<a href="#" class="catalog-sell__link arrow">Переглянути усі товари</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calc">
+			<div class="container">
+				<h2 class="front-title">Калькулятор цін</h2>
+				<div class="calc__block">
+					<div class="calc__text">Ви маєте можливість розрахувати приблизну вартість</div>
+					<ul class="nav nav-pills map" id="pills-calc" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="pills-gold-tab" data-bs-toggle="pill" data-bs-target="#pills-gold" type="button" role="tab" aria-controls="pills-gold" aria-selected="true">Оцінка золота</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-silver-tab" data-bs-toggle="pill" data-bs-target="#pills-silver" type="button" role="tab" aria-controls="pills-silver" aria-selected="false">Оцінка срібла</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-tech-tab" data-bs-toggle="pill" data-bs-target="#pills-tech" type="button" role="tab" aria-controls="pills-tech" aria-selected="false">Оцінка техніки</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-dimond-tab" data-bs-toggle="pill" data-bs-target="#pills-dimond" type="button" role="tab" aria-controls="pills-dimond" aria-selected="false">Оцінка діамантів</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-clock-tab" data-bs-toggle="pill" data-bs-target="#pills-clock" type="button" role="tab" aria-controls="pills-clock" aria-selected="false">Оцінка 
+								годинників</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-skup-tab" data-bs-toggle="pill" data-bs-target="#pills-skup" type="button" role="tab" aria-controls="pills-skup" aria-selected="false">Скупка золота</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-calcContent">
+						<div class="tab-pane fade show active" id="pills-gold" role="tabpanel" aria-labelledby="pills-gold-tab">
+							<div class="calc__form calc__form--gold">
+								<div class="calc__item">
+									<label class="calc__label">Проба</label>
+									<select class="form-select calc__select" aria-label="Проба">
+										<option selected>Не обрано</option>
+										<option value="150">375</option>
+										<option value="200">500</option>
+										<option value="300">585</option>
+										<option value="450">750</option>
+										<option value="500">809</option>
+										<option value="550">958</option>
+									</select>
+								</div>
+								<div class="calc__item">
+									<label class="calc__label">Вага, грам</label>
+									<input class="calc__input" type="number">
+								</div>
+								<div class="calc__results">
+									<p>Приблизна онлайн оцінка виробу:</p>
+									<p class="calc__result">до <span class="result">12 000</span> грн.</p>
+								</div>
+								<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-silver" role="tabpanel" aria-labelledby="pills-silver-tab">
+							<div class="calc__form calc__form--silver">
+								<div class="calc__item">
+									<label class="calc__label">Проба</label>
+									<select class="form-select calc__select" aria-label="Проба">
+										<option selected>Не обрано</option>
+										<option value="50">875</option>
+										<option value="100">916</option>
+										<option value="150">925</option>
+									</select>
+								</div>
+								<div class="calc__item">
+									<label class="calc__label">Вага, грам</label>
+									<input class="calc__input" type="number">
+								</div>
+								<div class="calc__results">
+									<p>Приблизна онлайн оцінка виробу:</p>
+									<p class="calc__result">до <span class="result">1000</span> грн.</p>
+								</div>
+								<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-tech" role="tabpanel" aria-labelledby="pills-tech-tab">
+
+						</div>
+						<div class="tab-pane fade" id="pills-dimond" role="tabpanel" aria-labelledby="pills-dimond-tab">
+
+						</div>
+						<div class="tab-pane fade" id="pills-clock" role="tabpanel" aria-labelledby="pills-clock-tab">
+
+						</div>
+						<div class="tab-pane fade" id="pills-skup" role="tabpanel" aria-labelledby="pills-skup-tab">
+							<div class="calc__form calc__form--skup">
+								<div class="calc__item">
+									<label class="calc__label">Проба</label>
+									<select class="form-select calc__select" aria-label="Проба">
+										<option selected>Не обрано</option>
+										<option value="150">375</option>
+										<option value="200">500</option>
+										<option value="300">585</option>
+										<option value="450">750</option>
+										<option value="500">809</option>
+										<option value="550">958</option>
+									</select>
+								</div>
+								<div class="calc__item">
+									<label class="calc__label">Вага, грам</label>
+									<input class="calc__input" type="number">
+								</div>
+								<div class="calc__results">
+									<p>Приблизна онлайн оцінка виробу:</p>
+									<p class="calc__result">до <span class="result">12 000</span> грн.</p>
+								</div>
+								<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ring">
+			<div class="container">
+				<h2 class="ring__title">Чому ми оцінюємо дорогоцінності <span class="accent">дорожче</span> ніж інші ломбарди?</h2>
+				<p class="ring__text">Ми одні із небагатьох  в Україні, чий багаторічний досвід дозволяє оцінювати за вартістю наближеною до ринкової. Наші експерти здатні побачити справжню вартість виробу з урахуванням всіх факторів.</p>
+				<div class="ring__banner">
+					<img src="img/ring-banner.png" alt="Временно" width="1104" height="294">
+					<div class="ring__banner-left"></div>
+					<div class="ring__banner-right"></div>
+				</div>
+			</div>
+		</section>
+		<section class="adv">
+			<div class="container">
+				<h2 class="front-title accent">З Нами Ви отримуєте</h2>
+				<div class="adv__items">
+					<div class="adv__item">
+						<h4>Вигідні умови</h4>
+						<ul>
+							<li>-найкращи умови кредитування</li>
+							<li>-низькій відсоток</li>
+							<li>-висока оцінка</li>
+						</ul>
+					</div>
+					<div class="adv__item">
+						<h4>Швидке оформлення</h4>
+						<ul>
+							<li>-потрібен тільки предмет застави та документ, що засвідчує особу</li>
+							<li>-швидка видача коштів</li>
+						</ul>
+					</div>
+					<div class="adv__item">
+						<h4>Зручно</h4>
+						<ul>
+							<li>-широкий спектр прийому</li>
+							<li>-оцінка  швейцарських годинників та діамантів</li>
+						</ul>
+					</div>
+					<div class="adv__item">
+						<h4>Надійно</h4>
+						<ul>
+							<li>-6 років на ринку надання послуг</li>
+							<li>-цілодобове відеоспостереження та охорона</li>
+						</ul>
+					</div>
+					<div class="adv__item">
+						<h4>Іноваційно</h4>
+						<ul>
+							<li>-оплата відсотків, погашення тіла кредиту або 
+								<br>добір - онлайн!</li>
+						</ul>
+					</div>
+					<div class="adv__item">
+						<h4>Безпека та швидкість</h4>
+						<ul>
+							<li>-видача грошей на карту або готівкою за 15 хвилин</li>
+							<li>-безпечне зберігання застав</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="steps">
+			<div class="container">
+				<h2 class="steps__title">Як отримати <span class="big">кредит</span> за <span class="acc">15 хвилин?</span></h2>
+				<div class="step">
+					<div class="step__text">
+						<h3>Оцінюємо предмет</h3>
+						<p>Кваліфіковані співробітники оцінюють предмет і запропонують Вам найкращу суму за вигідними умовами.</p>
+						<p>Предметом застави може бути: золото, срібло, діаманти, годинник, побутова техніка, комп'ютерна техніка, аудіо-відео апаратура, будівельний інструмент та багато іншого.</p>
+						<a href="#" class="step__link">Оцінити предмет онлайн</a>
+					</div>
+					<div class="step__img">
+						<img src="img/first.webp" alt="Оцінюємо предмет">
+					</div>
+				</div>
+				<div class="step">
+					<div class="step__img">
+						<img src="img/second.webp" alt="Оформлення договору">
+					</div>
+					<div class="step__text">
+						<h3>Оформлення договору</h3>
+						<p>Для оформлення кредиту Вам потрібний паспорт та ідентифікаційний код. Після проходження повної ідентифікації наступного разу Ви можете приходити без документів.</p>
+						<p>Вам видається екземпляр договору, в якому вказані всі характеристики та умови.</p>
+					</div>
+				</div>
+				<div class="step">
+					<div class="step__text">
+						<h3>Отримання грошей</h3>
+						<p>Отримання готівки або надання кредиту на картку.</p>
+						<p>Якщо Вам не потрібна вся сума зараз, Ви зможете оформити добір на карту або прийти на відділення.</p>
+					</div>
+					<div class="step__img">
+						<img src="img/therd.webp" alt="Отримання грошей">
+					</div>
+				</div>
+				<div class="step">
+					<div class="step__img">
+						<img src="img/forth.webp" alt="Зберігання">
+					</div>
+					<div class="step__text">
+						<h3>Зберігання</h3>
+						<p>Ваша застава зберігається в надійному, захищеному місці, під постійним наглядом, до моменту викупу.</p>
+						<p>Забрати заставу Ви можете у будь-який день та заплатите лише за фактичне користування кредитом.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<h2 class="front-title">Контакти</h2>
+				<ul class="nav nav-pills map" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="pills-map-tab" data-bs-toggle="pill" data-bs-target="#pills-map" type="button" role="tab" aria-controls="pills-map" aria-selected="true">На мапі</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="pills-list-tab" data-bs-toggle="pill" data-bs-target="#pills-list" type="button" role="tab" aria-controls="pills-list" aria-selected="false">Списком</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+					<img class="contacts__map" src="img/map.webp" alt="Карта магазинов">
+				</div>
+				<div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+					<div class="container">text</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

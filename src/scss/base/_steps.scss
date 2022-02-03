@@ -1,0 +1,135 @@
+.steps {
+  background-color: #F6F6F6;
+  padding: 60px 0;
+}
+
+.steps__title {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 56px;
+
+   & .big {
+    font-size: 34px;
+    color: $prime-color;
+   }
+
+   & .acc {
+    font-size: 36px;
+    font-weight: 700;
+    color: $sec-color;
+   }
+}
+
+.step {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  &:nth-of-type(1) .step__text {
+    background: url('../../img/un.svg') no-repeat bottom left/auto 80px;
+
+    &::before {
+      content: "1";
+      font-family: $regular-font;
+      font-weight: 600;
+      font-size: 270px;
+      color: rgba(198, 195, 195, 0.27);
+      position: absolute;
+      top: -138px;
+      left: -95px;
+      z-index: 0;
+    }
+  }
+
+  &:nth-of-type(2) {
+    padding-bottom: 85px;
+    background: url('../../img/dos.svg') no-repeat bottom center/auto 80px;
+
+    & .step__text {
+      padding-bottom: 0;
+
+      &::before {
+        content: "2";
+        font-family: $regular-font;
+        font-weight: 600;
+        font-size: 270px;
+        color: rgba(198, 195, 195, 0.27);
+        position: absolute;
+        top: -138px;
+        left: -95px;
+        z-index: 0;
+      }
+    }
+  }
+
+  &:nth-of-type(3) .step__text {
+    background: url('../../img/tres.svg') no-repeat bottom left/auto 80px;
+
+    &::before {
+      content: "3";
+      font-family: $regular-font;
+      font-weight: 600;
+      font-size: 270px;
+      color: rgba(198, 195, 195, 0.27);
+      position: absolute;
+      top: -138px;
+      left: -95px;
+      z-index: 0;
+    }
+  }
+}
+
+.step__text {
+  max-width: 442px;
+  padding-bottom: 85px;
+  position: relative;
+  z-index: 1;
+
+  & h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: $prime-color;
+    margin-bottom: 14px;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-right: 25px;
+      background-color: $prime-color;
+    }
+  }
+
+  & p {
+    margin-bottom: 10px;
+  }
+}
+
+.step:nth-of-type(even) .step__text h3::before {
+  background-color: $sec-color;
+}
+
+.step__link {
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+  color: $sec-color;
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+
+  &::after {
+    content: "\2192";
+    display: inline-block;
+    color: inherit;
+    font-size: 30px;
+    line-height: 1;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}

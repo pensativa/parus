@@ -1,0 +1,30 @@
+.button {
+  @include no-btn();
+  background: #1B5AA3;
+  border-radius: 5px;
+  align-items: center;
+  padding: 6px 52px;
+  font-weight: 500;
+  color: #fff;
+  @include transit();
+
+  &:hover,
+  &:focus {
+    background: #1B5AA3;
+    box-shadow: 3px 6px 10px rgba(71, 133, 244, 0.3);
+    color: #fff;
+  }
+}
+
+.arrow {
+  line-height: 1.1;
+}
+
+.arrow::after {
+  content: "\2192";
+  font-size: 22px;
+  line-height: 1.5;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}

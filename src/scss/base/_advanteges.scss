@@ -1,0 +1,74 @@
+.adv {
+  margin: 70px 0 40px;
+}
+
+.adv__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 65px;
+}
+
+.adv__item {
+  width: 350px;
+  border: 1px solid rgba(140, 190, 250, 0.72);
+  border-radius: 0 25px 25px 0;
+  padding: 20px 20px 30px 110px;
+  background-repeat: no-repeat;
+  background-size: 70px auto;
+  background-position: center left 25px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+
+  &:nth-of-type(1) {
+    background-image: url('../../img/umovy.svg');
+  }
+
+  &:nth-of-type(2) {
+    background-image: url('../../img/quicly.svg');
+  }
+
+  &:nth-of-type(3) {
+    background-image: url('../../img/zruchno.svg');
+  }
+
+  &:nth-of-type(4) {
+    background-image: url('../../img/nadiyno.svg');
+  }
+
+  &:nth-of-type(5) {
+    background-image: url('../../img/inovaciyno.svg');
+  }
+
+  &:nth-of-type(6) {
+    background-image: url('../../img/bezpeka.svg');
+  }
+
+  & h4 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 7px;
+    color: $prime-color;
+  }
+
+  &:nth-of-type(even) h4 {
+    color: $sec-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #F7F7F7;
+    box-shadow: 0px 8px 12px rgba(128, 181, 243, 0.14);
+
+    & h4 {
+      font-weight: 600;
+    }
+  }
+
+  & ul {
+    list-style: none;
+    font-size: 14px;
+    padding-left: 0;
+  }
+}
