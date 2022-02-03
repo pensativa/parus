@@ -16,11 +16,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .catalog-sell__item {
-  width: 209px;
+  width: 212px;
   background: #FFFEFE;
   border: 1px solid rgba(13, 70, 137, 0.14);
   box-shadow: 0px 4px 8px rgba(105, 161, 226, 0.09);
@@ -132,4 +132,68 @@
   font-weight: 400;
   color: #1157A9;
   line-height: 1.1;
+}
+
+@media (max-width: 1200px) {
+  .catalog-sell__list {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 992px) {
+  .catalog-sell__banner {
+    display: none;
+  }
+
+  .catalog-sell__list {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog-sell__item {
+    width: 142px;
+    padding-bottom: 15px;
+  }
+
+  .catalog__btns {
+    margin-bottom: 12px;
+  }
+
+  .catalog__btns button svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .catalog-sell__title {
+    font-size: 10px;
+  }
+
+  .catalog-sell__percent {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .catalog-sell__name {
+    font-size: 10px;
+    margin-right: 6px;
+  }
+
+  .catalog-sell__value {
+    font-size: 13px;
+  }
+
+  .catalog-sell__oldprice {
+    font-size: 10px;
+  }
+
+  .catalog-sell__link {
+    width: 110px;
+    font-size: 12px;
+  }
+
+  .arrow::after {
+    font-size: 14px;
+    line-height: 1;
+  }
 }

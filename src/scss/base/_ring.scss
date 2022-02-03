@@ -1,0 +1,61 @@
+.ring {
+  background: rgba(129, 153, 238, 0.3) url('../img/ad-bg.webp') no-repeat center/cover;
+  backdrop-filter: blur(10px);
+  padding: 60px 0;
+}
+
+.ring__title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  max-width: 514px;
+  margin: 0 auto 30px;
+
+  & .accent {
+    color: $sec-color;
+    font-weight: 700;
+  }
+}
+
+.ring__text {
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 670px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 30px;
+}
+
+.ring__banner img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.ring__banner-mob {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .ring__title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .ring__text {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .ring__banner>img {
+    display: none;
+  }
+
+  .ring__banner-mob {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

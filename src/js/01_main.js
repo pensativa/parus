@@ -21,6 +21,17 @@ const showMenu = function() {
 };
 showMenu();
 
+const showFooterMenu = function() {
+  const links = document.querySelectorAll(".footer__link");
+
+  for (let link of links) {
+    link.onclick = function() {
+      link.classList.toggle("show");
+    };
+  }
+};
+showFooterMenu();
+
 //Button to top
 
 const scrollToTop = function() {

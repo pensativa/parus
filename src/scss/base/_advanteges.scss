@@ -72,3 +72,18 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 1200px) {
+  .adv__item {
+    width: 305px;
+    padding: 15px 15px 20px 65px;
+    background-size: 50px auto;
+    background-position: center left 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .adv__items {
+    margin-top: 0;
+  }
+}

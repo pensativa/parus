@@ -54,10 +54,10 @@
 		<section class="catalog-new">
 			<div class="container">
 				<h2 class="front-title">Нові надходження</h2>
-				<div class="catalog-items catalog-new">
+				<div class="catalog-items catalog-news">
 					@@loop('components/bem-blocks/_catalog-items.html', 'components/bem-blocks/_catalog-new.json')
-					<a href="#" class="catalog-new__link">Переглянути усі товари</a>
 				</div>
+				<a href="#" class="catalog-new__link">Переглянути усі товари</a>
 			</div>
 		</section>
 		<section class="catalog-sell">
@@ -283,9 +283,15 @@
 				<h2 class="ring__title">Чому ми оцінюємо дорогоцінності <span class="accent">дорожче</span> ніж інші ломбарди?</h2>
 				<p class="ring__text">Ми одні із небагатьох  в Україні, чий багаторічний досвід дозволяє оцінювати за вартістю наближеною до ринкової. Наші експерти здатні побачити справжню вартість виробу з урахуванням всіх факторів.</p>
 				<div class="ring__banner">
-					<img src="img/ring-banner.png" alt="Временно" width="1104" height="294">
-					<div class="ring__banner-left"></div>
-					<div class="ring__banner-right"></div>
+					<img src="img/ring-banner.png" alt="Оцінив Ломбард Парус" width="1104" height="294">
+					<div class="ring__banner-mob">
+						<img src="img/ring-banner-m.webp" alt="Оцінив Ломбард Парус" width="284"
+						height="256">
+					</div>
+					<div class="ring__banner-mob">
+						<img src="img/banner-ring-m.webp" alt="Оцінив Ломбард Парус" width="284"
+						height="207">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -388,6 +394,10 @@
 		<section class="contacts">
 			<div class="container">
 				<h2 class="front-title">Контакти</h2>
+				<form class="d-flex contacts__search">
+					<input class="form-control me-2" type="search" placeholder="Адреса або орієнтир" aria-label="Адреса або орієнтир">
+					<button class="button" type="submit">Search</button>
+				</form>
 				<ul class="nav nav-pills map" id="pills-tab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<button class="nav-link active" id="pills-map-tab" data-bs-toggle="pill" data-bs-target="#pills-map" type="button" role="tab" aria-controls="pills-map" aria-selected="true">На мапі</button>
@@ -402,7 +412,9 @@
 					<img class="contacts__map" src="img/map.webp" alt="Карта магазинов">
 				</div>
 				<div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
-					<div class="container">text</div>
+					<div class="container">
+						@@loop('components/bem-blocks/_shops.html', 'components/bem-blocks/_shop-items.json')
+					</div>
 				</div>
 			</div>
 		</section>

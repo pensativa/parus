@@ -61,3 +61,30 @@
     color: $sec-color;
   }
 }
+
+@media (max-width: 1200px) {
+  .main-carusel {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner>.container {
+    max-width: 100%;
+    margin: 20px auto 60px;
+  }
+
+  .main-carusel {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .front-title {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 8px 14px;
+    min-width: 190px;
+    margin-bottom: 30px;
+  }
+}

@@ -8,6 +8,7 @@
 .scroll .navbar {
   background: #F0F4FC;
   padding: 0;
+  box-shadow: 0px 3px 7px rgba(29, 97, 177, 0.17);
 }
 
 .scroll .navbar-brand {
@@ -23,7 +24,7 @@
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  padding: 6px 0;
+  padding: 9px 0;
   cursor: pointer;
 
   &:hover,
@@ -35,7 +36,6 @@
 .nav-search {
   position: relative;
   width: 278px;
-  max-width: 30%;
 
    & input[type="search"] {
       width: 100%;
@@ -56,6 +56,10 @@
   position: absolute;
   top: 6px;
   left: 5px;
+}
+
+.nav-buttons {
+  display: flex;
 }
 
 .nav-button {
@@ -111,6 +115,7 @@
 }
 
 .nav-contacts {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 250px;
@@ -150,9 +155,6 @@
 
 .scroll.show .nav-contacts__button::after {
   transform: rotate(0);
-  width: 16px;
-  height: 16px;
-  background-image: url(../../img/close.svg);
 }
 
 .tel {
@@ -178,4 +180,64 @@
 .scroll .tel,
 .scroll .social {
   display: none;
+}
+
+@media (max-width: 992px) {
+  .header .close {
+    display: none;
+  }
+
+  .header .navbar {
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 720px;
+    margin: 0 auto;
+
+    & > div {
+      width: auto;
+      background: transparent;
+      margin: 0;
+    }
+  }
+
+  .header.scroll {
+    background: #F0F4FC;
+    padding: 15px 0;
+    box-shadow: 0px 3px 7px rgba(29, 97, 177, 0.17);
+
+    & .navbar {
+      background: transparent;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    & .main-menu {
+      display: block;
+      padding: 0;
+    }
+
+    & .nav-search {
+      margin-top: 0;
+    }
+  }
+
+  .nav-search {
+    margin-top: 18px;
+  }
+
+  .main-menu {
+    width: auto;
+    order: -1;
+    margin-top: 0!important;
+
+    & .navbar-toggler {
+      background: url('../../img/menu.svg') no-repeat center;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .nav-search {
+    width: 200px;
+  }
 }

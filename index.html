@@ -30,20 +30,20 @@
 	<header class="header">
   <nav class="navbar navbar-expand-lg flex-wrap">
     <div class="container flex-wrap">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand close" href="#">
         <img src="img/logo.svg" alt="Парус логотип" width="162" height="60">
       </a>
-      <div class="lang">UA</div>
+      <div class="lang close">UA</div>
       <form class="d-flex nav-search">
-        <input class="form-control me-2" type="search" aria-label="Search">
+        <input class="form-control me-2" type="search" aria-label="Хочу знайти..." placeholder="Хочу знайти...">
         <button class="btn-search" type="submit">Search</button>
       </form>
-      <div class="nav-buttons d-flex">
+      <div class="nav-buttons close">
         <div class="nav-button enter">Профиль</div>
         <div class="nav-button cart">Карзина</div>
         <div class="nav-button like-list">Избранные</div>
       </div>
-      <div class="nav-contacts d-flex">
+      <div class="nav-contacts close">
         <div class="nav-contacts__button">Головне МЕНЮ</div>
         <a href="tel:+380682510303" class="tel">(068) 251-03-03</a>
         <div class="social">
@@ -278,16 +278,16 @@
 		<section class="catalog-new">
 			<div class="container">
 				<h2 class="front-title">Нові надходження</h2>
-				<div class="catalog-items catalog-new">
+				<div class="catalog-items catalog-news">
 					<div class="catalog-item">
   <div class="catalog__btns">
-    <button class="catalog__sr">
+    <button type="button" class="catalog__sr" data-bs-toggle="tooltip" data-bs-placement="top" title="Можливість оплати частинами товару">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--part" />
 </svg>
 
     </button>
-    <button class="catalog__like-list">
+    <button type="button" class="catalog__like-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Додати до обраного товар">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--like" />
 </svg>
@@ -311,13 +311,13 @@
   </div>
 </div><div class="catalog-item">
   <div class="catalog__btns">
-    <button class="catalog__sr">
+    <button type="button" class="catalog__sr" data-bs-toggle="tooltip" data-bs-placement="top" title="Можливість оплати частинами товару">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--part" />
 </svg>
 
     </button>
-    <button class="catalog__like-list">
+    <button type="button" class="catalog__like-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Додати до обраного товар">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--like" />
 </svg>
@@ -341,13 +341,13 @@
   </div>
 </div><div class="catalog-item">
   <div class="catalog__btns">
-    <button class="catalog__sr">
+    <button type="button" class="catalog__sr" data-bs-toggle="tooltip" data-bs-placement="top" title="Можливість оплати частинами товару">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--part" />
 </svg>
 
     </button>
-    <button class="catalog__like-list">
+    <button type="button" class="catalog__like-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Додати до обраного товар">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--like" />
 </svg>
@@ -371,13 +371,13 @@
   </div>
 </div><div class="catalog-item">
   <div class="catalog__btns">
-    <button class="catalog__sr">
+    <button type="button" class="catalog__sr" data-bs-toggle="tooltip" data-bs-placement="top" title="Можливість оплати частинами товару">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--part" />
 </svg>
 
     </button>
-    <button class="catalog__like-list">
+    <button type="button" class="catalog__like-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Додати до обраного товар">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--like" />
 </svg>
@@ -401,13 +401,13 @@
   </div>
 </div><div class="catalog-item">
   <div class="catalog__btns">
-    <button class="catalog__sr">
+    <button type="button" class="catalog__sr" data-bs-toggle="tooltip" data-bs-placement="top" title="Можливість оплати частинами товару">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--part" />
 </svg>
 
     </button>
-    <button class="catalog__like-list">
+    <button type="button" class="catalog__like-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Додати до обраного товар">
       <svg class="catalog-sell__btns-icon">
   <use xlink:href="img/sprite.svg#sprite--like" />
 </svg>
@@ -430,8 +430,8 @@
     <a href="#" class="catalog-item__link">Отримати знижку</a>
   </div>
 </div>
-					<a href="#" class="catalog-new__link">Переглянути усі товари</a>
 				</div>
+				<a href="#" class="catalog-new__link">Переглянути усі товари</a>
 			</div>
 		</section>
 		<section class="catalog-sell">
@@ -687,9 +687,15 @@
 				<h2 class="ring__title">Чому ми оцінюємо дорогоцінності <span class="accent">дорожче</span> ніж інші ломбарди?</h2>
 				<p class="ring__text">Ми одні із небагатьох  в Україні, чий багаторічний досвід дозволяє оцінювати за вартістю наближеною до ринкової. Наші експерти здатні побачити справжню вартість виробу з урахуванням всіх факторів.</p>
 				<div class="ring__banner">
-					<img src="img/ring-banner.png" alt="Временно" width="1104" height="294">
-					<div class="ring__banner-left"></div>
-					<div class="ring__banner-right"></div>
+					<img src="img/ring-banner.png" alt="Оцінив Ломбард Парус" width="1104" height="294">
+					<div class="ring__banner-mob">
+						<img src="img/ring-banner-m.webp" alt="Оцінив Ломбард Парус" width="284"
+						height="256">
+					</div>
+					<div class="ring__banner-mob">
+						<img src="img/banner-ring-m.webp" alt="Оцінив Ломбард Парус" width="284"
+						height="207">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -792,6 +798,10 @@
 		<section class="contacts">
 			<div class="container">
 				<h2 class="front-title">Контакти</h2>
+				<form class="d-flex contacts__search">
+					<input class="form-control me-2" type="search" placeholder="Адреса або орієнтир" aria-label="Адреса або орієнтир">
+					<button class="button" type="submit">Search</button>
+				</form>
 				<ul class="nav nav-pills map" id="pills-tab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<button class="nav-link active" id="pills-map-tab" data-bs-toggle="pill" data-bs-target="#pills-map" type="button" role="tab" aria-controls="pills-map" aria-selected="true">На мапі</button>
@@ -806,7 +816,74 @@
 					<img class="contacts__map" src="img/map.webp" alt="Карта магазинов">
 				</div>
 				<div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
-					<div class="container">text</div>
+					<div class="container">
+						<div class="shop-item">
+  <a href="#">
+    <img class="shop-item__img" src="img/shop.jpg" alt="@@alt">
+  </a>
+  <div class="shop-item__data">
+    <p class="shop-item__city">м. Київ</p>
+    <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
+    <p class="shop-item__tel">(044) 337-39-38</p>
+    <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
+  </div>
+  <div class="shop-item__link">
+    <a class="arrow" href="#">Детальніше про відділення</a>
+  </div>
+</div><div class="shop-item">
+  <a href="#">
+    <img class="shop-item__img" src="img/shop.jpg" alt="@@alt">
+  </a>
+  <div class="shop-item__data">
+    <p class="shop-item__city">м. Київ</p>
+    <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
+    <p class="shop-item__tel">(044) 337-39-38</p>
+    <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
+  </div>
+  <div class="shop-item__link">
+    <a class="arrow" href="#">Детальніше про відділення</a>
+  </div>
+</div><div class="shop-item">
+  <a href="#">
+    <img class="shop-item__img" src="img/shop.jpg" alt="@@alt">
+  </a>
+  <div class="shop-item__data">
+    <p class="shop-item__city">м. Київ</p>
+    <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
+    <p class="shop-item__tel">(044) 337-39-38</p>
+    <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
+  </div>
+  <div class="shop-item__link">
+    <a class="arrow" href="#">Детальніше про відділення</a>
+  </div>
+</div><div class="shop-item">
+  <a href="#">
+    <img class="shop-item__img" src="img/shop.jpg" alt="@@alt">
+  </a>
+  <div class="shop-item__data">
+    <p class="shop-item__city">м. Київ</p>
+    <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
+    <p class="shop-item__tel">(044) 337-39-38</p>
+    <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
+  </div>
+  <div class="shop-item__link">
+    <a class="arrow" href="#">Детальніше про відділення</a>
+  </div>
+</div><div class="shop-item">
+  <a href="#">
+    <img class="shop-item__img" src="img/shop.jpg" alt="@@alt">
+  </a>
+  <div class="shop-item__data">
+    <p class="shop-item__city">м. Київ</p>
+    <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
+    <p class="shop-item__tel">(044) 337-39-38</p>
+    <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
+  </div>
+  <div class="shop-item__link">
+    <a class="arrow" href="#">Детальніше про відділення</a>
+  </div>
+</div>
+					</div>
 				</div>
 			</div>
 		</section>
