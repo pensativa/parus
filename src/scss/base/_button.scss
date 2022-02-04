@@ -16,6 +16,35 @@
   }
 }
 
+.load-button {
+  @include no-btn();
+  background: #F0F4FC;
+  border-radius: 3px;
+  align-items: center;
+  padding: 14px 48px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4A8FE0;
+  @include transit();
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url('../../img/load.svg') no-repeat center/contain;
+  }
+
+  &:hover,
+  &:focus {
+    background: #1B5AA3;
+    box-shadow: 3px 6px 10px rgba(71, 133, 244, 0.3);
+    color: #fff;
+  }
+}
+
 .arrow {
   line-height: 1.1;
 }

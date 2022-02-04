@@ -1,0 +1,130 @@
+.viddel__slider {
+  margin-bottom: 40px;
+
+  & .swiper-scrollbar-drag {
+    background: #AED3FF;
+    border: 2px solid rgba(14, 65, 125, 0.12);
+  }
+
+  & .viddel__slide {
+    transition: 0.4s;
+  }
+
+  & .viddel__slide:not(.swiper-slide-next) {
+    transform: scale(0.8);
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  & .swiper-scrollbar {
+    bottom: 0;
+  }
+}
+
+.viddel__data {
+  margin-bottom: 50px;
+
+  & .shop-item__data {
+    padding-left: 30px;
+    background-position: top 7px left;
+  }
+}
+
+.viddel__title {
+  font-size: 18px;
+  color: #7E7E7E;
+  margin-bottom: 10px;
+}
+
+.viddel_chat {
+  margin-left: auto;
+}
+
+.viddel_chat-text {
+  font-size: 18px;
+  color: #1B5AA3;
+  margin-bottom: 10px;
+}
+
+.viddel__button {
+  background: #4A8FE0;
+  border-radius: 10px;
+  padding: 9px 57px;
+  font-size: 14px;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url('../../img/viber.svg') no-repeat center;
+  }
+}
+
+.viddel__pay {
+  background: #F7F7F7;
+}
+
+.viddel__pay-titel {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: #0D4689;
+  padding: 30px 0;
+}
+
+.viddel__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+
+  & li {
+    margin-bottom: 20px;
+  }
+}
+
+.viddel__shop {
+  background: #0F60BE;
+  padding: 28px 0;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.viddel__shop-text {
+  padding-left: 65px;
+  max-width: 300px;
+  border-left: 5px solid $sec-color;
+  background: url('../../img/shopping-cart.webp') no-repeat center left 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+a.viddel__shop-link {
+  text-decoration-line: underline;
+  color: #fff;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    color: $sec-color;
+  }
+}
+
+.viddel__map img {
+  width: 100%;
+  height: auto;
+}

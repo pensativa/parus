@@ -13,6 +13,11 @@
   background: url(../../img/locacia.svg) no-repeat top 10px left 36px;
 }
 
+.shop-item__city {
+  color: #000;
+  font-weight: 400;
+}
+
 .shop-item__adres {
   font-weight: 600;
   color: $prime-color;
@@ -38,4 +43,55 @@
   font-weight: 400;
   font-style: italic;
   color: #1D61B1;
+}
+
+@media (max-width: $mobile-width) {
+  .shop-item {
+    display: block;
+    padding: 20px 0 40px;
+  }
+
+  .shop-item__img {
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 49%;
+  }
+
+  .shop-item__data {
+    display: inline-block;
+    max-width: 48%;
+    padding-left: 20px;
+    background-size: 20px auto;
+    background-position: top 2px left;
+  }
+
+  .shop-item__city {
+    font-size: 13px;
+  }
+
+  .shop-item__adres {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .shop-item__tel {
+    font-size: 12px;
+    background-size: contain;
+    padding-left: 20px;
+  }
+
+  .shop-item__time {
+    font-size: 11px;
+  }
+
+  .shop-item__link {
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+
+    & a {
+      font-size: 9px;
+      color: $sec-color;
+    }
+  }
 }

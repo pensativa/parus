@@ -1,0 +1,65 @@
+$breadcrumb-divider: url("../../img/bredcrams.svg");
+
+.page__breadcrumb {
+  margin-top: 70px;
+}
+
+.page__breadcrumb .breadcrumb-item {
+  font-size: 12px;
+  font-weight: 400;
+
+  & a {
+    color: #0D4689;
+    text-decoration: none;
+  }
+
+  &.active {
+    color: #7E7E7E;
+  }
+}
+
+.page__title {
+  margin: 30px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  color: #0D4689;
+}
+
+.page__pagination {
+  margin-bottom: 70px;
+
+  & .page-item {
+    margin-left: 10px;
+  }
+
+  & .page-link {
+    background: #F0F4FC;
+    border-radius: 3px;
+    padding: 8px 14px;
+    color: #2C2B2B;
+    font-size: 14px;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &.active {
+      background: #1B5AA3;
+      color: #fff;
+    }
+
+    &.page-link__arrow {
+      border: 1px solid rgba(112, 170, 239, 0.38);
+      background: transparent;
+      font-size: 30px;
+      padding: 0px 12px 3px;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page__title {
+    font-size: 18px;
+  }
+}

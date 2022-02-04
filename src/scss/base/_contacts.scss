@@ -2,6 +2,10 @@
   padding-top: 70px;
 }
 
+.page .contacts {
+  padding-top: 0;
+}
+
 .contacts__search {
   float: right;
   width: 365px;
@@ -21,6 +25,10 @@
     font-size: 0;
     padding: 7px 20px;
   }
+}
+
+.page .contacts__search {
+  margin-top: 0;
 }
 
 .contacts__map {
@@ -46,6 +54,11 @@
     font-weight: 600;
     background: #5EA5F8;
   }
+}
+
+.cantacts__list .contacts__btn {
+  margin: 39px 0 15px;
+  text-align: center;
 }
 
 @media (max-width: $mobile-width) {

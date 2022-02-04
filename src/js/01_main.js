@@ -22,7 +22,7 @@ const showMenu = function() {
 showMenu();
 
 const showFooterMenu = function() {
-  const links = document.querySelectorAll(".footer__link");
+  const links = document.querySelectorAll(".footer__link-dropped");
 
   for (let link of links) {
     link.onclick = function() {
@@ -101,3 +101,23 @@ const fronCalculation = function() {
   };
 };
 fronCalculation();
+
+//Slider
+var swiper = new Swiper(".viddel__slider", {
+  slidesPerView: 1,
+  grabCursor: true,
+  mousewheel: true,
+  hide: false,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 3,
+    },
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+});

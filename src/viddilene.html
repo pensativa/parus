@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Відділення ломбарду “ПАРУС” м.Київ, вул.Свободи, 34",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section class="viddel">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="viddilenia.html">Відділення ломбарду “ПАРУС” </a></li>
+            <li class="breadcrumb-item active" aria-current="page">Відділення м. Київ, вул. Свободи, 34</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Відділення ломбарду “ПАРУС” м.Київ, вул.Свободи, 34</h1>
+        <div class="viddel__slider swiper">
+          <div class="viddel__slider-wrapper swiper-wrapper">
+            <div class="viddel__slide swiper-slide"><img src="../img/shop-slide.webp" alt="Фото Відділення"></div>
+            <div class="viddel__slide swiper-slide"><img src="../img/shop-slide.webp" alt="Фото Відділення"></div>
+            <div class="viddel__slide swiper-slide"><img src="../img/shop-slide.webp" alt="Фото Відділення"></div>
+            <div class="viddel__slide swiper-slide"><img src="../img/shop-slide.webp" alt="Фото Відділення"></div>
+            <div class="viddel__slide swiper-slide"><img src="../img/shop-slide.webp" alt="Фото Відділення"></div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="row viddel__data">
+          <div class="col-3">
+            <p class="viddel__title">Адреса відділення:</p>
+            <div class="shop-item__data">
+              <p class="shop-item__city">м. Київ</p>
+              <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <p class="viddel__title">Телефон відділення:</p>
+            <p class="shop-item__tel">(044) 337-39-38</p>
+            <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
+          </div>
+          <div class="col-3 viddel_chat">
+            <p class="viddel_chat-text">Розпочати чат з менеджером відділення:</p>
+            <a href="#" class="button viddel__button">Viber чат</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="viddel__pay">
+      <div class="container">
+        <h2 class="viddel__pay-titel">Ми приймаємо:</h2>
+        <ul class="viddel__list">
+          <li><img src="../img/pay-1.svg" alt="Золото"></li>
+          <li><img src="../img/pay-2.svg" alt="Срібло"></li>
+          <li><img src="../img/pay-3.svg" alt="Вироби з діамантами"></li>
+          <li><img src="../img/pay-4.svg" alt="Техніку"></li>
+          <li><img src="../img/pay-5.svg" alt="Годинники наручні"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="viddel__shop">
+      <div class="container">
+        <div class="viddel__shop-text">У відділенні знаходиться комісійний магазин</div>
+        <a href="#" class="viddel__shop-link">прокласти маршрут на карті до відділення</a>
+      </div>
+    </section>
+    <section class="viddel__map">
+      <img src="../img/shop-map.jpg" alt="">
+    </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

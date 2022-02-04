@@ -131,7 +131,7 @@
   .footer__link {
     font-size: 14px;
 
-    &::after {
+    &.footer__link-dropped::after {
       content: "";
       width: 8px;
       height: 4px;

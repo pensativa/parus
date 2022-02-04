@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Відділення ломбарду “ПАРУС”",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main page">		
+		<section class="contacts">
+			<div class="container">        
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Відділення ломбарду “ПАРУС”</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Відділення ломбарду “ПАРУС”</h1>
+				<form class="d-flex contacts__search">
+					<input class="form-control me-2" type="search" placeholder="Адреса або орієнтир" aria-label="Адреса або орієнтир">
+					<button class="button" type="submit">Search</button>
+				</form>
+				<ul class="nav nav-pills map" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active" id="pills-map-tab" data-bs-toggle="pill" data-bs-target="#pills-map" type="button" role="tab" aria-controls="pills-map" aria-selected="true">На мапі</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link" id="pills-list-tab" data-bs-toggle="pill" data-bs-target="#pills-list" type="button" role="tab" aria-controls="pills-list" aria-selected="false">Списком</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+					<img class="contacts__map" src="img/map.webp" alt="Карта магазинов">
+				</div>
+				<div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+					<div class="container cantacts__list">
+						@@loop('components/bem-blocks/_shops.html', 'components/bem-blocks/_shop-items.json')
+            <div class="contacts__btn"><button class="load-button" type="button">Завантажити наступні 5</button></div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-end page__pagination">
+                <li class="page-item disabled">
+                  <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+                </li>
+              </ul>
+            </nav>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
