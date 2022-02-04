@@ -47,3 +47,18 @@
     background: #5EA5F8;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .contacts__search {
+    float: none;
+    margin: 0 0 30px;
+    max-width: 100%;
+  }
+
+  .shop-item {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

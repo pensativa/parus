@@ -87,3 +87,24 @@
     margin-top: 0;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .adv__items {
+    justify-content: space-evenly;
+  }
+
+  .adv__item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .adv__item .h4, 
+  .adv__item h4 {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .adv__item ul {
+    font-size: 12px;
+  }
+}
