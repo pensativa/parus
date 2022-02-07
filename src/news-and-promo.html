@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Новини та акції",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section class="promo">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Новини та акції</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Новини та акції</h1>
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills promo__nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="active promo__nav-link promo__nav-link--news" id="v-pills-news-tab" data-bs-toggle="pill" data-bs-target="#v-pills-news" type="button" role="tab" aria-controls="v-pills-news" aria-selected="true">Новини</button>
+            <button class="promo__nav-link promo__nav-link--promo" id="v-pills-promo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-promo" type="button" role="tab" aria-controls="v-pills-promo" aria-selected="false">Акції</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="../img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="../img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="../img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="../img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="../img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="contacts__btn">
+                <button class="load-button" type="button">Завантажити наступні 5</button></div>
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-end page__pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+                  </li>
+                  <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="v-pills-promo" role="tabpanel" aria-labelledby="v-pills-promo-tab">
+              @@loop('components/bem-blocks/_promo.html', 'components/bem-blocks/_promo-items.json')
+              <div class="contacts__btn"><button class="load-button" type="button">Завантажити наступні 5</button></div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-end page__pagination">
+                <li class="page-item disabled">
+                  <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+                </li>
+              </ul>
+            </nav>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

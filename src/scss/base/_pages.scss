@@ -62,4 +62,14 @@ $breadcrumb-divider: url("../../img/bredcrams.svg");
   .page__title {
     font-size: 18px;
   }
+
+  .page__pagination .page-link {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  .page__pagination .page-link.page-link__arrow {
+    font-size: 22px;
+    padding: 0px 9px 4px;
+  }
 }

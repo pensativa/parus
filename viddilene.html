@@ -30,7 +30,7 @@
 	<header class="header">
   <nav class="navbar navbar-expand-lg flex-wrap">
     <div class="container flex-wrap">
-      <a class="navbar-brand close" href="#">
+      <a class="navbar-brand close" href="index.html">
         <img src="img/logo.svg" alt="Парус логотип" width="162" height="60">
       </a>
       <div class="lang close">UA</div>
@@ -101,10 +101,10 @@
               <a class="nav-link" href="viddilenia.html">Відділення</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Оплата онлайн</a>
+              <a class="nav-link" href="oplata-online.html">Оплата онлайн</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Новини та акції</a>
+              <a class="nav-link" href="news-and-promo.html">Новини та акції</a>
             </li>
           </ul>
         </div>
@@ -135,19 +135,19 @@
           <div class="swiper-scrollbar"></div>
         </div>
         <div class="row viddel__data">
-          <div class="col-3">
+          <div class="col-12 col-md-4 col-lg-3">
             <p class="viddel__title">Адреса відділення:</p>
             <div class="shop-item__data">
               <p class="shop-item__city">м. Київ</p>
               <p class="shop-item__adres">вул. Свободи, буд.34/2</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-md-4 col-lg-3">
             <p class="viddel__title">Телефон відділення:</p>
             <p class="shop-item__tel">(044) 337-39-38</p>
             <p class="shop-item__time">Пн.-Нд. з 09:00 до 20:00</p>
           </div>
-          <div class="col-3 viddel_chat">
+          <div class="col-12 col-md-4 col-lg-3 viddel_chat">
             <p class="viddel_chat-text">Розпочати чат з менеджером відділення:</p>
             <a href="#" class="button viddel__button">Viber чат</a>
           </div>
@@ -158,11 +158,11 @@
       <div class="container">
         <h2 class="viddel__pay-titel">Ми приймаємо:</h2>
         <ul class="viddel__list">
-          <li><img src="img/pay-1.svg" alt="Золото"></li>
-          <li><img src="img/pay-2.svg" alt="Срібло"></li>
-          <li><img src="img/pay-3.svg" alt="Вироби з діамантами"></li>
-          <li><img src="img/pay-4.svg" alt="Техніку"></li>
-          <li><img src="img/pay-5.svg" alt="Годинники наручні"></li>
+          <li class="viddel__item viddel__item--checked"><img src="img/ring.svg" alt="Золото">Золото</li>
+          <li class="viddel__item viddel__item--checked"><img src="img/sriblo.svg" alt="Срібло">Срібло</li>
+          <li class="viddel__item viddel__item--checked"><img src="img/diomand.svg" alt="Вироби з діамантами">Вироби з діамантами</li>
+          <li class="viddel__item"><img src="img/tv.svg" alt="Техніку">Техніку</li>
+          <li class="viddel__item"><img src="img/clock.svg" alt="Годинники наручні">Годинники наручні</li>
         </ul>
       </div>
     </section>
@@ -220,15 +220,15 @@
         </ul>
       </div>
       <div class="footer__nav-item"><a href="viddilenia.html" class="footer__link">Bідділення</a></div>
-      <div class="footer__nav-item"><a href="#" class="footer__link">Оплата онлайн</a></div>
-      <div class="footer__nav-item"><a href="#" class="footer__link">Новини та акції</a></div>
+      <div class="footer__nav-item"><a href="oplata-online.html" class="footer__link">Оплата онлайн</a></div>
+      <div class="footer__nav-item"><a href="news-and-promo.html" class="footer__link">Новини та акції</a></div>
       <div class="footer__copyright">
         <img src="img/app.webp" alt="apps" class="apps">
         <p>Всі права захищені © Ломбард «ПАРУС» 2022</p>
       </div>
     </div>
   </div>
-  <div class="container partner d-flex justify-content-between py-4 my-4">
+  <div class="container partner d-flex justify-content-between py-4">
     <div class="partner__item d-flex flex-wrap justify-content-between">
       <p class="partner__title">Наші партнери</p>
       <img src="img/np.webp" alt="Nova poshta">
@@ -252,7 +252,9 @@
     </div>
   </div>
 </footer>
-<div id="to-top"></div>
+<div id="to-top">
+  <img src="img/to-top.svg" alt="вверх" width="42" height="42">
+</div>
 
 	<script src="js/libs.min.js"></script>
 <script src="js/popper.min.js"></script>

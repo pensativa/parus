@@ -5,6 +5,10 @@
   border-bottom: 1px solid rgba(29, 97, 177, 0.21);
   margin-bottom: -1px;
   padding: 25px 0 19px;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .shop-item__data {
@@ -48,7 +52,7 @@
 @media (max-width: $mobile-width) {
   .shop-item {
     display: block;
-    padding: 20px 0 40px;
+    padding: 20px 0 30px;
   }
 
   .shop-item__img {
@@ -70,8 +74,8 @@
   }
 
   .shop-item__adres {
-    font-size: 12px;
-    margin-bottom: 15px;
+    font-size: 11px;
+    margin-bottom: 13px;
   }
 
   .shop-item__tel {
@@ -88,6 +92,8 @@
     text-align: right;
     font-style: normal;
     font-weight: 600;
+    float: right;
+    margin-top: -20px;
 
     & a {
       font-size: 9px;

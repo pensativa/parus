@@ -31,6 +31,11 @@ a[class] {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 1200px), (min-width: 1400px) {
   .container {
     max-width: 1150px !important;

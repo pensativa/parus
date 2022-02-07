@@ -1,0 +1,25 @@
+.no-page {
+  background: #082E78 url('../../img/no-page-bg.webp') no-repeat center/cover;
+  color: #fff;
+}
+
+.no-page__body {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+
+  & h1 {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 90px;
+  }
+
+  & img {
+    margin-bottom: 95px;
+  }
+
+  & a {
+    color: #78B6FF;
+  }
+}

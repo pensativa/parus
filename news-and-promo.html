@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/swiper.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Новини та акції</title>
+</head>
+
+
+<body>
+	<header class="header">
+  <nav class="navbar navbar-expand-lg flex-wrap">
+    <div class="container flex-wrap">
+      <a class="navbar-brand close" href="index.html">
+        <img src="img/logo.svg" alt="Парус логотип" width="162" height="60">
+      </a>
+      <div class="lang close">UA</div>
+      <form class="d-flex nav-search">
+        <input class="form-control me-2" type="search" aria-label="Хочу знайти..." placeholder="Хочу знайти...">
+        <button class="btn-search" type="submit">Search</button>
+      </form>
+      <div class="nav-buttons close">
+        <div class="nav-button enter">Профиль</div>
+        <div class="nav-button cart">Карзина</div>
+        <div class="nav-button like-list">Избранные</div>
+      </div>
+      <div class="nav-contacts close">
+        <div class="nav-contacts__button">Головне МЕНЮ</div>
+        <a href="tel:+380682510303" class="tel">(068) 251-03-03</a>
+        <div class="social">
+          <a class="social__fb" href="#">
+            <img src="img/fb.svg" alt="facebook">
+          </a>
+          <a class="social__insta" href="#">
+            <img src="img/insta.svg" alt="instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu mt-3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Про нас
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Про компанію</a></li>
+                <li><a class="dropdown-item" href="#">Вакансії</a></li>
+                <li><a class="dropdown-item" href="#">Відгуки</a></li>
+                <li><a class="dropdown-item" href="#">Контакти</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Кредити
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Оцінка золота</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка срібла</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка техніки</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка діамантів</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка швейцарських годинників</a></li>
+                <li><a class="dropdown-item" href="#">Скупка золота</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Магазин
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Магазин техніки</a></li>
+                <li><a class="dropdown-item" href="#">Магазин золота</a></li>
+                <li><a class="dropdown-item" href="#">Оплата та доставка</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viddilenia.html">Відділення</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="oplata-online.html">Оплата онлайн</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news-and-promo.html">Новини та акції</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+	<main class="main">
+		<section class="promo">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Новини та акції</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Новини та акції</h1>
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills promo__nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="active promo__nav-link promo__nav-link--news" id="v-pills-news-tab" data-bs-toggle="pill" data-bs-target="#v-pills-news" type="button" role="tab" aria-controls="v-pills-news" aria-selected="true">Новини</button>
+            <button class="promo__nav-link promo__nav-link--promo" id="v-pills-promo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-promo" type="button" role="tab" aria-controls="v-pills-promo" aria-selected="false">Акції</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="news-item">
+                <div class="news-item__img">
+                  <a href="new.html"><img src="img/shop.webp" alt="Фото новини"></a>
+                </div>
+                <div class="news-item__text">
+                  <p class="news-item__mark">Новини</p>
+                  <p class="news-item__date">12.12.2021</p>
+                  <h3 class="news-item__title">Відбулося відкриття нового ломбарду у м.Київ</h3>
+                  <a class="news-item__link arrow" href="new.html">Читати детальніше</a>
+                </div>
+              </div>
+              <div class="contacts__btn">
+                <button class="load-button" type="button">Завантажити наступні 5</button></div>
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-end page__pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+                  </li>
+                  <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="v-pills-promo" role="tabpanel" aria-labelledby="v-pills-promo-tab">
+              <div class="news-item promo-item">
+  <div class="promo-item__img">
+    <img src="img/promo-1.webp" alt="Фото акції">
+  </div>
+  <div class="news-item__text promo-item__text">
+    <p class="promo-item__mark">Акція</p>
+    <p class="news-item__date promo-item__date">До закінчення: <span>14 дн.</span></p>
+    <h3 class="promo-item__title promo-item__title--cr">Приймаємо майже все! Даємо знижки та бонуси за все!</h3>
+    <p class="promo-item__disc">Додатково +25% до будь якого кредиту!</p>
+    <svg class="promo-item__percent blue">
+  <use xlink:href="img/sprite.svg#sprite--percent" />
+</svg>
+
+  </div>
+</div><div class="news-item promo-item">
+  <div class="promo-item__img">
+    <img src="img/promo-2.webp" alt="Фото акції">
+  </div>
+  <div class="news-item__text promo-item__text">
+    <p class="promo-item__mark">Акція</p>
+    <p class="news-item__date promo-item__date">До закінчення: <span>3 дн.</span></p>
+    <h3 class="promo-item__title promo-item__title--ce">Даруємо техніку та бонуси! Погашення кредиту та добір на карту!</h3>
+    <p class="promo-item__disc">Додатково +25% до будь якого кредиту!</p>
+    <svg class="promo-item__percent blue">
+  <use xlink:href="img/sprite.svg#sprite--percent" />
+</svg>
+
+  </div>
+</div><div class="news-item promo-item">
+  <div class="promo-item__img">
+    <img src="img/promo-3.webp" alt="Фото акції">
+  </div>
+  <div class="news-item__text promo-item__text">
+    <p class="promo-item__mark">Акція</p>
+    <p class="news-item__date promo-item__date">До закінчення: <span>3 дн.</span></p>
+    <h3 class="promo-item__title promo-item__title--cb">Даруємо техніку та бонуси! Погашення кредиту та добір на карту!</h3>
+    <p class="promo-item__disc">Додатково +25% до будь якого кредиту!</p>
+    <svg class="promo-item__percent red">
+  <use xlink:href="img/sprite.svg#sprite--percent" />
+</svg>
+
+  </div>
+</div><div class="news-item promo-item">
+  <div class="promo-item__img">
+    <img src="img/promo-4.webp" alt="Фото акції">
+  </div>
+  <div class="news-item__text promo-item__text">
+    <p class="promo-item__mark">Акція</p>
+    <p class="news-item__date promo-item__date">До закінчення: <span>14 дн.</span></p>
+    <h3 class="promo-item__title promo-item__title--cr">Приймаємо майже все! Даємо знижки та бонуси за все!</h3>
+    <p class="promo-item__disc">Додатково +25% до будь якого кредиту!</p>
+    <svg class="promo-item__percent blue">
+  <use xlink:href="img/sprite.svg#sprite--percent" />
+</svg>
+
+  </div>
+</div><div class="news-item promo-item">
+  <div class="promo-item__img">
+    <img src="img/promo-5.webp" alt="Фото акції">
+  </div>
+  <div class="news-item__text promo-item__text">
+    <p class="promo-item__mark">Акція</p>
+    <p class="news-item__date promo-item__date">До закінчення: <span>3 дн.</span></p>
+    <h3 class="promo-item__title promo-item__title--ce">Приймаємо майже все! Даємо знижки та бонуси за все!</h3>
+    <p class="promo-item__disc">Додатково +25% до будь якого кредиту!</p>
+    <svg class="promo-item__percent light">
+  <use xlink:href="img/sprite.svg#sprite--percent" />
+</svg>
+
+  </div>
+</div>
+              <div class="contacts__btn"><button class="load-button" type="button">Завантажити наступні 5</button></div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-end page__pagination">
+                <li class="page-item disabled">
+                  <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+                </li>
+              </ul>
+            </nav>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+  <div class="footer__nav">
+    <div class="container d-flex">
+      <div class="footer__contacts">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-w.svg" alt="Парус логотип" width="162" height="60">
+        </a>
+        <p>04211, Україна, м. Київ, пр. Г. Сталінграда 4</p>
+        <p class="footer__tel">
+          <a href="tel:+380682510303">(068) 251-03-03</a>
+          <br><span class="small">щодня з 09:00-20:00</span>
+        </p>
+      </div>
+      <div class="footer__nav-item">
+        <h5 class="footer__link footer__link-dropped">Про нас</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Про компанію</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Вакансії</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Відгуки</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav-item">
+        <h5 class="footer__link footer__link-dropped">Кредити</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка золота</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка срібла</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка техніки</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка діамантів</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка швейцарських годинників</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Скупка золота</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav-item">
+        <h5 class="footer__link footer__link-dropped">Магазин</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Магазин техніки</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Магазин золота</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оплата та доставка</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav-item"><a href="viddilenia.html" class="footer__link">Bідділення</a></div>
+      <div class="footer__nav-item"><a href="oplata-online.html" class="footer__link">Оплата онлайн</a></div>
+      <div class="footer__nav-item"><a href="news-and-promo.html" class="footer__link">Новини та акції</a></div>
+      <div class="footer__copyright">
+        <img src="img/app.webp" alt="apps" class="apps">
+        <p>Всі права захищені © Ломбард «ПАРУС» 2022</p>
+      </div>
+    </div>
+  </div>
+  <div class="container partner d-flex justify-content-between py-4">
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Наші партнери</p>
+      <img src="img/np.webp" alt="Nova poshta">
+      <img src="img/privat.webp" alt="Privat bank">
+    </div>
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Приймаємо до сплати</p>
+      <img src="img/viza.webp" alt="Viza">
+      <img src="img/mastercard.webp" alt="MasterCard">
+    </div>
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Безпечні платежи </p>
+      <img src="img/fondy.webp" alt="Fondy">
+    </div>
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Приєднуйтесь до нас</p>
+      <img src="img/viber.svg" alt="Viber chat">
+      <img src="img/viber.svg" alt="Viber chat">
+      <img src="img/fb-w.svg" alt="Facebook">
+      <img src="img/insta-w.svg" alt="Instagram">
+    </div>
+  </div>
+</footer>
+<div id="to-top">
+  <img src="img/to-top.svg" alt="вверх" width="42" height="42">
+</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
