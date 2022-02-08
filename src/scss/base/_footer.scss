@@ -119,12 +119,13 @@
 
 #to-top {
   position: fixed;
-  right: 20%;
+  right: 18%;
   bottom: 130px;
   z-index: 1000;
   opacity: 0.5;
   cursor: pointer;
   transition: 0.3s;
+  display: none;
 
   &:hover,
   &:focus {

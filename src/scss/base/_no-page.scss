@@ -5,7 +5,7 @@
 
 .no-page__body {
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
 
   & h1 {
@@ -20,6 +20,26 @@
   }
 
   & a {
+    font-weight: 600;
     color: #78B6FF;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .no-page header img {
+    max-width: 94px;
+  }
+
+  .no-page__body h1 {
+    font-size: 20px;
+    margin-top: 65px;
+  }
+
+  .no-page__body {
+    font-size: 16px;
+  }
+
+  .no-page__body img {
+    margin-bottom: 60px;
   }
 }

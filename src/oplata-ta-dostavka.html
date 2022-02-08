@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Оплата та доставка",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section class="oplata">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Магазин</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Оплата та доставка</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Оплата та доставка</h1>
+        <div class="oplata__accent">
+          <p>Після оформлення замовлення наш менеджер зателефонує вам для підтвердження. Ви завжди можете уточнити можливі способи оплати та доставки, обравши найбільш зручний варіант.</p>
+        </div>
+        <h2 class="oplata__title">Як отримати замовлення</h2>
+        <div class="oplata__block d-flex flex-wrap">
+          <div class="oplata__item oplata__item--sam">
+            <h3 class="oplata__item-title">Самовивіз</h3>
+            <p>Приходьте до пункту видачі, детально перевіряєте замовлений товар, оформляєте документи на покупку та оплачуєте замовлення, якщо все підходить</p>
+          </div>
+          <div class="oplata__item oplata__item--np">
+            <h3 class="oplata__item-title">Доставка “Новою Поштою”</h3>
+            <p>В цьому випадку потрібно при оформленні замовлення вказати номер відділення, місто та телефон отримувача. Обов'язково перевіряйте роботу всіх функцій товару дома. Після перевірки сплачуйте. Разом із замовленням вам видадуть чек та оплачену накладну доставки. Якщо у вас не виходить забрати замовлення за 5 днів з моменту доставки у відділення, він поїде назад продавцю. Якщо хочете, щоб замовлення на вас почекало — повідомте про це продавця. У деяких випадках для доставки товару передбачається повна або часткова передоплата. Ці деталі повідомить наш менеджер, при дзвінку</p>
+          </div>
+        </div>
+			</div>
+		</section>
+    <section class="dostavka">
+      <div class="container">
+        <h2 class="oplata__title">Як оплатити замовлення</h2>
+        <div class="dostavka__block d-flex flex-wrap">
+          <div class="dostavka__item active">
+            <h3>Оплата картою</h3>
+            <p>Для розрахунку в інтернет-магазині «Ломбард ПАРУС» приймаються картки Visa, MasterCard, а також сервіси Forty.</p>
+            <p>Після повної оплати – покупку потрібно забрати із магазину протягом 7 днів. За тиждень продаж анулюється.</p>
+          </div>
+          <div class="dostavka__item">
+            <h3>Оплата готівкою </h3>
+            <p>У будь-якому роздрібному відділенні магазину «Ломбард ПАРУС» ви можете розрахуватись готівкою.</p>
+            <p>Ми нараховуємо бонуси та знижки за оплату готівкою. </p>
+          </div>
+          <div class="dostavka__item">
+            <h3>Оплата частинами</h3>
+            <p>З карток «ПриватБанку» та Monobank гроші за покупку можна переказувати частинами.</p>
+            <p>Варто врахувати: хоч би яким банком ви не користувалися, оплата частинами оформляється на один товар у кошику.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

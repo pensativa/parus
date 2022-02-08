@@ -1,0 +1,242 @@
+.pay__acc {
+  background: #274784;
+  padding: 19px 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  
+  & p {
+    padding: 5px 0 5px 20px;
+    border-left: 4px solid $sec-color;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 123px;
+      height: 123px;
+      background: url('../../img/responsive.webp') no-repeat center/contain;
+      position: absolute;
+      bottom: -27px;
+      left: -180px;
+    }
+  }
+}
+
+.pay__type {
+  background-color: #F6F6F6;
+  background-repeat: no-repeat;
+  background-image: url('../../img/pay-bg-right.svg'), url('../../img/pay-bg.svg');
+  background-position: top right, bottom left;
+  padding: 87px 0;
+}
+
+.pay__title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: $prime-color;
+  margin-bottom: 56px;
+}
+
+.pay__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pay__item {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: top 17px center;
+  border: 1px solid rgba(140, 190, 250, 0.72);
+  border-radius: 0px 10px 10px 0px;
+  padding: 94px 20px 17px;
+  transition: 0.3s;
+  width: 250px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus,
+  &.active {
+    background-color: #0D4689;
+    border: 1px solid rgba(91, 153, 226, 0.31);
+    box-shadow: 4px 6px 10px rgba(17, 31, 47, 0.2);
+    color: #fff;
+
+    & .pay__item-title,
+    & .pay__item-link a {
+      color: #fff;
+    }
+  }
+
+  &:nth-of-type(1) {
+    background-image: url(../../img/credit-card.webp);
+  }
+
+  &:nth-of-type(2) {
+    background-image: url(../../img/cash.webp);
+  }
+
+  &:nth-of-type(3) {
+    background-image: url(../../img/wallet.webp);
+  }
+
+  &:nth-of-type(4) {
+    background-image: url(../../img/credit.webp);
+  }
+}
+
+.pay__item-title {
+  font-weight: 400;
+  font-size: 18px;
+  color: $prime-color;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 13px;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: $sec-color;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+}
+
+.pay__item-text {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+a.pay__item-link {
+  font-size: 14px; 
+  color: #1063C4;
+  margin-top: auto;
+}
+
+.pay__instr-items {
+  justify-content: space-evenly;
+  margin-top: 74px;
+}
+
+.pay__instr-item  {
+  border: 1px solid rgba(140, 190, 250, 0.72);
+  border-radius: 0px 25px 25px 0px;
+  max-width: 100%;
+  width: 438px;
+  padding: 35px;
+  margin-bottom: 47px;
+
+  & a.arrow {
+    text-decoration: underline;
+    color: #4A8FE0;
+    font-weight: 400;
+  }
+}
+
+.pay__instr-item--credit {
+  background: #DDE9FE;
+}
+
+.pay__instr-title {
+  font-weight: 600;
+  font-size: 22px;
+  color: $prime-color;
+  margin-bottom: 13px;
+}
+
+.pay__instr-item--fondy {
+  width: 987px;
+  text-align: center;
+
+  & .pay__instr-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.pay__instr-list {
+  list-style: none;
+  padding-left: 0;
+
+  & li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:not(.accent)::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $sec-color;
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
+  }
+
+  &.accent {
+    font-weight: 300;
+    font-size: 14px;
+    color: $sec-color;
+  }
+}
+
+.pay__form {
+  & input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+
+    &:not(:checked) + label::before,
+    &:checked + label::before {
+      content: "";
+      width: 23px;
+      height: 23px; 
+      border: 1px solid rgba(140, 190, 250, 0.72);
+      border-radius: 4px;
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    &:checked + label::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #0D4689;
+      border-radius: 2px;
+      position: absolute;
+      top: 9px;
+      left: 8px;
+    }
+  }
+
+  & label {
+    color: #7E7E7E;
+    font-weight: 400;
+    margin-right: 18%;
+    position: relative;
+
+    & img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 28px;
+    }
+  }
+
+  & .button {
+    padding: 11px 75px;
+  }
+}

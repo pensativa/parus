@@ -1,9 +1,14 @@
 .promo {
-  background: url('../../img/promo-bg.svg') no-repeat top center/100% auto;
+  background: url('../../img/promo-bg.svg') no-repeat top 100px center/100% auto;
+}
+
+.promo__block {
+  align-items: flex-start;
 }
 
 .promo__nav-pills {
   margin-right: 32px;
+  flex-direction: column
 }
 
 .promo__nav-link {
@@ -71,6 +76,7 @@
   width: 656px;
   max-width: 100%;
   margin-bottom: 35px;
+  position: relative;
 }
 
 .news-item__text {
@@ -206,6 +212,112 @@
   margin-bottom: 22px;
 }
 
-.new__content p {
+.new__text p {
   margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .promo {
+    background: none;
+  }
+
+  .promo__block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .promo__nav-pills {
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .new__img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo__nav-link {
+    width: 137px;
+    font-size: 16px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    padding: 53px 35px 17px;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .news-item__mark {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .news-item__date {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    font-size: 10px;
+  }
+
+  .promo-item {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .promo-item__mark {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-weight: 500;
+    font-size: 11px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .promo-item__date span {
+    font-size: 13px;
+    padding-left: 4px;
+  }
+
+  .promo-item__title {
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0 33px;
+  }
+
+  .promo-item__disc {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .promo-item__percent {
+    right: auto;
+    top: auto;
+    left: 0;
+    bottom: 27px;
+    transform: none;
+    width: 60px;
+    height: 60px;
+  }
+
+  .new__content {
+    position: relative;
+    padding-top: 53px;
+  }
+
+  .new__img {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
