@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Контакти",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section>
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item"><a href="about.html">Про нас</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакти</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Контакти</h1>
+        <div class="contacts__block contacts__callback">
+          <form class="contact__form">
+            <h2>Замовити зворотній дзвінок</h2>
+            <label for="call">Телефон</label>
+            <input id="call" type="text" placeholder="+38 (097)....   ..   ..">
+            <p>Заявки на зворотний дзвінок, залишені в період з 20:00 до 09:00 обробляються після 09:00</p>
+            <button class="button button--red">Зателефонуйте мені</button>
+          </form>
+        </div>
+        <div class="contacts__block contacts__chats">
+          <h2>Online підтримка користувачів</h2>
+          <p>Ми знаходимося з Вами на постійному зв’язку. Ви маєте можливість замовити дзвінок або написати нам у Viber.</p>
+          <a href="#" class="button button--callback callicon">Дзвінок до call центру</a>
+          <a href="#" class="button button--callback chaticon">Viber чат</a>
+        </div>
+        <div class="contacts__block contacts__shops">
+          <p class="contacts__shops-items">Відділеня Ломбарду “ПАРУС” (325)</p>
+          <a href="viddilenia.html" class="contacts__shops-link arrow">Переглянути на мапі</a>
+        </div>
+			</div>
+		</section>
+    @@include('components/page-blocks/_callback.html')
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

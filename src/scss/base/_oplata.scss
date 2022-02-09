@@ -1,5 +1,6 @@
 .oplata__accent {
   width: 949px;
+  max-width: 100%;
   background: #274784 url('../../img/checklist.webp') no-repeat left 24px center;
   border-radius: 5px;
   padding: 45px 24px 45px 130px;
@@ -31,12 +32,25 @@
   padding: 22px 10px 15px 130px;
   max-width: 100%;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .oplata__item--sam {
   background: #DDE9FE url('../../img/samovyviz.webp') no-repeat left 10px center;
   box-shadow: 4px 6px 10px rgba(160, 171, 185, 0.13);
   width: 328px;
+
+  &::after {
+    content: "або";
+    font-family: $regular-font;
+    font-weight: 600;
+    font-size: 120px;
+    color: #F5F7FA;
+    position: absolute;
+    right: -158px;
+    top: -22px;
+    z-index: 2;
+  }
 }
 
 .oplata__item--np {
@@ -131,5 +145,118 @@
 
   & p {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .oplata__item--np {
+    width: 580px;
+  }
+}
+
+@media (max-width: 992px) {
+  .oplata__item--sam {
+    width: 500px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .dostavka__item {
+    padding: 20px;
+    width: 220px;
+    background-size: 0;
+
+    & h3 {
+      font-size: 18px;
+      margin-right: 0;
+
+      &::before {
+        width: 7px;
+        height: 7px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .oplata__accent {
+    padding: 18px 10px 22px 66px;
+    margin-bottom: 35px;
+    background-size: 60px;
+    background-position: left 4px center;
+
+    & p {
+      padding-left: 5px;
+      font-size: 13px;
+    }
+  }
+
+  .oplata__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .oplata__block {
+    margin-bottom: 0;
+  }
+
+  .oplata__item {
+    padding: 16px 14px;
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 14px;
+
+    &::after {
+      font-family: $regular-font;
+      font-weight: 600;
+      font-size: 120px;
+      color: #F5F7FA;
+      position: absolute;
+      left: 5px;
+    }
+
+    & p {
+      margin-left: 110px;
+    }
+  }
+
+  .oplata__item--sam::after {
+    content: "1";
+    top: auto;
+    right: auto;
+    bottom: -76px;
+    display: block;
+  }
+
+  .oplata__item--sam,
+  .oplata__item--np {
+    background-position: top 60px left 10px;
+    min-height: 160px;
+  }
+
+  .oplata__item--np::after {
+    content: "2";
+    top: 125px;
+  }
+
+  .oplata__item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .dostavka {
+    padding: 25px 0;
+    background-image: none;
+  }
+
+  .dostavka__item {
+    width: 100%;
+    padding: 18px 15px;
+    background-size: 50px;
+    background-position: top 3px right 8px;
+    font-size: 14px;
   }
 }

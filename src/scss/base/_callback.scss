@@ -1,0 +1,62 @@
+.callback {
+  background: #2D62A0 url(../../img/callback-bg.svg) no-repeat center/cover;
+  color: #fff;
+  padding: 43px 0 62px;
+}
+
+.front-title--w {
+  color: #fff;
+}
+
+.callback__form {
+  width: 914px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  & .button {
+    align-self: center;
+    padding: 13px 55px;
+  }
+}
+
+.callback__form-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.callback__form-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.callback__form-item {
+  width: 46%;
+  margin-bottom: 30px;
+}
+
+.callback__form-label {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 7px;
+}
+
+.callback__form-input {
+  background: #FFFFFF;
+  border: 1px solid rgba(112, 170, 239, 0.38);
+  border-radius: 5px;
+  width: 100%;
+  height: 39px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+
+  &::placeholder {
+    font-size: 14px;
+    color: rgba(44, 43, 43, 0.5);
+  }
+}
+
+.callback__form-textarea {
+  height: 191px;
+}

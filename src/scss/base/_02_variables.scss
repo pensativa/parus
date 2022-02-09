@@ -41,3 +41,9 @@ img {
     max-width: 1150px !important;
   }
 }
+
+@media (max-width: $mobile-width) {
+  body {
+    font-size: 14px !important;
+  }
+}

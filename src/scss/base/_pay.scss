@@ -117,10 +117,13 @@
   margin-bottom: 25px;
 }
 
-a.pay__item-link {
-  font-size: 14px; 
-  color: #1063C4;
+.pay__item-link {
   margin-top: auto;
+
+  & a {
+    font-size: 14px; 
+    color: #1063C4;
+  }
 }
 
 .pay__instr-items {
@@ -182,12 +185,12 @@ a.pay__item-link {
       top: 5px;
       left: 0;
     }
-  }
 
-  &.accent {
-    font-weight: 300;
-    font-size: 14px;
-    color: $sec-color;
+    &.accent {
+      font-weight: 300;
+      font-size: 14px;
+      color: $sec-color;
+    }
   }
 }
 
@@ -218,7 +221,7 @@ a.pay__item-link {
       background: #0D4689;
       border-radius: 2px;
       position: absolute;
-      top: 9px;
+      top: 8px;
       left: 8px;
     }
   }
@@ -238,5 +241,102 @@ a.pay__item-link {
 
   & .button {
     padding: 11px 75px;
+  }
+}
+
+a.pay__instr-download {
+  display: inline-block;
+  text-decoration-line: underline;
+  color: #4A8FE0;
+  margin-bottom: 70px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 27px;
+    height: 27px;
+    background: url('../../img/download.svg') no-repeat center/contain;
+    position: absolute;
+    top: -5px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pay__acc p {
+    padding: 5px 0 5px 5px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      left: -97px;
+    }
+  }
+  
+  .pay__list {
+    justify-content: space-evenly;
+  }
+  
+  .pay__item {
+    margin-right: 0;
+  }
+
+  .pay__instr-item:not(.pay__instr-item--fondy) {
+    width: 330px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .pay__acc {
+    background: #274784 url('../../img/responsive.webp') no-repeat left 6px center/60px;
+    font-size: 14px;
+    text-align: left;
+
+    & p {
+      margin-left: 70px;
+      padding-left: 10px;
+      margin-right: 20px;
+      border-width: 2px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .pay__type {
+    padding: 36px 0;
+    background-size: 40% auto;
+  }
+
+  .pay__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .pay__instr-item {
+    padding: 20px 14px;
+  }
+
+  .pay__instr-title,
+  .pay__instr-item--fondy .pay__instr-title {
+    font-size: 18px;
+  }
+
+  .pay__form label {
+    margin-right: 0;
+    margin-bottom: 38px;
+  }
+
+  a.pay__instr-download {
+    margin-bottom: 60px;
+    max-width: 186px;
+    font-size: 14px;
+
+    &::after {
+      top: 5px;
+      right: -20px;
+    }
   }
 }

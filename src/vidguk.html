@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Відгуки",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section>
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item"><a href="about.html">Про нас</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Відгуки</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Відгуки</h1>
+        <div class="vidguk__count">Всього відгуків: <span>257</span></div>
+				<div class="vidguk__item">
+					<div class="vidguk__body">
+						<img src="../img/userpic-1.svg" alt="Userpic" class="vidguk__img">
+						<div class="vidguk__text">
+							<p class="vidguk__name">Артеменко Сергій</p>
+							<p class="vidguk__inter">Замовленням задоволений! Здивувало що доставку посилки вагою в 20кг вони оплатили самі. Буду купувати ще!</p>
+						</div>
+						<div class="vidguk__date">12.12.2021</div>
+					</div>
+					<div class="vidguk__answer">Дякуємо за Ваш відгук! Бажаємо гарних покупок!</div>
+				</div>
+				<div class="vidguk__item">
+					<div class="vidguk__body">
+						<img src="../img/userpic-1.svg" alt="Userpic" class="vidguk__img">
+						<div class="vidguk__text">
+							<p class="vidguk__name">Паномаренко Владислав Миколайович</p>
+							<p class="vidguk__inter">Дуже схвальні враження від роботи працівників ломбарду. Завжди отримую швидку допомогу та корисні поради. Буду звертатися до вас ще не один раз.!</p>
+						</div>
+						<div class="vidguk__date">10.12.2021</div>
+					</div>
+					<div class="vidguk__answer">Дякуємо за Ваш відгук! Бажаємо гарних покупок!</div>
+				</div>
+				<div class="vidguk__item">
+					<div class="vidguk__body">
+						<img src="../img/userpic-2.svg" alt="Userpic" class="vidguk__img">
+						<div class="vidguk__text">
+							<p class="vidguk__name">Коваленко Ірина </p>
+							<p class="vidguk__inter">Доброго дня! Придбала телефон, але маю сумніви щодо його працездатності. Чи можу я звернутись до вас та оримати допомогу в цьому питанні?</p>
+						</div>
+						<div class="vidguk__date">08.12.2021</div>
+					</div>
+					<div class="vidguk__answer">Дякуємо за Ваш відгук! Ваша заявка буде розглянута в найближчий час. Вибачте за незручності.</div>
+				</div>
+				<div class="vidguk__item">
+					<div class="vidguk__body">
+						<img src="../img/userpic-1.svg" alt="Userpic" class="vidguk__img">
+						<div class="vidguk__text">
+							<p class="vidguk__name">Кисленко Артем</p>
+							<p class="vidguk__inter">Отримали сьогодні своє замовлення. Замовленням впринципі задоволені а от сервіс мене трохи засмутив( не перезвонили фото оригіналу не надали і я замовляла доставку за бонуси а мені довелося оплачувати.</p>
+						</div>
+						<div class="vidguk__date">10.12.2021</div>
+					</div>
+					<div class="vidguk__answer">Доброго дня. Вдячні за Ваш відгук. Приносимо свої вибачення за помилку внаслідок, якої Ваше замовлення було підтверджено без зворотного дзвінка. Якщо представлений на сайті товар не має фото, при оформлені замовлення Ви маєте можливість запросити їх, для цього необхідно зробити відповідну відмітку. Для оформлення доставки за бонуси, під час замовлення необхідно обрати дану опцію, а також обов’язково відмітити артикул товару, що буде доставлений за рахунок бонусів.</div>
+				</div>
+				<div class="vidguk__item">
+					<div class="vidguk__body">
+						<img src="../img/userpic-2.svg" alt="Userpic" class="vidguk__img">
+						<div class="vidguk__text">
+							<p class="vidguk__name">Притули Ганна</p>
+							<p class="vidguk__inter">Доброго дня! Придбала телефон, але маю сумніви щодо його працездатності. Чи можу я звернутись до вас та оримати допомогу в цьому питанні?</p>
+						</div>
+						<div class="vidguk__date">08.12.2021</div>
+					</div>
+					<div class="vidguk__answer">Дякуємо за Ваш відгук! Ваша заявка буде розглянута в найближчий час. Вибачте за незручності.</div>
+				</div>
+				<div class="contacts__btn">
+					<button class="load-button" type="button">Завантажити наступні 5</button>
+				</div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-end page__pagination">
+            <li class="page-item disabled">
+              <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+            </li>
+            <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+            </li>
+          </ul>
+        </nav>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

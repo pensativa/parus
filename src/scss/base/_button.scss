@@ -16,6 +16,11 @@
   }
 }
 
+.button--red {
+  padding: 11px 37px;
+  background: $sec-color;
+}
+
 .load-button {
   @include no-btn();
   background: #F0F4FC;
@@ -39,9 +44,34 @@
 
   &:hover,
   &:focus {
-    background: #1B5AA3;
+    background-color: #1B5AA3;
     box-shadow: 3px 6px 10px rgba(71, 133, 244, 0.3);
     color: #fff;
+  }
+}
+
+.button--callback {
+  padding: 19px 15px 19px 63px;
+  background-color: #4A8FE0;
+  background-position: left 8px center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  width: 230px;
+
+  &.callicon {
+    background-image: url('../../img/call.svg');
+  }
+
+  &.chaticon {
+    background-image: url('../../img/viber-light.svg');
+  }
+
+  &:hover,
+  &:focus {
+    background-position: left 8px center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -50,9 +80,9 @@
 }
 
 .arrow::after {
-  content: "\2192";
-  font-size: 22px;
-  line-height: 1.5;
+  content: "\279C";
+  font-size: inherit;
+  line-height: inherit;
   display: inline-block;
   margin-left: 10px;
   vertical-align: middle;
