@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-@@include('components/page-blocks/_head.html',{
-"lang":"uk",
-"title":"Вакансії",
-"description":"",
-"keywords":"",
-"favicon":"img/favicons/favicon",
-})
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/swiper.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Відкриті вакансії</title>
+</head>
+
 
 <body>
-	@@include('components/page-blocks/_header.html')
+	<header class="header">
+  <nav class="navbar navbar-expand-lg flex-wrap">
+    <div class="container flex-wrap">
+      <a class="navbar-brand close" href="index.html">
+        <img src="img/logo.svg" alt="Парус логотип" width="162" height="60">
+      </a>
+      <div class="lang close">UA</div>
+      <form class="d-flex nav-search">
+        <input class="form-control me-2" type="search" aria-label="Хочу знайти..." placeholder="Хочу знайти...">
+        <button class="btn-search" type="submit">Search</button>
+      </form>
+      <div class="nav-buttons close">
+        <div class="nav-button enter">Профиль</div>
+        <div class="nav-button cart">Карзина</div>
+        <div class="nav-button like-list">Избранные</div>
+      </div>
+      <div class="nav-contacts close">
+        <div class="nav-contacts__button">Головне МЕНЮ</div>
+        <a href="tel:+380682510303" class="tel">(068) 251-03-03</a>
+        <div class="social">
+          <a class="social__fb" href="#">
+            <img src="img/fb.svg" alt="facebook">
+          </a>
+          <a class="social__insta" href="#">
+            <img src="img/insta.svg" alt="instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu mt-3">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Про нас
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Про компанію</a></li>
+                <li><a class="dropdown-item" href="vacancii.html">Вакансії</a></li>
+                <li><a class="dropdown-item" href="vidguk.html">Відгуки</a></li>
+                <li><a class="dropdown-item" href="contacts.html">Контакти</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Кредити
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Оцінка золота</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка срібла</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка техніки</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка діамантів</a></li>
+                <li><a class="dropdown-item" href="#">Оцінка швейцарських годинників</a></li>
+                <li><a class="dropdown-item" href="#">Скупка золота</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Магазин
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Магазин техніки</a></li>
+                <li><a class="dropdown-item" href="#">Магазин золота</a></li>
+                <li><a class="dropdown-item" href="oplata-ta-dostavka.html">Оплата та доставка</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="viddilenia.html">Відділення</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="oplata-online.html">Оплата онлайн</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news-and-promo.html">Новини та акції</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
 	<main class="main">
 		<section>
 			<div class="container">
@@ -19,30 +123,7 @@
             <li class="breadcrumb-item active" aria-current="page">Вакансії</li>
           </ol>
         </nav>
-				<h1 class="page__title">Вакансії</h1>
-			</div>
-		</section>
-		<section class="vacancy__accent">
-			<div class="container">
-				<h2 class="vacancy__accent-title">Швидка та успішна кар’єра з Ломбардом “ПАРУС”</h2>
-				<p class="vacancy__accent-text">Ми шукаємо саме тебе!</p>
-				<button type="button" class="button button--red vacancy__accent-btn" data-bs-toggle="modal" data-bs-target="#vacancyModal">
-					Приєднатись
-				</button>
-			</div>
-		</section>
-		<section class="vacancy">
-			<div class="container">
-				<h2 class="vacancy__title">Переваги роботи з нами</h2>
-				<div class="vacancy__items">
-					<div class="vacancy__item">Безкоштовне навчання професіям потрібним для нашої компанії та виплата степендій </div>
-					<div class="vacancy__item">Наша компанія завжди проводить курси підвіщення кваліфікація та різноманітні семінари серед працівників</div>
-					<div class="vacancy__item">Робота у твоєму місті</div>
-					<div class="vacancy__item">Ти отримаєшь роботу у компанія яка постійно зротсає та покращує свої показники дііяльності</div>
-					<div class="vacancy__item">Після проходження навчання ми гарантуємо працевлаштування</div>
-					<div class="vacancy__item">Ти отримуватимешь бонуси та постійне підвищення зарплати за свої досягнення у роботі </div>
-				</div>
-				<h2 class="vacancy__title">Відкриті вакансії</h2>
+				<h1 class="page__title">Відкриті вакансії</h1>
 				<div class="vidguk__count">Всього вакансій: <span>20</span></div>
 				<div class="vacancy__block">
 					<div class="vacancy__date">12.12.2021</div>
@@ -220,7 +301,7 @@
 					</div>
 				</div>
 				<div class="contacts__btn">
-					<a class="vacancy__all arrow" href="vacancy.html">Переглянути усі вакансії</a>
+					<button class="load-button" type="button">Завантажити наступні 5</button>
 				</div>
         <nav aria-label="Page navigation">
           <ul class="pagination justify-content-end page__pagination">
@@ -237,12 +318,12 @@
         </nav>
 			</div>
 		</section>
-		<div class="modal fade" id="vacancyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vacancyModalLabel" aria-hidden="true">
+    <div class="modal fade" id="vacancyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vacancyModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <a class="navbar-brand" href="index.html">
-              <img src="../../img/logo.svg" alt="Парус логотип" width="122" height="51">
+              <img src="img/logo.svg" alt="Парус логотип" width="122" height="51">
             </a>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -280,8 +361,91 @@
       </div>
     </div>
 	</main>
-	@@include('components/page-blocks/_footer.html')
-	@@include('components/page-blocks/_scripts.html')
+	<footer class="footer">
+  <div class="footer__nav">
+    <div class="container d-flex">
+      <div class="footer__contacts">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-w.svg" alt="Парус логотип" width="162" height="60">
+        </a>
+        <p>04211, Україна, м. Київ, пр. Г. Сталінграда 4</p>
+        <p class="footer__tel">
+          <a href="tel:+380682510303">(068) 251-03-03</a>
+          <br><span class="small">щодня з 09:00-20:00</span>
+        </p>
+      </div>
+      <div class="footer__nav-item">
+        <h5 class="footer__link footer__link-dropped">Про нас</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Про компанію</a></li>
+          <li class="nav-item mb-2"><a href="vacancii.html" class="nav-link p-0">Вакансії</a></li>
+          <li class="nav-item mb-2"><a href="vidguk.html" class="nav-link p-0">Відгуки</a></li>
+          <li class="nav-item mb-2"><a href="contacts.html" class="nav-link p-0">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav-item">
+        <h5 class="footer__link footer__link-dropped">Кредити</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка золота</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка срібла</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка техніки</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка діамантів</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Оцінка швейцарських годинників</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Скупка золота</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav-item">
+        <h5 class="footer__link footer__link-dropped">Магазин</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Магазин техніки</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Магазин золота</a></li>
+          <li class="nav-item mb-2"><a href="oplata-ta-dostavka.html" class="nav-link p-0">Оплата та доставка</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav-item"><a href="viddilenia.html" class="footer__link">Bідділення</a></div>
+      <div class="footer__nav-item"><a href="oplata-online.html" class="footer__link">Оплата онлайн</a></div>
+      <div class="footer__nav-item"><a href="news-and-promo.html" class="footer__link">Новини та акції</a></div>
+      <div class="footer__copyright">
+        <img src="img/app.webp" alt="apps" class="apps">
+        <p>Всі права захищені © Ломбард «ПАРУС» 2022</p>
+      </div>
+    </div>
+  </div>
+  <div class="container partner d-flex justify-content-between py-4">
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Наші партнери</p>
+      <img src="img/np.webp" alt="Nova poshta">
+      <img src="img/privat.webp" alt="Privat bank">
+    </div>
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Приймаємо до сплати</p>
+      <img src="img/viza.webp" alt="Viza">
+      <img src="img/mastercard.webp" alt="MasterCard">
+    </div>
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Безпечні платежи </p>
+      <img src="img/fondy.webp" alt="Fondy">
+    </div>
+    <div class="partner__item d-flex flex-wrap justify-content-between">
+      <p class="partner__title">Приєднуйтесь до нас</p>
+      <img src="img/viber.svg" alt="Viber chat">
+      <img src="img/viber.svg" alt="Viber chat">
+      <img src="img/fb-w.svg" alt="Facebook">
+      <img src="img/insta-w.svg" alt="Instagram">
+    </div>
+  </div>
+</footer>
+<div id="to-top">
+  <img src="img/to-top.svg" alt="вверх" width="42" height="42">
+</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

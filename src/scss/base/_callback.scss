@@ -60,3 +60,13 @@
 .callback__form-textarea {
   height: 191px;
 }
+
+@media (max-width: $mobile-width) {
+  .callback__form-item {
+    min-width: 295px;
+  }
+
+  .callback__form-items {
+    justify-content: space-evenly;
+  }
+}

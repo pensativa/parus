@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
 "lang":"uk",
-"title":"Вакансії",
+"title":"Відкриті вакансії",
 "description":"",
 "keywords":"",
 "favicon":"img/favicons/favicon",
@@ -19,30 +19,7 @@
             <li class="breadcrumb-item active" aria-current="page">Вакансії</li>
           </ol>
         </nav>
-				<h1 class="page__title">Вакансії</h1>
-			</div>
-		</section>
-		<section class="vacancy__accent">
-			<div class="container">
-				<h2 class="vacancy__accent-title">Швидка та успішна кар’єра з Ломбардом “ПАРУС”</h2>
-				<p class="vacancy__accent-text">Ми шукаємо саме тебе!</p>
-				<button type="button" class="button button--red vacancy__accent-btn" data-bs-toggle="modal" data-bs-target="#vacancyModal">
-					Приєднатись
-				</button>
-			</div>
-		</section>
-		<section class="vacancy">
-			<div class="container">
-				<h2 class="vacancy__title">Переваги роботи з нами</h2>
-				<div class="vacancy__items">
-					<div class="vacancy__item">Безкоштовне навчання професіям потрібним для нашої компанії та виплата степендій </div>
-					<div class="vacancy__item">Наша компанія завжди проводить курси підвіщення кваліфікація та різноманітні семінари серед працівників</div>
-					<div class="vacancy__item">Робота у твоєму місті</div>
-					<div class="vacancy__item">Ти отримаєшь роботу у компанія яка постійно зротсає та покращує свої показники дііяльності</div>
-					<div class="vacancy__item">Після проходження навчання ми гарантуємо працевлаштування</div>
-					<div class="vacancy__item">Ти отримуватимешь бонуси та постійне підвищення зарплати за свої досягнення у роботі </div>
-				</div>
-				<h2 class="vacancy__title">Відкриті вакансії</h2>
+				<h1 class="page__title">Відкриті вакансії</h1>
 				<div class="vidguk__count">Всього вакансій: <span>20</span></div>
 				<div class="vacancy__block">
 					<div class="vacancy__date">12.12.2021</div>
@@ -220,7 +197,7 @@
 					</div>
 				</div>
 				<div class="contacts__btn">
-					<a class="vacancy__all arrow" href="vacancy.html">Переглянути усі вакансії</a>
+					<button class="load-button" type="button">Завантажити наступні 5</button>
 				</div>
         <nav aria-label="Page navigation">
           <ul class="pagination justify-content-end page__pagination">
@@ -237,7 +214,7 @@
         </nav>
 			</div>
 		</section>
-		<div class="modal fade" id="vacancyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vacancyModalLabel" aria-hidden="true">
+    <div class="modal fade" id="vacancyModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vacancyModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">

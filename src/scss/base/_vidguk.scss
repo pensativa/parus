@@ -67,3 +67,34 @@
     left: -35px;
   }
 }
+
+@media (max-width: 992px) {
+  .vidguk__inter {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .vidguk__body {
+    position: relative;
+  }
+
+  .vidguk__img {
+    margin-right: 10px;
+    max-width: 30px;
+  }
+
+  .vidguk__date {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+
+  .vidguk__name {
+    max-width: 250px;
+  }
+
+  .vidguk__answer {
+    margin-left: 37px;
+  }
+}

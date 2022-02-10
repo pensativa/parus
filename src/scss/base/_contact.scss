@@ -125,3 +125,87 @@
     margin-right: 7px;
   }
 }
+
+@media (max-width: 992px) {
+  .contacts__chats {
+    padding: 26px 15px 20px 300px;
+
+    & .button--callback {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__block {
+    margin-bottom: 40px;
+  }
+
+  .contacts__callback {
+    background-image: url('../../img/callback-bg-m.svg'), url('../../img/bg-callback-m.webp');
+    background-position: top left, top right;
+    background-size: auto 100%, auto 240px;
+  }
+
+  .contact__form {
+    width: 100%;
+    padding-left: 0;
+    border: none;
+
+    & h2 {
+      font-size: 16px;
+      margin-bottom: 83px;
+      margin-top: 60px;
+      max-width: 160px;
+    }
+  }
+
+  .contacts__chats {
+    padding: 17px 7px;
+    text-align: center;
+    background-image: none;
+
+    &  h2 {
+      font-size: 18px;
+
+      &::before {
+        display: block;
+        margin: 0 auto 10px;
+      }
+    }
+
+    & p {
+      font-size: 13px;
+
+      &::after {
+        content: "";
+        width: 246px;
+        height: 181px;
+        background: url('../../img/chats.webp') no-repeat center/contain;
+        display: block;
+        margin: 15px auto;
+      }
+    }
+
+    & .button--callback {
+      width: 100%;
+      max-width: 230px;
+      margin: 0 auto 10px;
+    }
+  }
+
+  .contacts__shops {
+    padding: 10px;
+  }
+
+  .contacts__shops-items {
+    font-size: 13px;
+    margin-bottom: 13px;
+
+    &::before {
+      width: 34px;
+      height: 34px;
+      margin-right: 9px;
+    }
+  }
+}
