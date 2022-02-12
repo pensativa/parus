@@ -1,5 +1,5 @@
 .promo {
-  background: url('../../img/promo-bg.svg') no-repeat top 100px center/100% auto;
+  background: url('../../img/promo-bg.svg') no-repeat center left;
 }
 
 .promo__block {
@@ -30,6 +30,7 @@
   &.active {
     opacity: 1;
     border-color: #1672DE;
+    position: relative;
 
     &::before {
       content: "";
@@ -42,6 +43,17 @@
       margin-right: 8px;
       @include transit(0.3);
     }
+  }
+
+  &.active::after {
+    content: "";
+    width: 93px;
+    height: 41px;
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    transform: translateY(-50%);
+    background: url('../../img/arrow-promo.svg') no-repeat center/contain;
   }
 }
 

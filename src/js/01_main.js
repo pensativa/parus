@@ -121,3 +121,19 @@ var swiper = new Swiper(".viddel__slider", {
     draggable: true,
   },
 });
+
+//Download files
+const fileInputChangeText = function () {
+  const file = document.querySelector('.modal-form__item--file input[type="file"]');
+  const fileText = document.querySelector('.input-text');
+
+  file.onchange = function() {
+    console.log(file.value);
+    if (file.value != '') {
+      fileText.innerHTML = 'Файл вибраний';
+    } else {
+      fileText.innerHTML = 'Назва.pdf';
+    }
+  };
+};
+fileInputChangeText();

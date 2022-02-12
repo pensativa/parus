@@ -151,6 +151,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .catalog-sell__list {
+    justify-content: space-evenly;
+  }
+  
   .catalog-sell__item {
     width: 142px;
     padding-bottom: 15px;
