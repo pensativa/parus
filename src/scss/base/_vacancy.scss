@@ -1,6 +1,6 @@
 .vacancy__accent {
   background-color: #274784;
-  background-image: url('../../img/vac-bg.svg'), url('../../img/bg-vac.png');
+  background-image: url('../img/vac-bg.svg'), url('../img/bg-vac.png');
   background-repeat: no-repeat;
   background-position: right bottom, center bottom -9px;
   background-size: 100% auto, auto 100%;
@@ -57,27 +57,27 @@
   transition: 0.3s;
 
   &:nth-child(1) {
-    background-image: url('../../img/learning.png');
+    background-image: url('../img/learning.png');
   }
 
   &:nth-child(2) {
-    background-image: url('../../img/podium.png');
+    background-image: url('../img/podium.png');
   }
 
   &:nth-child(3) {
-    background-image: url('../../img/road-map.png');
+    background-image: url('../img/road-map.png');
   }
 
   &:nth-child(4) {
-    background-image: url('../../img/growth.png');
+    background-image: url('../img/growth.png');
   }
 
   &:nth-child(5) {
-    background-image: url('../../img/portfolio.png');
+    background-image: url('../img/portfolio.png');
   }
 
   &:nth-child(6) {
-    background-image: url('../../img/discounts.png');
+    background-image: url('../img/discounts.png');
   }
 
   &:hover,
@@ -140,7 +140,7 @@
       width: 11px;
       height: 10px;
       display: inline-block;
-      background: url(../../img/arrow.svg) center/contain no-repeat;
+      background: url(../img/arrow.svg) center/contain no-repeat;
       vertical-align: middle;
       margin-left: 8px;
     }
@@ -291,7 +291,7 @@
   }
 
   & .input-text {
-    background: url('../../img/download-input.svg') no-repeat right 10px center;
+    background: url('../img/download-input.svg') no-repeat right 10px center;
   }
 }
 
@@ -327,7 +327,7 @@
 
 @media (max-width: $mobile-width) {
   .vacancy__accent {
-    background: #274784 url('../../img/bg-vac-m.png') no-repeat right -72px bottom -11px /auto 430px;
+    background: #274784 url('../img/bg-vac-m.png') no-repeat right -72px bottom -11px /auto 430px;
   }
   .vacancy__accent-title {
     font-size: 20px;

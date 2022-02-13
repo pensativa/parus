@@ -1,6 +1,5 @@
 .main-menu {
   background: #F0F4FC;
-  padding: 18px 0;
   width: 100%;
 }
 
@@ -13,15 +12,25 @@
   padding: 0;
   font-weight: 600;
   font-size: 17px;
+  padding: 18px 0 14px;
   text-transform: uppercase;
   color: $prime-color;
+  border-bottom: 4px solid transparent;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus,
+  &.acive {
+    color: #1672DE;
+    border-color: $sec-color;
+  }
 }
 
 .main-menu .dropdown-toggle::after {
   width: 13px;
   height: 7px;
   border: none;
-  background: url(../../img/arrow.svg) no-repeat center/contain;
+  background: url(../img/arrow.svg) no-repeat center/contain;
   vertical-align: middle;
 }
 

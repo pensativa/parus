@@ -241,7 +241,31 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-tech" role="tabpanel" aria-labelledby="pills-tech-tab">
-
+							<form class="calc__tech-form">
+								<div class="calc__tech-item">
+									<div>
+										<label class="visually-hidden" for="model">Бренд, модель</label>
+										<input class="calc__input" id="model" type="text" placeholder="Бренд, модель">
+										<p class="text-mute">Наприклад: IPhone 11 128 GB</p>
+									</div>
+									<p class="calc__tech-result">Модель не вибрана</p>
+								</div>
+								<fieldset class="rating">
+									<p class="rating-name">Стан</p>
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+							</fieldset>
+							<p class="calc__star-result calc__input"><span>4</span> Відмінний стан (незначні потертості)</p>
+							<div class="calc__tech-item">
+								<label class="visually-hidden" for="tech-tel">Телефон</label>
+								<input class="calc__input" id="tech-tel" type="text" placeholder="Телефон">
+								<button class="button button--red">Розрахувати</button>
+							</div>
+							</form>
+							<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
 						</div>
 						<div class="tab-pane fade" id="pills-dimond" role="tabpanel" aria-labelledby="pills-dimond-tab">
 

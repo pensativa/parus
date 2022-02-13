@@ -1,5 +1,5 @@
 .calc {
-  background: #F6F6F6 url('../../img/calc-bg.svg') no-repeat center/100% auto;
+  background: #F6F6F6 url('../img/calc-bg.svg') no-repeat center/100% auto;
   padding: 45px 0 80px;
 }
 
@@ -69,6 +69,91 @@
 .calc__link {
   font-weight: 600;
   color: #C83138;
+}
+
+.calc__tech-form .calc__input {
+  width: 360px;
+  clear: both;
+}
+
+.calc__tech-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 17px;
+}
+
+.calc__tech-result {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 30px;
+  border: 1px solid #70AAEF;
+  border-radius: 5px;
+}
+
+.text-mute {
+  color: #7E7E7E;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.rating { 
+  border: none;
+  float: left;
+  margin-bottom: 13px;
+}
+
+.rating-name {
+  font-weight: 400;
+  font-size: 15px;
+  color: #7E7E7E;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 25px;
+  line-height: 1;
+  display: inline-block;
+  content: "\2605";
+}
+
+.rating > label { 
+  color: #fff;
+  -webkit-text-stroke: 1px #0D4689;
+  -ms-text-shadow: -1px -1px 0 #0D4689, 1px -1px 0 #0D4689, -1px 1px 0 #0D4689, 1px 1px 0 #0D4689;
+  float: right; 
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {     
+  color: #0D4689; 
+} 
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label {   
+  color: #0D4689;  
+} 
+
+.calc__star-result {
+  margin-bottom: 19px;
+  color: #7E7E7E;
+
+  & span {
+    color: #0D4689;
+    font-weight: 600;
+    padding-right: 15px;
+  }
+}
+
+.calc .button--red {
+  padding: 11px 52px;
 }
 
 @media (max-width: 992px) {

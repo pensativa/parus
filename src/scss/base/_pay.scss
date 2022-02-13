@@ -17,7 +17,7 @@
       content: "";
       width: 123px;
       height: 123px;
-      background: url('../../img/responsive.webp') no-repeat center/contain;
+      background: url('../img/responsive.webp') no-repeat center/contain;
       position: absolute;
       bottom: -27px;
       left: -180px;
@@ -28,7 +28,7 @@
 .pay__type {
   background-color: #F6F6F6;
   background-repeat: no-repeat;
-  background-image: url('../../img/pay-bg-right.svg'), url('../../img/pay-bg.svg');
+  background-image: url('../img/pay-bg-right.svg'), url('../img/pay-bg.svg');
   background-position: top right, bottom left;
   padding: 87px 0;
 }
@@ -77,19 +77,19 @@
   }
 
   &:nth-of-type(1) {
-    background-image: url(../../img/credit-card.webp);
+    background-image: url(../img/credit-card.webp);
   }
 
   &:nth-of-type(2) {
-    background-image: url(../../img/cash.webp);
+    background-image: url(../img/cash.webp);
   }
 
   &:nth-of-type(3) {
-    background-image: url(../../img/wallet.webp);
+    background-image: url(../img/wallet.webp);
   }
 
   &:nth-of-type(4) {
-    background-image: url(../../img/credit.webp);
+    background-image: url(../img/credit.webp);
   }
 }
 
@@ -255,7 +255,7 @@ a.pay__instr-download {
     content: "";
     width: 27px;
     height: 27px;
-    background: url('../../img/download.svg') no-repeat center/contain;
+    background: url('../img/download.svg') no-repeat center/contain;
     position: absolute;
     top: -5px;
     right: -40px;
@@ -289,7 +289,7 @@ a.pay__instr-download {
 
 @media (max-width: $mobile-width) {
   .pay__acc {
-    background: #274784 url('../../img/responsive.webp') no-repeat left 6px center/60px;
+    background: #274784 url('../img/responsive.webp') no-repeat left 6px center/60px;
     font-size: 14px;
     text-align: left;
 

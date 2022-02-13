@@ -1,7 +1,7 @@
 .oplata__accent {
   width: 949px;
   max-width: 100%;
-  background: #274784 url('../../img/checklist.webp') no-repeat left 24px center;
+  background: #274784 url('../img/checklist.webp') no-repeat left 24px center;
   border-radius: 5px;
   padding: 45px 24px 45px 130px;
   margin: 0 auto 70px;
@@ -36,7 +36,7 @@
 }
 
 .oplata__item--sam {
-  background: #DDE9FE url('../../img/samovyviz.webp') no-repeat left 10px center;
+  background: #DDE9FE url('../img/samovyviz.webp') no-repeat left 10px center;
   box-shadow: 4px 6px 10px rgba(160, 171, 185, 0.13);
   width: 328px;
 
@@ -54,7 +54,7 @@
 }
 
 .oplata__item--np {
-  background: #fff url('../../img/nova-poshta.webp') no-repeat left 10px bottom 30px;
+  background: #fff url('../img/nova-poshta.webp') no-repeat left 10px bottom 30px;
   width: 690px;
 }
 
@@ -78,7 +78,7 @@
 .dostavka{
   background-color: #F6F6F6;
   background-repeat: no-repeat;
-  background-image: url('../../img/pay-bg-right.svg'), url('../../img/pay-bg.svg');
+  background-image: url('../img/pay-bg-right.svg'), url('../img/pay-bg.svg');
   background-position: top right, bottom left;
   padding: 37px 0 70px;
 }
@@ -100,15 +100,15 @@
   margin-bottom: 30px;
 
   &:nth-of-type(1) {
-    background-image: url(../../img/credit-card.webp);
+    background-image: url(../img/credit-card.webp);
   }
 
   &:nth-of-type(2) {
-    background-image: url(../../img/wallet.webp);
+    background-image: url(../img/wallet.webp);
   }
 
   &:nth-of-type(3) {
-    background-image: url(../../img/credit.webp);
+    background-image: url(../img/credit.webp);
   }
 
   &:hover,

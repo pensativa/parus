@@ -40,7 +40,7 @@
       position: absolute;
       bottom: 69px;
       left: -16px;
-      background: url('../../img/un.svg') no-repeat top left/auto 80px;
+      background: url('../img/un.svg') no-repeat top left/auto 80px;
     }
 
     & .step__text::before {
@@ -65,7 +65,7 @@
       position: absolute;
       bottom: 55px;
       left: 100px;
-      background: url('../../img/dos.svg') no-repeat top left/auto 80px;
+      background: url('../img/dos.svg') no-repeat top left/auto 80px;
     }
 
     & .step__text {
@@ -94,7 +94,7 @@
       position: absolute;
       bottom: 34px;
       left: 14px;
-      background: url('../../img/tres.svg') no-repeat top left/auto 80px;
+      background: url('../img/tres.svg') no-repeat top left/auto 80px;
     }
 
     & .step__text::before {
@@ -216,7 +216,7 @@
       & .step__img::after {
         bottom: -228px;
         left: -7px;
-        background-image: url('../../img/uno-m.svg');
+        background-image: url('../img/uno-m.svg');
       }
     }
 
@@ -230,7 +230,7 @@
       & .step__img::after {
         bottom: -226px;
         left: -70px;
-        background-image: url('../../img/dos-m.svg');
+        background-image: url('../img/dos-m.svg');
       }
     }
 
@@ -244,7 +244,7 @@
       & .step__img::after {
         bottom: -218px;
         left: -4px;
-        background-image: url('../../img/tres-m.svg');
+        background-image: url('../img/tres-m.svg');
       }
     }
 
@@ -258,7 +258,7 @@
       & .step__img::after {
         bottom: -188px;
         left: -51px;
-        background-image: url('../../img/cuatro-m.svg');
+        background-image: url('../img/cuatro-m.svg');
       }
     }
   }

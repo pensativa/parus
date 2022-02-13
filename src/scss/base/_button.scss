@@ -19,6 +19,13 @@
 .button--red {
   padding: 11px 37px;
   background: $sec-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #AE252C;
+    box-shadow: none;
+  }
 }
 
 .load-button {
@@ -39,7 +46,7 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
-    background: url('../../img/load.svg') no-repeat center/contain;
+    background: url('../img/load.svg') no-repeat center/contain;
   }
 
   &:hover,
@@ -61,11 +68,11 @@
   width: 230px;
 
   &.callicon {
-    background-image: url('../../img/call.svg');
+    background-image: url('../img/call.svg');
   }
 
   &.chaticon {
-    background-image: url('../../img/viber-light.svg');
+    background-image: url('../img/viber-light.svg');
   }
 
   &:hover,

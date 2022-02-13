@@ -36,6 +36,10 @@ img {
   height: auto;
 }
 
+input {
+  appearance: none;
+}
+
 @media (min-width: 1200px), (min-width: 1400px) {
   .container {
     max-width: 1150px !important;

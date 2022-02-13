@@ -6,7 +6,7 @@
 }
 
 .contacts__callback {
-  background: #184070 url('../../img/contacts-bg.webp') no-repeat left bottom -6px /auto 100%;
+  background: #184070 url('../img/contacts-bg.webp') no-repeat left bottom -6px /auto 100%;
   color: #fff;
   padding: 25px 15px 18px;
 }
@@ -53,7 +53,7 @@
 }
 
 .contacts__chats {
-  background: #F7F7F7 url('../../img/chats.webp') no-repeat left center/ auto 100%;
+  background: #F7F7F7 url('../img/chats.webp') no-repeat left center/ auto 100%;
   padding: 40px 24px 20px 400px;
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +70,7 @@
       content: "";
       width: 30px;
       height: 30px;
-      background: url('../../img/video-call.webp') no-repeat center/contain;
+      background: url('../img/video-call.webp') no-repeat center/contain;
       display: inline-block;
       vertical-align: middle;
       margin-right: 13px;
@@ -103,7 +103,7 @@
     content: "";
     width: 60px;
     height: 60px;
-    background: url('../../img/map-book.webp') no-repeat center/contain;
+    background: url('../img/map-book.webp') no-repeat center/contain;
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
@@ -119,7 +119,7 @@
     content: "";
     width: 19px;
     height: 30px;
-    background: url('../../img/locacia.svg') no-repeat center/contain;
+    background: url('../img/locacia.svg') no-repeat center/contain;
     display: inline-block;
     vertical-align: middle;
     margin-right: 7px;
@@ -142,7 +142,7 @@
   }
 
   .contacts__callback {
-    background-image: url('../../img/callback-bg-m.svg'), url('../../img/bg-callback-m.webp');
+    background-image: url('../img/callback-bg-m.svg'), url('../img/bg-callback-m.webp');
     background-position: top left, top right;
     background-size: auto 100%, auto 240px;
   }
@@ -181,7 +181,7 @@
         content: "";
         width: 246px;
         height: 181px;
-        background: url('../../img/chats.webp') no-repeat center/contain;
+        background: url('../img/chats.webp') no-repeat center/contain;
         display: block;
         margin: 15px auto;
       }
