@@ -1,0 +1,27 @@
+[
+  {
+    "link": "kredit-zoloto.html",
+    "modif": "zoloto",
+    "name": "Оцінка золота"
+  },
+  {
+    "link": "kredit-tech.html",
+    "modif": "tech",
+    "name": "Оцінка техніки"
+  },
+  {
+    "link": "kredit-diamant.html",
+    "modif": "diamant",
+    "name": "Оцінка діамантів"
+  },
+  {
+    "link": "kredit-clock.html",
+    "modif": "clock",
+    "name": "Оцінка швейцарських годинників"
+  },
+  {
+    "link": "kredit-skupka.html",
+    "modif": "skupka",
+    "name": "Скупка золота"
+  }
+]

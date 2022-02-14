@@ -128,7 +128,6 @@ const fileInputChangeText = function () {
   const fileText = document.querySelector('.input-text');
 
   file.onchange = function() {
-    console.log(file.value);
     if (file.value != '') {
       fileText.innerHTML = 'Файл вибраний';
     } else {
@@ -136,4 +135,26 @@ const fileInputChangeText = function () {
     }
   };
 };
-fileInputChangeText();
+const modalForm = document.querySelector('.modal-form');
+if (modalForm) {
+  fileInputChangeText();
+}
+
+const fileInputChangeBg = function () {
+  const files = document.querySelectorAll('.calc__clock-file');
+
+  for (let file of files) {
+    file.onchange = function() {
+      const fileBg = file.parentElement;
+      if (file.value != '') {
+        fileBg.style.backgroundImage = "url('../img/checked.svg')";
+      } else {
+        fileBg.style.backgroundImage = "url('../img/plus.svg')";
+      }
+    };
+  }
+};
+const calc = document.querySelector('.calc');
+if (calc) {
+  fileInputChangeBg();
+}

@@ -1,0 +1,108 @@
+.kredit__accent {
+  background: #0F53A3;
+  border-radius: 5px;
+  padding: 22px 42px 22px 310px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 66px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &.kredit__accent--gold::after {
+    width: 254px;
+    height: 204px;
+    bottom: 0;
+    left: -6px;
+    background-image: url(../img/kz.png);
+  }
+
+  &.kredit__accent--silver::after {
+    width: 232px;
+    height: 232px;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/ks.webp);
+  }
+
+  &.kredit__accent--diamant::after {
+    width: 310px;
+    height: 214px;
+    bottom: 0;
+    left: -20px;
+    background-image: url(../img/kd.webp);
+  }
+
+  &.kredit__accent--silver::after {
+    width: 360px;
+    height: 190px;
+    top: 26px;
+    left: -60px;
+    background-image: url(../img/ks.webp);
+  }
+
+  &.kredit__accent--clock::after {
+    width: 142px;
+    height: 283px;
+    bottom: -10px;
+    left: 40px;
+    background-image: url(../img/kc.webp);
+  }
+
+  &.kredit__accent--skupka::after {
+    width: 357px;
+    height: 237px;
+    top: 0;
+    left: -20px;
+    background-image: url(../img/ksz.webp);
+  }
+
+  & p {
+    margin-bottom: 14px;
+  }
+
+  & ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  & li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: #C83138;
+      border-radius: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.kredit__form {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(7, 17, 27, 0.15);
+  border-radius: 10px;
+  width: 820px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+}
+
+.kredit__form-title {
+  background: #5EA5F8;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}

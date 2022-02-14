@@ -1,0 +1,125 @@
+.pay-block {
+  background: #F7F7F7;
+  padding: 50px 0;
+}
+
+.pay-block__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.play-block__item {
+  margin-right: 3%;
+  margin-bottom: 30px;
+  width: 188px;
+  max-width: 17%;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(140, 190, 250, 0.72);
+  border-radius: 0px 10px 10px 0px;
+  transition: 0.3s;
+  text-align: center;
+  background-position: top 35px center;
+  background-repeat: no-repeat;
+  background-size: 45px;
+
+  &:hover,
+  &:focus {
+    background-blend-mode: color-dodge;
+    background-color: #0D4689;
+    border: 1px solid rgba(91, 153, 226, 0.31);
+    box-shadow: 4px 6px 10px rgba(17, 31, 47, 0.2);
+  }
+}
+
+.play-block__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 35px 10px 10px;
+  color: #0E417D;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &.zoloto::before {
+    background-image: url('../img/ring.svg');
+  }
+
+  &.sriblo::before {
+    background-image: url('../img/sriblo.svg');
+  }
+
+  &.tech::before {
+    background-image: url('../img/tv.svg');
+  }
+
+  &.diamant::before {
+    background-image: url('../img/diomand.svg');
+  }
+
+  &.clock::before {
+    background-image: url('../img/clock.svg');
+  }
+
+  &.skupka::before {
+    background-image: url('../img/skupka.svg');
+  }
+
+  &:hover,
+  &:focus {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (max-width: 992px) {
+  .play-block__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .pay-block__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .play-block__item {
+    width: 285px;
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+
+  .play-block__link {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 15px 30px 15px 25px;
+
+    &::before {
+      width: 38px;
+      height: 36px;
+      margin-right: 34px;
+      margin-bottom: 0;
+    }
+
+    &.clock::before,
+    &.skupka::before {
+      width: 49px;
+      height: 49px;
+    }
+  }
+}

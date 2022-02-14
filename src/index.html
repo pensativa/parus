@@ -215,7 +215,7 @@
 									<p>Приблизна онлайн оцінка виробу:</p>
 									<p class="calc__result">до <span class="result">12 000</span> грн.</p>
 								</div>
-								<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+								<a href="kredit-zoloto.html" class="arrow calc__link">Точніша оцінка онлайн</a>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-silver" role="tabpanel" aria-labelledby="pills-silver-tab">
@@ -237,7 +237,7 @@
 									<p>Приблизна онлайн оцінка виробу:</p>
 									<p class="calc__result">до <span class="result">1000</span> грн.</p>
 								</div>
-								<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+								<a href="kredit-sriblo.html" class="arrow calc__link">Точніша оцінка онлайн</a>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-tech" role="tabpanel" aria-labelledby="pills-tech-tab">
@@ -261,17 +261,115 @@
 							<p class="calc__star-result calc__input"><span>4</span> Відмінний стан (незначні потертості)</p>
 							<div class="calc__tech-item">
 								<label class="visually-hidden" for="tech-tel">Телефон</label>
-								<input class="calc__input" id="tech-tel" type="text" placeholder="Телефон">
+								<input class="calc__input" id="tech-tel" type="tel" placeholder="Телефон">
 								<button class="button button--red">Розрахувати</button>
 							</div>
 							</form>
-							<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+							<a href="kredit-tech.html" class="arrow calc__link">Точніша оцінка онлайн</a>
 						</div>
 						<div class="tab-pane fade" id="pills-dimond" role="tabpanel" aria-labelledby="pills-dimond-tab">
-
+							<form class="calc__diomand-form">
+								<div class="calc__tech-item">
+									<label class="visually-hidden" for="userpib">ПІБ</label>
+									<input class="calc__input calc__input--long" id="userpib" type="text" placeholder="ПІБ">
+									<label class="visually-hidden" for="usertel">Телефон</label>
+									<input class="calc__input" id="usertel" type="tel" placeholder="Телефон">
+								</div>
+								<div class="calc__tech-item">
+									<div>
+										<label class="calc__label" for="d-form">Форма</label>
+										<select id="d-form" class="form-select calc__select" aria-label="Форма">
+											<option selected>Не обрано</option>
+											<option value="50">Кругла</option>
+											<option value="100">Маркиз</option>
+											<option value="150">Груша</option>
+											<option value="100">Овал</option>
+											<option value="150">Серце</option>
+											<option value="100">Смарагд</option>
+											<option value="150">Принцеса</option>
+										</select>
+									</div>
+									<div>
+										<label class="calc__label" for="carat">Карат</label>
+										<input class="calc__input" id="carat" type="number">
+									</div>
+								</div>
+								<div class="calc__tech-item">
+									<div>
+										<label class="calc__label" for="color-gost">Колір (ГОСТ)</label>
+										<select id="color-gost" class="form-select calc__select" aria-label="Форма">
+											<option selected>Не обрано</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</div>
+									<div>
+										<label class="calc__label" for="chistota-gost">Чистота (ГОСТ)</label>
+										<select id="chistota-gost" class="form-select calc__select" aria-label="Чистота (ГОСТ)">
+											<option selected>Не обрано</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+								</div>
+								<div class="calc__tech-item">
+									<button class="button button--red">Розрахувати</button>
+									<a href="kredit-diamant.html" class="arrow calc__link">Точніша оцінка онлайн</a>
+								</div>
+							</form>
 						</div>
 						<div class="tab-pane fade" id="pills-clock" role="tabpanel" aria-labelledby="pills-clock-tab">
-
+							<form class="calc__clock-form">
+								<div class="calc__tech-item">
+									<label class="visually-hidden" for="clock-userpib">ПІБ</label>
+									<input class="calc__input calc__input--long" id="clock-userpib" type="text" placeholder="ПІБ">
+									<label class="visually-hidden" for="clock-usertel">Телефон</label>
+									<input class="calc__input" id="clock-usertel" type="tel" placeholder="Телефон">
+								</div>
+								<label class="visually-hidden" for="clock-model">Бренд, модель</label>
+								<input class="calc__input calc__input--long" id="clock-model" type="text" placeholder="Бренд, модель">
+								<p class="text-mute">Наприклад: Rolex steel 345</p>
+								<fieldset class="rating">
+									<p class="rating-name">Стан</p>
+									<input type="radio" id="clock-star5" name="rating" value="5" /><label class = "full" for="clock-star5" title="Awesome"></label>
+									<input type="radio" id="clock-star4" name="rating" value="4" /><label class = "full" for="clock-star4" title="Pretty good"></label>
+									<input type="radio" id="clock-star3" name="rating" value="3" /><label class = "full" for="clock-star3" title="Meh"></label>
+									<input type="radio" id="clock-star2" name="rating" value="2" /><label class = "full" for="clock-star2" title="Kinda bad"></label>
+									<input type="radio" id="clock-star1" name="rating" value="1" /><label class = "full" for="clock-star1" title="Sucks big time"></label>
+								</fieldset>
+								<p class="calc__star-result calc__input"><span>4</span> Відмінний стан (незначні потертості)</p>
+								<div class="calc__clock-download">
+									<label class="calc__label" for="clock-file">Додати фото </label>
+									<div class="calc__clock-file--psevdo">
+										<input class="calc__clock-file" name="clock-file" type="file">
+									</div>
+									<div class="calc__clock-file--psevdo">
+										<input class="calc__clock-file" name="clock-file" type="file">
+									</div>
+								</div>
+								<div class="calc__tech-item">
+									<button class="button button--red">Розрахувати</button>
+									<a href="kredit-clock.html" class="arrow calc__link">Точніша оцінка онлайн</a>
+								</div>
+							</form>
 						</div>
 						<div class="tab-pane fade" id="pills-skup" role="tabpanel" aria-labelledby="pills-skup-tab">
 							<div class="calc__form calc__form--skup">
@@ -295,7 +393,7 @@
 									<p>Приблизна онлайн оцінка виробу:</p>
 									<p class="calc__result">до <span class="result">12 000</span> грн.</p>
 								</div>
-								<a href="#" class="arrow calc__link">Точніша оцінка онлайн</a>
+								<a href="kredit-skupka.html" class="arrow calc__link">Точніша оцінка онлайн</a>
 							</div>
 						</div>
 					</div>
