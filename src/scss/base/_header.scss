@@ -183,6 +183,10 @@
 }
 
 @media (max-width: 992px) {
+  .header {
+    padding: 15px 0;
+  }
+  
   .header .close {
     display: none;
   }
@@ -202,7 +206,6 @@
 
   .header.scroll {
     background: #F0F4FC;
-    padding: 15px 0;
     box-shadow: 0px 3px 7px rgba(29, 97, 177, 0.17);
 
     & .navbar {
@@ -219,10 +222,6 @@
     & .nav-search {
       margin-top: 0;
     }
-  }
-
-  .nav-search {
-    margin-top: 18px;
   }
 
   .main-menu {

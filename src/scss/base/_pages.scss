@@ -26,6 +26,15 @@ $breadcrumb-divider: url("../img/bredcrams.svg");
   color: #0D4689;
 }
 
+.page__title--gold {
+  color: #F5EE41;
+  -webkit-text-stroke: 0.5px #A09108;
+}
+
+.page__title--accent {
+  color: $sec-color;
+}
+
 .page__pagination {
   margin-bottom: 70px;
 

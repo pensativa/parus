@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Нові надходження",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section>
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Нові надходження</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Нові надходження</h1>
+        <div class="catalog-items catalog-news">
+					@@loop('components/bem-blocks/_catalog-items.html', 'components/bem-blocks/_catalog-new-full.json')
+				</div>
+        <div class="sale__link">
+          <button class="btn">Показати ще</button>
+        </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-end page__pagination">
+            <li class="page-item disabled">
+              <a class="page-link page-link__arrow" href="#" tabindex="-1" aria-disabled="true">&lsaquo;</a>
+            </li>
+            <li class="page-item"><a class="page-link active" href="#"  aria-current="page">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link page-link__arrow" href="#">&rsaquo;</a>
+            </li>
+          </ul>
+        </nav>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

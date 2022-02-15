@@ -29,6 +29,87 @@
         </div>
         <div class="kredit__form">
           <h2 class="kredit__form-title">Оцінка виробів із золота онлайн</h2>
+          <div class="kredit__form-body">
+            <div class="calc__item">
+              <label class="calc__label">Проба</label>
+              <select class="form-select calc__select" aria-label="Проба">
+                <option selected>Не обрано</option>
+                <option value="150">375</option>
+                <option value="200">500</option>
+                <option value="300">585</option>
+                <option value="450">750</option>
+                <option value="500">809</option>
+                <option value="550">958</option>
+              </select>
+            </div>
+            <div class="calc__item">
+              <label class="calc__label">Вага, грам</label>
+              <input class="calc__input" type="number" min="0.1" max="200" step="0.1">
+            </div>
+            <div class="calc__item">
+              <label class="calc__label">Місто</label>
+              <select class="form-select calc__select" aria-label="Місто">
+                <option selected>Не обрано</option>
+                <option value="kiev">Київ</option>
+                <option value="lvov">Львів</option>
+                <option value="ternopil">Тернопіль</option>
+                <option value="odessa">Одеса</option>
+                <option value="dnipro">Дніпро</option>
+                <option value="harkiv">Харків</option>
+              </select>
+            </div>
+            <div class="calc__item">
+              <label class="calc__label">Відділення</label>
+              <select class="form-select calc__select" aria-label="Відділення">
+                <option selected>Не обрано</option>
+                <option value="1">вул. Свободи, буд.34/2</option>
+                <option value="2">вул. Свободи, буд.34/2</option>
+                <option value="3">вул. Свободи, буд.34/2</option>
+                <option value="4">вул. Свободи, буд.34/2</option>
+                <option value="5">вул. Свободи, буд.34/2</option>
+                <option value="6">вул. Свободи, буд.34/2</option>
+              </select>
+              <a href="http://localhost:3000/viddilenia.html" class="kredit__link-viddels" target="_blanc">Відділення</a>
+            </div>
+            <div class="calc__item">
+              <label class="calc__label">Предмет застави</label>
+              <select class="form-select calc__select" aria-label="Предмет застави">
+                <option selected>Не обрано</option>
+                <option value="kabluchka">Каблучка</option>
+                <option value="kulony">Кулони</option>
+                <option value="krestiki">Крестики</option>
+                <option value="lancujki">Ланцюжки</option>
+                <option value="braslety">Браслети</option>
+                <option value="obruchka">Обручка</option>
+                <option value="inche">інше</option>
+              </select>
+            </div>
+            <div class="calc__item">
+              <label class="calc__label">Термін застави</label>
+              <input class="calc__input" type="number" min="1" max="63" step="1">
+            </div>
+            <div class="calc__item">
+              <label for="" class="kredit__cat">
+                <input type="radio">
+              </label>
+              <label for="" class="kredit__cat">
+                <input type="radio">
+              </label>
+              <label for="" class="kredit__cat">
+                <input type="radio">
+              </label><label for="" class="kredit__cat">
+                <input type="radio">
+              </label>
+              <label for="" class="kredit__cat">
+                <input type="radio">
+              </label>
+            </div>
+            <div class="calc__results">
+              <p>Оцінка Вашего виробу:</p>
+              <p class="calc__result"><span class="result">12 000</span> грн.</p>
+            </div>
+            <a href="kredit-diamant.html" class="arrow kredit__form-link">Якщо у виробі є діаманти їх можно оцінити окремо</a>
+          </div>
         </div>
 			</div>
 		</section>

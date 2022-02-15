@@ -1,0 +1,145 @@
+.catalog__sections {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.catalog__setion {
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid rgba(113, 130, 219, 0.28);
+  box-shadow: 0px 4px 8px rgba(112, 170, 239, 0.13);
+  overflow: hidden;
+  width: 200px;
+  min-height: 240px;
+  margin: 0 3% 30px;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    border: 1px solid rgba(113, 130, 219, 0.6);
+    box-shadow: 0px 4px 8px rgba(112, 170, 239, 0.13);
+  }
+}
+
+.catalog__section-img {
+  width: 100%;
+  height: 186px;
+  background-size: cover;
+}
+
+.catalog__section-title {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 13px 20px 5px;
+  text-align: center;
+
+  & a {
+    color: $prime-color;
+    text-decoration: none;
+  }
+}
+
+.catalog__subsections {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.catalog__subsection {
+  width: 186px;
+  min-height: 186px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid rgba(91, 153, 226, 0.31);
+  border-radius: 7px;
+  margin-bottom: 40px;
+  margin-right: 3%;
+
+  &:hover,
+  &:focus {
+    background: rgba(245, 249, 255, 0.64);
+    border: 1px solid rgba(91, 153, 226, 0.31);
+    box-shadow: 0px 10px 18px rgba(81, 125, 209, 0.18);
+  }
+}
+
+.catalog__subsection-img {
+  max-width: 100%;
+  max-height: 110px;
+  width: auto;
+}
+
+.catalog__subsection-title {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 20px 10px;
+
+  & a {
+    color: $prime-color;
+    text-decoration: none;
+  }
+
+  &.other a {
+    color: #1E81F8;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalog__setion {
+    margin: 0 1% 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .catalog__setions {
+    margin-bottom: 50px;
+  }
+
+  .catalog__setion {
+    width: 135px;
+    min-height: 162px;
+    margin: 0 2% 36px;
+  }
+
+  .catalog__section-img {
+    height: 126px;
+  }
+
+  .catalog__section-title {
+    font-size: 14px;
+    padding: 10px 15px 5px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog__subsections {
+    margin-bottom: 40px;
+  }
+
+  .catalog__subsection {
+    width: 135px;
+    min-height: 135px;
+    margin-right: 13px;
+    margin-bottom: 20px;
+  }
+
+  .catalog__subsection-img {
+    max-height: 82px;
+  }
+
+  .catalog__subsection-title {
+    font-size: 14px;
+    padding: 8px 15px 5px;
+  }
+}
+
+@media (max-width: 570px) {
+  .catalog__setions {
+    justify-content: space-between;
+  }
+}
