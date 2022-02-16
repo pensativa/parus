@@ -1,0 +1,39 @@
+.sort {
+  text-align: right;
+  margin-bottom: 38px;
+}
+
+.sort__label {
+  color: #7E7E7E;
+  font-size: 15px;
+  margin-right: 13px;
+}
+
+.sort__select {
+  background: #FFFFFF;
+  border: 1px solid rgba(140, 190, 250, 0.34);
+  border-radius: 4px;
+  width: 283px;
+  height: 40px;
+  font-size: 15px;
+  padding: 8px 13px;
+  color: #313030;
+}
+
+@media (max-width: $mobile-width) {
+  .sort {
+    margin-top: -30px;
+    margin-bottom: 25px;
+  }
+
+  .sort__label {
+    display: none;
+  }
+
+  .sort__select {
+    width: 180px;
+    font-size: 12px;
+    height: 30px;
+    padding: 4px 10px;
+  }
+}

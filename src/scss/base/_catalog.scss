@@ -25,6 +25,39 @@
   }
 }
 
+.catalog-item--hover {
+  border-radius: 7px;
+  width: 186px;
+  margin-left: 2.8%;
+
+  &:hover,
+  &:focus {
+    background: rgba(245, 249, 255, 0.5);
+    border: 1px solid rgba(91, 153, 226, 0.4);
+    box-shadow: 2px 6px 12px rgba(81, 125, 209, 0.18);
+  }
+
+  & .catalog-item__disc {
+    margin-bottom: 0;
+  }
+
+  & .catalog-item__value {
+    padding-left: 10px;
+  }
+}
+
+.catalog-item__title {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  & a {
+    color: #184070;
+    text-decoration: none;
+  }
+}
+
 .catalog-item__disc {
   font-weight: 300;
   font-size: 11px;
@@ -77,6 +110,48 @@
   color: #1157A9;
 }
 
+.catalog__nav {
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(221, 233, 254, 0.78);
+}
+
+.catalog__back {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0E3667;
+  margin-bottom: 10px;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 7px;
+    background: url(../img/arrow.svg) center/contain no-repeat;
+    transform: rotate(90deg);
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.catalog__current {
+  text-align: center;
+  font-size: 15px;
+  color: #0D4689;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: none;
+    background: #F8EF28;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .catalog-new .catalog-item:last-of-type {
     display: none;
@@ -86,6 +161,16 @@
 @media (max-width: 992px) {
   .catalog-new .catalog-item:last-of-type {
     display: block;
+  }
+  
+  .catalog-item--hover {
+    width: 140px;
+    padding: 6px 6px 15px;
+    margin-left: 2.6%;
+
+    & .catalog-item__value {
+      font-size: 15px;
+    }
   }
 }
 
@@ -133,5 +218,34 @@
 
   .catalog-new__link {
     font-size: 10px;
+  }
+
+  .catalog__nav {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & > * {
+      margin-right: 15px;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+  }
+
+  .catalog__back {
+    font-size: 14px;
+
+    &::before {
+      margin-right: 5px;
+      vertical-align: baseline;
+    }
+  }
+
+  .catalog__current {
+    font-size: 11px;
   }
 }

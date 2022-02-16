@@ -82,6 +82,18 @@
   }
 }
 
+.button--filter {
+  padding: 7px 22px;
+  color: #184070;
+  background: rgba(91, 153, 226, 0.54);
+
+  &:hover,
+  &:focus {
+    background: #184070;
+    color: #5b99e2;
+  }
+}
+
 .arrow {
   line-height: 1.1;
 }
