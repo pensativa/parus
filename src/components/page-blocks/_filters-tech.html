@@ -1,0 +1,135 @@
+<div class="filter">
+  <button class="button filter__toggel">Фільтр</button>
+  <form class="filter__form">
+    <div class="accordion filter" id="accordionPanels">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+            Ціна
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <div class="range-slider">
+              <input class="filter__price-range" value="250" min="0" max="100000" step="1" type="range">
+              <input class="filter__price-range" value="50000" min="0" max="100000" step="1" type="range">
+              <span>
+                <input class="filter__price-input" type="number" value="250" min="0" max="100000" step="1" placeholder="від"> 
+                <input class="filter__price-input" type="number" value="7500" min="0" max="100000" step="1" placeholder="до">
+              </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+            Новинки
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+          <div class="filter__checkbox">
+            <input id="new-items" class="filter__input-checkbox visually-hidden" name="new-items" type="checkbox">
+            <label for="new-items" class="filter__label">Новинки (24)</label>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+            Розпродаж
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+          <div class="filter__checkbox">
+            <input id="sale-items" class="filter__input-checkbox visually-hidden" name="sale-items" type="checkbox">
+            <label for="sale-items" class="filter__label">Розпроадаж (12)</label>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Стан
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="filter__checkbox">
+            <input id="stan-new" class="filter__input-checkbox visually-hidden" name="stan" type="checkbox" checked>
+            <label for="stan-new" class="filter__label">Новий</label>
+            <input id="stan-by" class="filter__input-checkbox visually-hidden" name="stan" type="checkbox">
+            <label for="stan-by" class="filter__label">Як новий (б/у)</label>
+            <input id="stan-gread" class="filter__input-checkbox visually-hidden" name="stan" type="checkbox">
+            <label for="stan-gread" class="filter__label">Відмінний</label>
+            <input id="stan-good" class="filter__input-checkbox visually-hidden" name="stan" type="checkbox">
+            <label for="stan-good" class="filter__label">Добрий</label>
+            <input id="stan-ud" class="filter__input-checkbox visually-hidden" name="stan" type="checkbox">
+            <label for="stan-ud" class="filter__label">Задовільний</label>
+            <input id="stan-niz" class="filter__input-checkbox visually-hidden" name="stan" type="checkbox">
+            <label for="stan-niz" class="filter__label">Нижче задовільного</label>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFore">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFore" aria-expanded="false" aria-controls="panelsStayOpen-collapseFore">
+            Бренд
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFore" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFore">
+          <div class="filter__checkbox filter__checkbox-wrap">
+            <input id="Phillips" class="filter__input-checkbox visually-hidden" name="brend" type="checkbox">
+            <label for="Phillips" class="filter__label">Phillips</label>
+            <input id="Panasonic" class="filter__input-checkbox visually-hidden" name="brend" type="checkbox">
+            <label for="Panasonic" class="filter__label">Panasonic</label>
+            <input id="Bosch" class="filter__input-checkbox visually-hidden" name="brend" type="checkbox">
+            <label for="Bosch" class="filter__label">Bosch</label>
+            <input id="Samsung" class="filter__input-checkbox visually-hidden" name="brend" type="checkbox">
+            <label for="Samsung" class="filter__label">Samsung</label>
+            <a href="" class="filter__link">Показати ще (10)</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            Місто
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+          <div class="filter__checkbox">
+            <input id="m-kiev" class="filter__input-checkbox visually-hidden" name="misto" type="checkbox">
+            <label for="m-kiev" class="filter__label">Київ (123)</label>
+            <input id="m-mikolaev" class="filter__input-checkbox visually-hidden" name="misto" type="checkbox">
+            <label for="m-mikolaev" class="filter__label">Миколаїв (23)</label>
+            <input id="m-zaporijja" class="filter__input-checkbox visually-hidden" name="misto" type="checkbox">
+            <label for="m-zaporijja" class="filter__label">Запоріжжя (12)</label>
+            <input id="m-dnipro" class="filter__input-checkbox visually-hidden" name="misto" type="checkbox">
+            <label for="m-dnipro" class="filter__label">Дніпро (45)</label>
+            <a href="" class="filter__link">Показати ще (10)</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Придбати в кредит
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <div class="filter__checkbox">
+              <input id="tak" class="filter__input-checkbox visually-hidden" name="kredit" type="radio">
+              <label for="tak" class="filter__label">Так</label>
+              <input id="ni" class="filter__input-checkbox visually-hidden" name="kredit" type="radio" checked>
+              <label for="ni" class="filter__label">Ні</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter__button">
+      <button class="button button--filter">Примінити</button>
+    </div>
+  </form>
+</div>

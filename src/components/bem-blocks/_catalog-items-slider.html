@@ -1,0 +1,22 @@
+<div class="swiper-slide catalog-item catalog-item--hover">
+  <div class="catalog__btns">
+    <button type="button" class="catalog__sr" data-bs-toggle="tooltip" data-bs-placement="top" title="Можливість оплати частинами товару">
+      @@include('_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--part"})
+    </button>
+    <button type="button" class="catalog__like-list" data-bs-toggle="tooltip" data-bs-placement="top" title="Додати до обраного товар">
+      @@include('_sprite.html', {"class": "catalog-sell__btns-icon", "id": "sprite--like"})
+    </button>
+  </div>
+  <a class="catalog-item__img-link" href="@@href">
+    <img class="catalog-item__img" src="@@src" alt="@@alt">
+  </a>
+  <h4 class="catalog-item__title"><a href="@@href">@@title</a></h4>
+  <div class="catalog-item__price">
+    <span class="catalog-item__name">Ціна:</span>
+    <span class="catalog-item__value">@@price</span>
+  </div>
+  <div class="catalog-item__disc">
+    <p class="catalog-item__name">Опис товару:</p>
+    <p>@@text</p>
+  </div>
+</div>

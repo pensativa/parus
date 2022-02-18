@@ -205,7 +205,105 @@ if (calc) {
   const filterToggle = document.querySelector('.filter__toggel');
   const filterForm = document.querySelector('.filter__form');
 
-  filterToggle.onclick = function() {
-    filterForm.classList.toggle('open');
+  if (filterToggle) {
+    filterToggle.onclick = function() {
+      filterForm.classList.toggle('open');
+    }
+  }
+})();
+
+//Toolip script
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+
+//Card Sliders
+var swiper = new Swiper(".card__thumbs-slider", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  direction: getDirection(),
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 760 ? 'horizontal' : 'vertical';
+
+  return direction;
+}
+
+var swiper2 = new Swiper(".card__slider", {
+  autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+var swiper3 = new Swiper(".catalog-plus__slider", {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+(function() {
+  const tulipToggle = document.querySelector('.card__shops-link');
+  const tulipBody = document.querySelector('.card__shops-body');
+
+  if (tulipToggle) {
+    tulipToggle.onclick = function() {
+      tulipBody.classList.toggle('show');
+    }
+  }
+})();
+
+(function() {
+  const addBtn = document.querySelector('.button--add');
+
+  if (addBtn) {
+    addBtn.onclick = function() {
+      if (addBtn.classList.contains('added')) {
+        addBtn.classList.remove('added');
+        addBtn.innerHTML = '<span class="button--add-icon">&#10084;</span> Додати до обраного'
+      } else {
+        addBtn.classList.add('added');
+        addBtn.innerHTML = '&#10003; Товар успішно додан до обраного!'
+      }
+    }
+  }
+})();
+
+(function() {
+  const btnPlus = document.querySelector('.card__add-btn.plus');
+  const btnPMinus = document.querySelector('.card__add-btn.minus');
+  const counter = document.querySelector('.card__count');
+
+  if (counter) {
+    btnPlus.onclick = function() {
+      if (counter.value < 100) {
+        counter.value= Number(counter.value) + 1;
+      } else {
+        counter.value = 100;
+      }
+    };
+
+    btnPMinus.onclick = function() {
+      if (counter.value > 1) {
+        counter.value-=1;
+      } else {
+        counter.value = 1;
+      }
+    };
   }
 })();

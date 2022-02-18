@@ -20,7 +20,7 @@
   &:hover,
   &:focus {
     border: 1px solid rgba(113, 130, 219, 0.6);
-    box-shadow: 0px 4px 8px rgba(112, 170, 239, 0.13);
+    box-shadow: 0px 4px 8px rgba(112, 170, 239, 0.25);
   }
 }
 
@@ -32,8 +32,8 @@
 
 .catalog__section-title {
   font-weight: 600;
-  font-size: 18px;
-  padding: 13px 20px 5px;
+  font-size: 16px;
+  padding: 13px 12px 5px;
   text-align: center;
 
   & a {
@@ -65,18 +65,29 @@
     background: rgba(245, 249, 255, 0.64);
     border: 1px solid rgba(91, 153, 226, 0.31);
     box-shadow: 0px 10px 18px rgba(81, 125, 209, 0.18);
+
+    & .catalog__subsection-title a {
+      color: #1E81F8;
+    }
   }
+}
+
+.catalog__sub-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
 }
 
 .catalog__subsection-img {
   max-width: 100%;
-  max-height: 110px;
+  max-height: 100%;
   width: auto;
 }
 
 .catalog__subsection-title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px 20px 10px;
 
   & a {
@@ -126,6 +137,10 @@
     min-height: 135px;
     margin-right: 13px;
     margin-bottom: 20px;
+  }
+
+  .catalog__sub-img {
+    height: 90px;
   }
 
   .catalog__subsection-img {

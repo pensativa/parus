@@ -26,6 +26,12 @@ $breadcrumb-divider: url("../img/bredcrams.svg");
   color: #0D4689;
 }
 
+.page__title--card {
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+}
+
 .page__title--gold {
   color: #F5EE41;
   -webkit-text-stroke: 0.5px #A09108;
@@ -70,6 +76,10 @@ $breadcrumb-divider: url("../img/bredcrams.svg");
 @media (max-width: $mobile-width) {
   .page__title {
     font-size: 18px;
+  }
+
+  .page__title--card {
+    font-size: 16px;
   }
 
   .page__pagination .page-link {

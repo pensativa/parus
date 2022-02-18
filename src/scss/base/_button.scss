@@ -94,6 +94,31 @@
   }
 }
 
+.button--add {
+  padding: 5px 14px;
+  background: transparent;
+  color: #9fc1e7;
+  border: 1px solid #9fc1e7;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.button--add-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.button--cart {
+  padding: 12px 25px;
+  font-size: 15px;
+
+  & img {
+    margin-left: 5px;
+  }
+}
+
 .arrow {
   line-height: 1.1;
 }
@@ -116,5 +141,15 @@
       width: 25px;
       height: 25px;
     }
+  }
+
+  .button--add {
+    font-size: 10px;
+  }
+
+  .button--add-icon {
+    font-size: 14px;
+    margin-right: 5px;
+    background-size: contain;
   }
 }
