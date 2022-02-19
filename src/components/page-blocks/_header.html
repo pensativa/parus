@@ -11,7 +11,7 @@
       </form>
       <div class="nav-buttons close">
         <div class="nav-button enter">Профиль</div>
-        <div class="nav-button cart">Карзина</div>
+        <a href="cart.html" class="nav-button cart">Карзина</a>
         <div class="nav-button like-list">Избранные</div>
       </div>
       <div class="nav-contacts close">
@@ -33,6 +33,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="nav-mobile">
+            @@include('../bem-blocks/_nav-side.html')
+          </div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

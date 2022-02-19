@@ -16,6 +16,23 @@
   }
 }
 
+.button--sec {
+  @include no-btn();
+  color: #1B5AA3;
+  font-weight: 500;
+  padding: 6px 52px;
+  text-align: center;
+  border: 1px solid #1B5AA3;
+  border-radius: 5px;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background: #4A8FE0;
+    color: #fff;
+  }
+}
+
 .button--red {
   padding: 11px 37px;
   background: $sec-color;
@@ -116,6 +133,23 @@
 
   & img {
     margin-left: 5px;
+  }
+}
+
+.button--del {
+  @include no-btn();
+  font-weight: 500;
+  font-size: 14px;
+  padding: 6px 52px;
+  border: 1px solid #C83138;
+  color: #C83138;
+  border-radius: 5px;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background: #BD373D;
+    color: #fff;
   }
 }
 

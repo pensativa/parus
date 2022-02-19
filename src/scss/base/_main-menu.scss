@@ -80,3 +80,9 @@
 .scroll.show .main-menu {
   display: block;
 }
+
+@media (min-width:991px) {
+  .nav-mobile {
+    display: none;
+  }
+}
