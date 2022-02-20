@@ -305,7 +305,7 @@
                 </div>
               </div>
               <button type="button" class="button button--add">
-                <span class="button--add-icon">&#10084;</span> Додати до обраного
+                <span class="button--add-icon"><svg width="17" height="16" viewBox="0 0 21 19" xmlns="http://www.w3.org/2000/svg"><path d="M2.30581 2.27702C4.4681 0.0309206 8.14524 0.100063 10.3494 2.30425L10.8083 2.77149L11.2671 2.31263C13.4713 0.100063 17.1485 0.0309206 19.3108 2.27702C20.3207 3.32681 20.8785 4.73085 20.8644 6.18747C20.8503 7.64409 20.2654 9.03707 19.2353 10.0671L18.6738 10.6286L11.0891 18.2134C11.0521 18.2505 11.0081 18.2799 10.9598 18.2999C10.9114 18.32 10.8596 18.3303 10.8072 18.3303C10.7549 18.3303 10.703 18.32 10.6547 18.2999C10.6063 18.2799 10.5624 18.2505 10.5254 18.2134L2.38124 10.0671C1.35122 9.03707 0.766318 7.64409 0.752214 6.18747C0.73811 4.73085 1.29593 3.32681 2.30581 2.27702Z"/></svg></span> Додати до обраного
               </button>
             </div>
             <div class="card__prices">
@@ -316,7 +316,7 @@
               <p>Мікрохвильова піч Samsung 22Y3 керується за допомогою кнопок на передній панелі пристрою. Для створення соковитих страв із підсмаженою скоринкою передбачений потужний гриль. Для автоматичного розморожування продуктів можна активувати один із чотирьох режимів із оптимальними передустановками. </p>
             </div>
             <div class="card__data d-flex flex-wrap">
-              <button class="button button--cart">Додати до кошику
+              <button class="button button--cart"  data-bs-toggle="modal" data-bs-target="#cardModal">Додати до кошику
                 <img src="img/shopping.svg" alt="Cart">
               </button>
               <div class="card__info">
@@ -792,6 +792,36 @@
 			</div>
 		</section>
 	</main>
+  <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" alt="Парус логотип" width="122" height="51">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-titel">Обраний Вами товар додан до кошику</h3>
+          <div class="modal-data d-flex flex-wrap">
+            <p class="modal-img">
+              <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung 22Y3" width="85"
+              height="69">
+            </p>
+            <div class="modal-card">
+              <h4 class="modal-card-title">Мікрохвильова піч Samsung 22Y3</h4>
+              <p class="modal-card-art">Артикул: 06780645КК</p>
+              <p class="modal-card-price">3399 грн.</p>
+            </div>
+          </div>
+          <div class="modal-buttons">
+            <button class="button--sec" data-bs-dismiss="modal">Продовжити покупки</button>
+            <a href="cart.html" class="button">Перейти до кошика</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 	<footer class="footer">
   <div class="footer__nav">
     <div class="container d-flex">

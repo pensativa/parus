@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Оформлення замовлення",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section>
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
+						<li class="breadcrumb-item"><a href="cart.html">Мій кошик</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Оформлення замовлення</li>
+          </ol>
+        </nav>
+				<div class="order d-flex flex-wrap">
+					<div class="order__info">
+						<h1 class="order__title">2. Способи доставки та оплати:</h1>
+						<form class="order__form order__form--pay">
+							<p class="order__label">Спосіб доставки</p>
+							<div class="filter__checkbox order__pay">
+                <input id="nova-pochta" class="filter__input-checkbox visually-hidden" name="dostavka" type="radio">
+                <label for="nova-pochta" class="filter__label delivery-btn">Нова Почта</label>
+                <div class="pay__block">
+                  <label for="pay-city">Оберіть місто </label>
+                  <select class="order__input form-control" name="pay-city" id="pay-city">
+                    <option value="">Київ</option>
+                    <option value="">Дніпро</option>
+                    <option value="">Харків</option>
+                  </select>
+                  <label for="pay-viddel">Оберіть відділеня</label>
+                  <select class="order__input form-control" name="pay-viddel" id="pay-viddel">
+                    <option value="">відділення №3243</option>
+                    <option value="">відділення №3253</option>
+                    <option value="">відділення №4243</option>
+                  </select>
+                </div>
+                <input id="samovyvoz" class="filter__input-checkbox visually-hidden" name="dostavka" type="radio">
+                <label for="samovyvoz" class="filter__label delivery-btn">Самовивіз</label>
+                <div class="pay__block">
+                  <label for="pay-city">Оберіть місто</label>
+                  <input class="order__input form-control" type="text" placeholder="м. Київ, вул. Соборна, буд. 34 (відділення №3243)">
+                  <a href="viddilenia.html" class="pay__block-link arrow" target="_blank">Переглянути на мапі</a>
+                </div>
+              </div>
+							<p class="order__label">Спосіб оплати</p>
+							<div class="filter__checkbox order__pay">
+                <input id="gotivka" class="filter__input-checkbox visually-hidden" name="oplata" type="radio" checked="">
+                <label for="gotivka" class="filter__label">Готівковий розрахунок</label>
+                <input id="nalojka" class="filter__input-checkbox visually-hidden" name="oplata" type="radio">
+                <label for="nalojka" class="filter__label">Накладений платіж</label>
+                <input id="pay-fondy" class="filter__input-checkbox visually-hidden" name="oplata" type="radio">
+                <label for="pay-fondy" class="filter__label">Платіжна платформа Fondy</label>
+              </div>
+              <label for="order-text" class="order__label order__label--text">Додати коментар до замовлення <span class="symbol">&#43;</span></label>
+              <textarea class="order__input order__textarea form-control" name="order-text" id="order-text" rows="7" placeholder="Вкажіть текст ..."></textarea>
+              <div class="filter__checkbox order__pay order__pay--small">
+                <input id="no" class="filter__input-checkbox visually-hidden" name="callback" type="radio" checked>
+                <label for="no" class="filter__label">Не передзвонювати мені для підтвердження замовлення</label>
+                <input id="yes" class="filter__input-checkbox visually-hidden" name="callback" type="radio">
+                <label for="yes" class="filter__label">Хочу отримувати вигідні пропозиції на електрону адресу</label>
+              </div>
+						</form>
+						<a href="success.html" class="order__button button--sec">Далі</a>
+            <p class="order__met">**Оформляючи замовлення, я приймаю умови користувальницької угоди та підтверджую, що ознайомлений з інформацією про товар</p>
+					</div>
+          @@include('components/bem-blocks/_cart-data.html')
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

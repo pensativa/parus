@@ -275,7 +275,7 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
     addBtn.onclick = function() {
       if (addBtn.classList.contains('added')) {
         addBtn.classList.remove('added');
-        addBtn.innerHTML = '<span class="button--add-icon">&#10084;</span> Додати до обраного'
+        addBtn.innerHTML = '<span class="button--add-icon"><svg width="17" height="16" viewBox="0 0 21 19" xmlns="http://www.w3.org/2000/svg"><path d="M2.30581 2.27702C4.4681 0.0309206 8.14524 0.100063 10.3494 2.30425L10.8083 2.77149L11.2671 2.31263C13.4713 0.100063 17.1485 0.0309206 19.3108 2.27702C20.3207 3.32681 20.8785 4.73085 20.8644 6.18747C20.8503 7.64409 20.2654 9.03707 19.2353 10.0671L18.6738 10.6286L11.0891 18.2134C11.0521 18.2505 11.0081 18.2799 10.9598 18.2999C10.9114 18.32 10.8596 18.3303 10.8072 18.3303C10.7549 18.3303 10.703 18.32 10.6547 18.2999C10.6063 18.2799 10.5624 18.2505 10.5254 18.2134L2.38124 10.0671C1.35122 9.03707 0.766318 7.64409 0.752214 6.18747C0.73811 4.73085 1.29593 3.32681 2.30581 2.27702Z"/></svg></span> Додати до обраного'
       } else {
         addBtn.classList.add('added');
         addBtn.innerHTML = '&#10003; Товар успішно додан до обраного!'
@@ -285,25 +285,127 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
 })();
 
 (function() {
-  const btnPlus = document.querySelector('.card__add-btn.plus');
-  const btnPMinus = document.querySelector('.card__add-btn.minus');
-  const counter = document.querySelector('.card__count');
+  const counter = document.querySelector('.card__add-counter');
 
   if (counter) {
+    const btnPlus = counter.querySelector('.card__add-btn.plus');
+    const btnPMinus = counter.querySelector('.card__add-btn.minus');
+    const input = counter.querySelector('.card__count');
     btnPlus.onclick = function() {
-      if (counter.value < 100) {
-        counter.value= Number(counter.value) + 1;
+      if (input.value < 100) {
+        input.value= Number(input.value) + 1;
       } else {
-        counter.value = 100;
+        input.value = 100;
       }
     };
 
     btnPMinus.onclick = function() {
-      if (counter.value > 1) {
-        counter.value-=1;
+      if (input.value > 1) {
+        input.value-=1;
       } else {
-        counter.value = 1;
+        input.value = 1;
       }
     };
+
+    input.oninput = function() {
+      if (input.value > 100) {
+        input.value = 100;
+      }
+      if (input.value < 1) {
+        input.value = 1;
+      }
+    };
+  }
+})();
+
+(function() {
+  const counters = document.querySelectorAll('.cart__row--product');
+  const cartTotal = document.querySelector('.cart__total-price > .sum');
+
+  for (let counter of counters) {
+    const btnPlus = counter.querySelector('.card__add-btn.plus');
+    const btnPMinus = counter.querySelector('.card__add-btn.minus');
+    const input = counter.querySelector('.card__count');
+    const price = counter.querySelector('.cart__price').innerHTML.replace(/\D+/g,"");
+    const sale = counter.querySelector('.cart__sale').innerHTML.replace(/\D+/g,"")/100;
+    const total = counter.querySelector('.cart__total');
+    let sum = price;
+    let sumTotal = cartTotal.innerHTML.replace(/\D+/g,"");
+    const del = counter.querySelector('.button--del');
+
+    const cartSum = function() {
+      sum = (price - (price*sale))*input.value;
+      total.innerHTML = Math.round(sum) + ' грн.';
+      sumTotal = Number(sumTotal) + Math.round(sum);
+      cartTotal.innerHTML = sumTotal + ' грн.'
+    };
+
+    btnPlus.onclick = function() {
+      if (input.value < 100) {
+        input.value= Number(input.value) + 1;
+      } else {
+        input.value = 100;
+      }
+      cartSum();
+    };
+
+    btnPMinus.onclick = function() {
+      if (input.value > 1) {
+        input.value-=1;
+      } else {
+        input.value = 1;
+      }
+      cartSum();
+    };
+
+    input.oninput = function() {
+      if (input.value > 100) {
+        input.value = 100;
+      }
+      if (input.value < 1) {
+        input.value = 1;
+      }
+      cartSum();
+    };
+
+    del.onclick = function() {
+      counter.remove();
+    };
+  }
+})();
+
+(function() {
+  const payForm = document.querySelector('.order__form--pay');
+
+  if (!payForm) {
+    return;
+  }
+
+  const textShowButton = payForm.querySelector('.order__label--text');
+  const buttonSymbol = textShowButton.querySelector('.symbol');
+  const textarea = payForm.querySelector('.order__textarea');
+
+  textShowButton.onclick = function() {
+    if(textShowButton.classList.contains('show')) {
+      textShowButton.classList.remove('show');
+      buttonSymbol.innerHTML = '&#43;';
+      textarea.style.display = 'none';
+    } else {
+      textShowButton.classList.add('show');
+      buttonSymbol.innerHTML = '&#8722;';
+      textarea.style.display = 'block';
+    }
+  };
+
+  const deliveryButtons = payForm.querySelectorAll('.delivery-btn');
+
+  for (let deliveryButton of deliveryButtons) {
+    deliveryButton.previousElementSibling.oninput = function() {
+      if (deliveryButton.previousElementSibling.checked) {
+        deliveryButton.nextElementSibling.style.display = "block";
+      } else {
+        deliveryButton.nextElementSibling.style.display = "none";
+      }
+    }
   }
 })();

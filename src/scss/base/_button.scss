@@ -3,7 +3,7 @@
   background: #1B5AA3;
   border-radius: 5px;
   align-items: center;
-  padding: 6px 52px;
+  padding: 11px 40px;
   font-weight: 500;
   color: #fff;
   @include transit();
@@ -20,7 +20,7 @@
   @include no-btn();
   color: #1B5AA3;
   font-weight: 500;
-  padding: 6px 52px;
+  padding: 11px 52px;
   text-align: center;
   border: 1px solid #1B5AA3;
   border-radius: 5px;
@@ -28,6 +28,7 @@
 
   &:hover,
   &:focus {
+    border-color: #4A8FE0;
     background: #4A8FE0;
     color: #fff;
   }
@@ -118,6 +119,11 @@
   border: 1px solid #9fc1e7;
   font-weight: 400;
   font-size: 12px;
+
+  &:hover .button--add-icon svg,
+  &:focus .button--add-icon svg {
+    fill: #fff;
+  }
 }
 
 .button--add-icon {
@@ -125,6 +131,11 @@
   vertical-align: middle;
   font-size: 16px;
   margin-right: 10px;
+
+  & svg {
+    fill: #9fc1e7;
+    vertical-align: baseline;
+  }
 }
 
 .button--cart {
@@ -140,7 +151,7 @@
   @include no-btn();
   font-weight: 500;
   font-size: 14px;
-  padding: 6px 52px;
+  padding: 11px 40px;
   border: 1px solid #C83138;
   color: #C83138;
   border-radius: 5px;
@@ -185,5 +196,10 @@
     font-size: 14px;
     margin-right: 5px;
     background-size: contain;
+  }
+  
+  .button--del {
+    font-size: 12px;
+    padding: 5px 29px;
   }
 }

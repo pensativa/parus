@@ -95,7 +95,7 @@
                   <input type="number" class="card__count" min="1" max="100" step="1" value="1">
                   <span class="card__add-btn plus">+</span>
                 </div>
-                <button class="button button--cart">Додати до кошику
+                <button class="button button--cart"  data-bs-toggle="modal" data-bs-target="#cardModal">Додати до кошику
                   <img src="img/shopping.svg" alt="Cart">
                 </button>
               </div>
@@ -140,6 +140,36 @@
 			</div>
 		</section>
 	</main>
+  <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" alt="Парус логотип" width="122" height="51">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="modal-titel">Обраний Вами товар додан до кошику</h3>
+          <div class="modal-data d-flex flex-wrap">
+            <p class="modal-img">
+              <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung 22Y3" width="85"
+              height="69">
+            </p>
+            <div class="modal-card">
+              <h4 class="modal-card-title">Мікрохвильова піч Samsung 22Y3</h4>
+              <p class="modal-card-art">Артикул: 06780645КК</p>
+              <p class="modal-card-price">3399 грн.</p>
+            </div>
+          </div>
+          <div class="modal-buttons">
+            <button class="button--sec" data-bs-dismiss="modal">Продовжити покупки</button>
+            <a href="cart.html" class="button">Перейти до кошика</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
 </body>

@@ -91,4 +91,8 @@ $breadcrumb-divider: url("../img/bredcrams.svg");
     font-size: 22px;
     padding: 0px 9px 4px;
   }
+
+  .page__breadcrumb .breadcrumb-item {
+    font-size: 11px;
+  }
 }

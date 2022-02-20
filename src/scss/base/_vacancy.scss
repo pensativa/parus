@@ -325,6 +325,10 @@
   }
 }
 
+.modal-backdrop {
+  z-index: 10510;
+}
+
 @media (max-width: $mobile-width) {
   .vacancy__accent {
     background: #274784 url('../img/bg-vac-m.png') no-repeat right -72px bottom -11px /auto 430px;

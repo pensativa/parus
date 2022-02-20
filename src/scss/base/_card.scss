@@ -241,6 +241,56 @@ a.card__shops-link {
   color: #000;
 }
 
+.modal-titel {
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-data {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.modal-img {
+  border: 1px solid rgba(13, 70, 137, 0.2);
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+
+.modal-card-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: $prime-color;
+}
+
+.modal-card-art {
+  font-weight: normal;
+  font-size: 12px;
+  color: #7E7E7E;
+  margin-bottom: 25px;
+}
+
+.modal-card-price {
+  font-weight: 500;
+  font-size: 24px;
+  color: $prime-color;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  & > * {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .card__info {
     width: 215px
@@ -301,5 +351,45 @@ a.card__shops-link {
 
   .catalog-plus__title {
     font-size: 16px;
+  }
+
+  .modal-titel {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .modal-img {
+    margin-bottom: 6px;
+
+    & img {
+      max-width: 55px;
+    }
+  }
+
+  .modal-card-title {
+    font-size: 14px;
+  }
+
+  .modal-card-art {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .modal-card-price {
+    font-size: 14px;
+  }
+
+  .modal-buttons {
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    & > * {
+      width: 250px;
+      text-align: center;
+    }
+
+    & .button {
+      order: -1;
+    }
   }
 }
