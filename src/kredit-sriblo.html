@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
 "lang":"uk",
-"title":"Оцінка золота",
+"title":"Оцінка срібла",
 "description":"",
 "keywords":"",
 "favicon":"img/favicons/favicon",
@@ -15,12 +15,12 @@
 				<nav aria-label="breadcrumb">
           <ol class="breadcrumb page__breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Оцінка золота</li>
+            <li class="breadcrumb-item active" aria-current="page">Оцінка срібла</li>
           </ol>
         </nav>
-				<h1 class="page__title">Кредит під заставу золота</h1>
-        <div class="kredit__accent kredit__accent--gold">
-          <p>Ломбард “ПАРУС” видає кредити під заставу золота або платини. Ви маєте можливість отримати кредит у найкоротший час! Для цього Вам потрібні лише:</p>
+				<h1 class="page__title">Кредит під заставу срібла</h1>
+        <div class="kredit__accent kredit__accent--silver">
+          <p>Ломбард “ПАРУС” видає кредити під заставу срібла. Ви маєте можливість отримати кредит у найкоротший час! Для цього Вам потрібні лише:</p>
           <ul>
             <li>предмет застави</li>
             <li>ІПН</li>
@@ -28,7 +28,7 @@
           </ul>
         </div>
         <div class="kredit__form">
-          <h2 class="kredit__form-title">Оцінка виробів із золота онлайн</h2>
+          <h2 class="kredit__form-title">Оцінка виробів із срібла онлайн</h2>
           <div class="kredit__form-body">
             <div class="accordion calc__accordion" id="accordionCalc">
               <div class="accordion-item">
@@ -105,18 +105,7 @@
             <div class="calc__item calc__radios">
               <p class="calc__label">Категорії*</p>
               <div class="calc__categoria">
-                <input id="cat-5" class="visually-hidden" name="categoria" type="radio">
-                <label for="cat-5" class="radios-label kredit__cat">5
-                </label>
-                <input id="cat-4" class="visually-hidden" name="categoria" type="radio" checked>
-                <label for="cat-4" class="radios-label kredit__cat">
-                  4
-                </label>
-                <input id="cat-3" class="visually-hidden" name="categoria" type="radio">
-                <label for="cat-3" class="radios-label kredit__cat">
-                  3
-                </label>
-                <input id="cat-2" class="visually-hidden" name="categoria" type="radio">
+                <input id="cat-2" class="visually-hidden" name="categoria" type="radio" checked>
                 <label for="cat-2" class="radios-label kredit__cat">
                   2
                 </label>
@@ -126,7 +115,7 @@
                 </label>
               </div>
               <div class="calc__categoria-result">
-                Деформовані і пошкоджені вироби з золота від 375 до 958 проби. Також обручки, зламані годинник (або непрацюючий механізм), комбіновані вироби з різних проб золота і т.д.
+                Хороший стан без істотних пошкоджень і дефектів, вироби без дефектів на каменях і вставках. 925 і 875 з діамантами
               </div>
             </div>
             <div class="calc__item calc__radios">
@@ -162,7 +151,7 @@
       <div class="container">
         <h2 class="front-title">Інші кредити під заставу</h2>
         <ul class="pay-block__list">
-          @@loop('components/bem-blocks/_pay.html', 'components/bem-blocks/_pay-gold.json')
+          @@loop('components/bem-blocks/_pay.html', 'components/bem-blocks/_pay-silver.json')
         </ul>
       </div>
     </section>

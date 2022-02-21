@@ -25,8 +25,8 @@
   &.kredit__accent--silver::after {
     width: 232px;
     height: 232px;
-    bottom: 0;
-    left: 0;
+    top: -9px;
+    left: 38px;
     background-image: url(../img/ks.webp);
   }
 
@@ -38,12 +38,12 @@
     background-image: url(../img/kd.webp);
   }
 
-  &.kredit__accent--silver::after {
+  &.kredit__accent--tech::after {
     width: 360px;
     height: 190px;
     top: 26px;
     left: -60px;
-    background-image: url(../img/ks.webp);
+    background-image: url(../img/kt.webp);
   }
 
   &.kredit__accent--clock::after {
@@ -57,8 +57,8 @@
   &.kredit__accent--skupka::after {
     width: 357px;
     height: 237px;
-    top: 0;
-    left: -20px;
+    top: -7px;
+    left: -55px;
     background-image: url(../img/ksz.webp);
   }
 
@@ -109,8 +109,234 @@
 }
 
 .kredit__form-body {
-  width: 500px;
+  width: 535px;
   max-width: 100%;
   padding: 30px 0 40px;
   margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & .calc__diomand-form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  & .form-select.calc__select {
+    width: 266px;
+  }
+
+  & .calc__diomand-form .calc__select,
+  & .calc__diomand-form .calc__input:not(.calc__input--long) {
+    width: 227px;
+  }
+
+  & .calc__item--half .calc__select,
+  & .calc__diomand-form .calc__item--half .calc__input {
+    width: 355px;
+  }
+
+  & .calc__results {
+    align-self: center;
+    width: 410px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  & .calc__input--long,
+  & .calc__item--long {
+    width: 100%;
+  }
+}
+
+.calc__label--accent {
+  color: #4A8FE0;
+  font-weight: 500;
+}
+
+.calc__item--viddel {
+  width: 100%;
+
+  & .form-select.calc__select {
+    display: inline-block;
+  }
+}
+
+.kredit__link-viddels.pay__block-link {
+  margin-left: 8%;
+}
+
+.radios-label {
+  border: 1px solid rgba(112, 170, 239, 0.38);
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  margin-right: 8px;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus,
+  input:checked + & {
+    background: #0D4689;
+    border: 1px solid rgba(112, 170, 239, 0.38);
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+.kredit__cat {
+  padding: 14px 38px;
+  font-size: 20px;
+}
+
+.kredit__status {
+  padding: 18px 32px;
+  font-size: 14px;
+}
+
+.calc__categoria-result,
+.calc__status-result {
+  font-size: 14px;
+}
+
+.kredit__form-link {
+  display: inline-block;
+  margin: 0 auto;
+  color: #4A8FE0;
+}
+
+.calc__radio-box .filter__label:not(:last-of-type) {
+  margin-right: 35px;
+}
+
+.calc__accordion {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.calc__accordion .accordion-button {
+  justify-content: center;
+  margin-bottom: 20px;
+
+  &::after {
+    margin-left: 15px;
+  }
+
+  &.calc__label--accent::after {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234A8FE0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+}
+
+.calc__accordion .accordion-item {
+  border: none;
+}
+
+.calc__accordion .accordion-button:not(.collapsed) {
+  color: #4A8FE0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: $mobile-width) {
+  .kredit__accent {
+    padding: 20px 100px 20px 10px;
+    font-size: 12px;
+
+    & li {
+      margin-bottom: 8px;
+      padding-left: 15px;
+
+      &::before {
+        width: 5px;
+        height: 5px;
+        top: 6px;
+      } 
+    }
+  }
+
+  .kredit__accent.kredit__accent--gold::after {
+    width: 128px;
+    height: 103px;
+    left: auto;
+    top: -22px;
+    right: -10px;
+    transform: rotateY(180deg);
+  }
+
+  .kredit__accent.kredit__accent--silver::after {
+    width: 109px;
+    height: 109px;
+    left: auto;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+  }
+
+  .kredit__accent.kredit__accent--skupka::after {
+    width: 147px;
+    height: 98px;
+    top: 0;
+    left: auto;
+    right: -31px;
+  }
+
+  .kredit__form-title {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .kredit__form-body {
+    padding: 20px 15px 16px;
+  }
+
+  .kredit__form-body .form-select.calc__select {
+    width: 100%;
+  }
+
+  .kredit__link-viddels.pay__block-link {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .radios-label {
+    margin-bottom: 10px;
+  }
+
+  .kredit__cat {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+  .kredit__status {
+    padding: 11px 16px;
+    font-size: 12px;
+  }
+
+  .kredit__form-body .calc__diomand-form .calc__input:not(.calc__input--long), 
+  .kredit__form-body .calc__diomand-form .calc__select,
+  .kredit__form-body .calc__diomand-form .calc__item--half .calc__input, 
+  .kredit__form-body .calc__item--half .calc__select {
+    width: 100%;
+  }
+
+  .calc__radio-box .filter__label:not(:last-of-type) {
+    margin-right: 6px;
+  }
+
+  .calc__radio-box .filter__input-checkbox:checked+label::before, 
+  .calc__radio-box .filter__input-checkbox:not(:checked)+label::before {
+    margin-right: 5px;
+  }
 }

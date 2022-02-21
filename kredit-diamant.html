@@ -22,7 +22,7 @@
 				href="css/swiper.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>Оцінка золота</title>
+	<title>Оцінка діамантів</title>
 </head>
 
 
@@ -242,26 +242,167 @@
 				<nav aria-label="breadcrumb">
           <ol class="breadcrumb page__breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Оцінка золота</li>
+            <li class="breadcrumb-item active" aria-current="page">Оцінка срібла</li>
           </ol>
         </nav>
-				<h1 class="page__title">Кредит під заставу золота</h1>
-        <div class="kredit__accent kredit__accent--gold">
-          <p>Ломбард “ПАРУС” видає кредити під заставу золота або платини. Ви маєте можливість отримати кредит у найкоротший час! Для цього Вам потрібні лише:</p>
+				<h1 class="page__title">Кредит під заставу діамантів</h1>
+        <div class="kredit__accent kredit__accent--silver">
+          <p>Ломбард “ПАРУС” видає кредити під заставу діамантів. Ви маєте можливість отримати кредит у найкоротший час! Для цього Вам потрібні лише:</p>
           <ul>
             <li>предмет застави</li>
-            <li>ІПН</li>
-            <li>паспорт або інший документ, який ідентифікує особу</li>
+            <li>заповнити заявку на оцінку нижче</li>
+            <li>дочекатись нашого дзвінка</li>
           </ul>
         </div>
         <div class="kredit__form">
-          <h2 class="kredit__form-title">Оцінка виробів із золота онлайн</h2>
+          <h2 class="kredit__form-title">Завка на оцінку діамантів</h2>
           <div class="kredit__form-body">
+            <form class="calc__diomand-form">
+              <div class="calc__item calc__item--long">
+                <label class="calc__label" for="userpib">ПІБ</label>
+                <input class="calc__input calc__input--long" id="userpib" type="text" placeholder="ПІБ">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="usertel">Телефон</label>
+                <input class="calc__input" id="usertel" type="tel" placeholder="Телефон">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="useremail">Email</label>
+                <input class="calc__input" id="useremail" type="email">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label calc__label--accent" for="d-form">Форма каменю*</label>
+                <select id="d-form" class="form-select calc__select" aria-label="Форма">
+                  <option selected>Не обрано</option>
+                  <option value="50">Кругла</option>
+                  <option value="100">Маркиз</option>
+                  <option value="150">Груша</option>
+                  <option value="100">Овал</option>
+                  <option value="150">Серце</option>
+                  <option value="100">Смарагд</option>
+                  <option value="150">Принцеса</option>
+                </select>
+              </div>
+              <div class="calc__item">
+                <label class="calc__label calc__label--accent" for="carat">Вага (каратність)*</label>
+                <input class="calc__input" id="carat" type="number">
+              </div>
+              <div class="calc__item">
+                <p class="calc__label calc__label--accent">Колір каменю:*</p>
+                <label class="calc__label" for="color-gost">ГОСТ</label>
+                <select id="color-gost" class="form-select calc__select" aria-label="Колір">
+                  <option selected>Не обрано</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="calc__item calc__item--gia">
+                <label class="calc__label" for="color-gia">GIA</label>
+                <select id="color-gia" class="form-select calc__select" aria-label="Колір">
+                  <option selected>Не обрано</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="calc__item">
+                <p class="calc__label calc__label--accent">Чистота:*</p>
+                <label class="calc__label" for="chistota-gost">ГОСТ</label>
+                <select id="chistota-gost" class="form-select calc__select" aria-label="Чистота (ГОСТ)">
+                  <option selected>Не обрано</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="chistota-gia">GIA</label>
+                <select id="chistota-gia" class="form-select calc__select" aria-label="Чистота (GIA)">
+                  <option selected>Не обрано</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="calc__item calc__item--half">
+                <label class="calc__label calc__label--accent" for="geometria">Геометричні параметри:</label>
+                <select id="geometria" class="form-select calc__select" aria-label="Геометричні параметри">
+                  <option selected>Не обрано</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="calc__item">
+                <p class="calc__label calc__label--accent" for="num-sertificat">Наявність сертифікату</p>
+                <div class="calc__radio-box">
+                  <input id="GIA" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio" checked>
+                  <label for="GIA" class="filter__label">GIA</label>
+                  <input id="AGS" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio">
+                  <label for="AGS" class="filter__label">AGS</label>
+                  <input id="HRD" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio">
+                  <label for="HRD" class="filter__label">HRD</label>
+                  <input id="EGL" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio">
+                  <label for="EGL" class="filter__label">EGL</label>
+                  <input id="GCI" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio">
+                  <label for="GCI" class="filter__label">GCI</label>
+                </div>
+              </div>
+              <div class="calc__item calc__item--half">
+                <label class="calc__label calc__label--accent" for="num-sertificat">Номер сертифікату</label>
+                <input class="calc__input" id="num-sertificat" type="number">
+              </div>
+              <div class="calc__item calc__item--long text-center">
+                <button class="button button--red">Відправити</button>
+              </div>
+            </form>
             <div class="accordion calc__accordion" id="accordionCalc">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                    Як оформити кредит?
+                  <button class="accordion-button collapsed calc__label--accent" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    Відчого залежить оцінка?
                   </button>
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
@@ -271,116 +412,6 @@
                 </div>
               </div>
             </div>
-            <div class="calc__item">
-              <label class="calc__label">Проба</label>
-              <select class="form-select calc__select" aria-label="Проба">
-                <option selected>Не обрано</option>
-                <option value="150">375</option>
-                <option value="200">500</option>
-                <option value="300">585</option>
-                <option value="450">750</option>
-                <option value="500">809</option>
-                <option value="550">958</option>
-              </select>
-            </div>
-            <div class="calc__item">
-              <label class="calc__label">Вага, грам</label>
-              <input class="calc__input" type="number" min="0.1" max="200" step="0.1">
-            </div>
-            <div class="calc__item">
-              <label class="calc__label">Місто</label>
-              <select class="form-select calc__select" aria-label="Місто">
-                <option selected>Не обрано</option>
-                <option value="kiev">Київ</option>
-                <option value="lvov">Львів</option>
-                <option value="ternopil">Тернопіль</option>
-                <option value="odessa">Одеса</option>
-                <option value="dnipro">Дніпро</option>
-                <option value="harkiv">Харків</option>
-              </select>
-            </div>
-            <div class="calc__item calc__item--viddel">
-              <label class="calc__label">Відділення</label>
-              <select class="form-select calc__select" aria-label="Відділення">
-                <option selected>Не обрано</option>
-                <option value="1">вул. Свободи, буд.34/2</option>
-                <option value="2">вул. Свободи, буд.34/2</option>
-                <option value="3">вул. Свободи, буд.34/2</option>
-                <option value="4">вул. Свободи, буд.34/2</option>
-                <option value="5">вул. Свободи, буд.34/2</option>
-                <option value="6">вул. Свободи, буд.34/2</option>
-              </select>
-              <a href="http://localhost:3000/viddilenia.html" class="kredit__link-viddels pay__block-link" target="_blanc">Відділення</a>
-            </div>
-            <div class="calc__item">
-              <label class="calc__label">Предмет застави</label>
-              <select class="form-select calc__select" aria-label="Предмет застави">
-                <option selected>Не обрано</option>
-                <option value="kabluchka">Каблучка</option>
-                <option value="kulony">Кулони</option>
-                <option value="krestiki">Крестики</option>
-                <option value="lancujki">Ланцюжки</option>
-                <option value="braslety">Браслети</option>
-                <option value="obruchka">Обручка</option>
-                <option value="inche">інше</option>
-              </select>
-            </div>
-            <div class="calc__item">
-              <label class="calc__label">Термін застави</label>
-              <input class="calc__input" type="number" min="1" max="63" step="1">
-            </div>
-            <div class="calc__item calc__radios">
-              <p class="calc__label">Категорії*</p>
-              <div class="calc__categoria">
-                <input id="cat-5" class="visually-hidden" name="categoria" type="radio">
-                <label for="cat-5" class="radios-label kredit__cat">5
-                </label>
-                <input id="cat-4" class="visually-hidden" name="categoria" type="radio" checked>
-                <label for="cat-4" class="radios-label kredit__cat">
-                  4
-                </label>
-                <input id="cat-3" class="visually-hidden" name="categoria" type="radio">
-                <label for="cat-3" class="radios-label kredit__cat">
-                  3
-                </label>
-                <input id="cat-2" class="visually-hidden" name="categoria" type="radio">
-                <label for="cat-2" class="radios-label kredit__cat">
-                  2
-                </label>
-                <input id="cat-1" class="visually-hidden" name="categoria" type="radio">
-                <label for="cat-1" class="radios-label kredit__cat">
-                  1
-                </label>
-              </div>
-              <div class="calc__categoria-result">
-                Деформовані і пошкоджені вироби з золота від 375 до 958 проби. Також обручки, зламані годинник (або непрацюючий механізм), комбіновані вироби з різних проб золота і т.д.
-              </div>
-            </div>
-            <div class="calc__item calc__radios">
-              <p class="calc__label">Статус клієнта*</p>
-              <div class="calc__status">
-                <input id="status-3" class="visually-hidden" name="status" type="radio" checked>
-                <label for="status-3" class="radios-label kredit__status">
-                  Новий
-                </label>
-                <input id="status-2" class="visually-hidden" name="status" type="radio">
-                <label for="status-2" class="radios-label kredit__status">
-                  Постійний
-                </label>
-                <input id="status-1" class="visually-hidden" name="status" type="radio">
-                <label for="status-1" class="radios-label kredit__status">
-                  Золотий
-                </label>
-              </div>
-              <div class="calc__status-result">
-                Не користувався послугами
-              </div>
-            </div>
-            <div class="calc__results">
-              <p>Оцінка Вашего виробу:</p>
-              <p class="calc__result"><span class="result">12 000</span> грн.</p>
-            </div>
-            <a href="kredit-diamant.html" class="arrow kredit__form-link">Якщо у виробі є діаманти їх можно оцінити окремо</a>
           </div>
         </div>
 			</div>
@@ -391,13 +422,13 @@
         <ul class="pay-block__list">
           
 <li class="play-block__item">
+  <a href="kredit-zoloto.html" class="play-block__link zoloto">Оцінка золота</a>
+</li>
+<li class="play-block__item">
   <a href="kredit-sriblo.html" class="play-block__link sriblo">Оцінка срібла</a>
 </li>
 <li class="play-block__item">
   <a href="kredit-tech.html" class="play-block__link tech">Оцінка техніки</a>
-</li>
-<li class="play-block__item">
-  <a href="kredit-diamant.html" class="play-block__link diamant">Оцінка діамантів</a>
 </li>
 <li class="play-block__item">
   <a href="kredit-clock.html" class="play-block__link clock">Оцінка швейцарських годинників</a>
