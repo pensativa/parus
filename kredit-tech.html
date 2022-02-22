@@ -22,7 +22,7 @@
 				href="css/swiper.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>Дякуємо за ваше замовлення!</title>
+	<title>Оцінка техніки</title>
 </head>
 
 
@@ -237,55 +237,141 @@
 </header>
 
 	<main class="main">
-		<section class="success">
+		<section class="kredit">
 			<div class="container">
 				<nav aria-label="breadcrumb">
           <ol class="breadcrumb page__breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
-						<li class="breadcrumb-item"><a href="cart.html">Мій кошик</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Оформлення замовлення</li>
+            <li class="breadcrumb-item active" aria-current="page">Оцінка техніки</li>
           </ol>
         </nav>
-				<h1 class="page__title">Дякуємо за ваше замовлення!</h1>
-        <div class="success__text">
-          <p>Лист з підтвердженням замовлення надісланий на Вашу електрону адресу.</p>
-          <p>Та зачекайте дзвінка від менеджера для завершення замовлення.</p>
+				<h1 class="page__title">Кредит під заставу техніки</h1>
+        <div class="kredit__accent kredit__accent--tech">
+          <p>Ломбард “ПАРУС” видає кредити під заставу техніки. Ви маєте можливість отримати кредит у найкоротший час! Для цього Вам потрібні лише:</p>
+          <ul>
+            <li>техніка, яку Ви заставляєте</li>
+            <li>ІПН</li>
+            <li>паспорт або інший документ, який ідентифікує особу</li>
+          </ul>
         </div>
-        <div class="success__block">
-          <div class="d-flex flex-wrap justify-content-between">
-            <p class="succsess__order mb-2">Замовлення:  <span class="accent">№33465</span></p>
-            <p class="succsess__pay mb-2"><b>Спосіб оплати:</b> Накладений платіж</p>
-          </div>
-          <div class="order__data-item">
-            <a href="card.html" class="order__img">
-              <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung  22Y3"  width="46" height="37">
-            </a>
-            <div class="order__data-info">
-              <h4 class="order__data-title"><a href="card.html">Мікрохвильова піч Samsung  22Y3</a></h4>
-              <p class="order__data-article">Артикул: 06780645КК</p>
+        <div class="kredit__form">
+          <h2 class="kredit__form-title">Оцінка техніки онлайн</h2>
+          <div class="kredit__form-body kredit__form-body--tech">
+            <div class="accordion calc__accordion" id="accordionCalc">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    Як оформити кредит?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="order__price">
-              3399 грн.
-            </div>
-          </div>
-          <div class="order__data-item">
-            <a href="card.html" class="order__img">
-              <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung  22Y3"  width="46" height="37">
-            </a>
-            <div class="order__data-info">
-              <h4 class="order__data-title"><a href="card.html">Мікрохвильова піч Samsung  22Y3</a></h4>
-              <p class="order__data-article">Артикул: 06780645КК</p>
-            </div>
-            <div class="order__price">
-              3399 грн.
-            </div>
-          </div>
-          <div class="order__total">
-            <p>Всього до сплати: <span class="accent">6 798 грн.</span></p>
+            <form class="calc__tech-form">
+              <div class="calc__tech-result">
+                <p><b>Приклад:</b> IPhone 12 Max</p>
+                <img src="img/iphonemax.png" alt="IPhone 12 Max" width="212"
+                height="251">
+              </div>
+              <div class="calc__item calc__item--first">
+                <label class="calc__label" for="model">Бренд, модель</label>
+                <input class="calc__input" id="model" type="text" placeholder="IPhone 12 Max">
+              </div>
+              <fieldset class="rating calc__item">
+                <p class="rating-name calc__label">Стан</p>
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+              </fieldset>
+              <div class="calc__star-result calc__item">
+                <p class="calc__input"><span>4</span> Відмінний стан (незначні потертості)</p>
+                </div>
+              <div class="calc__item">
+                <p class="calc__label">Комплект</p>
+                <div class="calc__radio-box">
+                  <input id="full-complect" class="filter__input-checkbox visually-hidden" name="complect" type="radio" checked>
+                  <label for="full-complect" class="filter__label">Повний</label>
+                  <input id="part-complect" class="filter__input-checkbox visually-hidden" name="complect" type="radio">
+                  <label for="part-complect" class="filter__label">Частковий</label>
+                  <input id="not-komplect" class="filter__input-checkbox visually-hidden" name="complect" type="radio">
+                  <label for="not-komplect" class="filter__label">Відсутній</label>
+                </div>
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="tech-tel">Телефон</label>
+                <input class="calc__input" id="tech-tel" type="tel" placeholder="+38 (...) ...      ..     ..">
+              </div>
+              <div class="calc__item calc__item-download">
+                <label class="calc__label" for="clock-file">Додати фото </label>
+                <p class="calc__label calc__label--accent">*Обов'язково читабельні фото фронтального та зворотного боків</p>
+                <div class="calc__clock-file--psevdo">
+                  <input class="calc__clock-file" name="clock-file" type="file">
+                </div>
+                <div class="calc__clock-file--psevdo">
+                  <input class="calc__clock-file" name="clock-file" type="file">
+                </div>
+              </div>
+              <div class="calc__item calc__item--long">
+                <button class="button button--red">Розрахувати</button>
+                <p class="text-mute">*Дана сума є орієнтовною, залежить від терміну експлуатації пристрою. Остаточний розрахунок суми проводить експерт–оцінювач у відділеннi.</p>
+              </div>
+            </form>
           </div>
         </div>
 			</div>
 		</section>
+    <section class="pay-block">
+      <div class="container">
+        <h2 class="front-title">Інші кредити під заставу</h2>
+        <ul class="pay-block__list">
+          
+<li class="play-block__item">
+  <a href="kredit-zoloto.html" class="play-block__link zoloto">Оцінка золота</a>
+</li>
+<li class="play-block__item">
+  <a href="kredit-sriblo.html" class="play-block__link sriblo">Оцінка срібла</a>
+</li>
+<li class="play-block__item">
+  <a href="kredit-diamant.html" class="play-block__link diamant">Оцінка діамантів</a>
+</li>
+<li class="play-block__item">
+  <a href="kredit-clock.html" class="play-block__link clock">Оцінка швейцарських годинників</a>
+</li>
+<li class="play-block__item">
+  <a href="kredit-skupka.html" class="play-block__link skupka">Скупка золота</a>
+</li>
+        </ul>
+      </div>
+    </section>
+		<section class="callback">
+  <div class="container">
+    <h2 class="front-title front-title--w">зв’яжіться з нами</h2>
+    <form class="callback__form">
+      <div class="callback__form-text">Ви маєте можливисті залишити будь-яку пропозиція або запитання до нас</div>
+      <div class="callback__form-items">
+        <div class="callback__form-item">
+          <label for="pib" class="callback__form-label">ПІБ</label>
+          <input id="pib" name="name" type="text" class="callback__form-input" placeholder="Авраменко Сергій Миколайович">
+          <label for="tel" class="callback__form-label">Телефон</label>
+          <input id="tel" name="tel" type="text" class="callback__form-input" placeholder="+38 (097)....   ..   ..">
+          <label for="email" class="callback__form-label">Email</label>
+          <input id="email" name="email" type="text" class="callback__form-input" placeholder="avramenko@gmail.com">
+        </div>
+        <div class="callback__form-item">
+          <label for="text" class="callback__form-label">Ваш текст</label>
+          <textarea name="text" id="text" cols="30" rows="10" class="callback__form-input callback__form-textarea" placeholder="Введіть текст..."></textarea>
+        </div>
+      </div>
+      <button class="button button--red">Надіслати</button>
+    </form>
+  </div>
+</section>
 	</main>
 	<footer class="footer">
   <div class="footer__nav">

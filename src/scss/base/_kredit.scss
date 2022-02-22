@@ -33,7 +33,7 @@
   &.kredit__accent--diamant::after {
     width: 310px;
     height: 214px;
-    bottom: 0;
+    bottom: -13px;
     left: -20px;
     background-image: url(../img/kd.webp);
   }
@@ -41,16 +41,16 @@
   &.kredit__accent--tech::after {
     width: 360px;
     height: 190px;
-    top: 26px;
-    left: -60px;
+    top: 25px;
+    left: -49px;
     background-image: url(../img/kt.webp);
   }
 
   &.kredit__accent--clock::after {
-    width: 142px;
-    height: 283px;
-    bottom: -10px;
-    left: 40px;
+    width:  194px;
+    height: 315px;
+    bottom: -58px;
+    left: 60px;
     background-image: url(../img/kc.webp);
   }
 
@@ -147,9 +147,12 @@
     text-align: center;
   }
 
-  & .calc__input--long,
-  & .calc__item--long {
+  & .calc__input--long {
     width: 100%;
+  }
+
+  & .calc__item--long {
+    width: calc(100% - 40px);
   }
 }
 
@@ -248,6 +251,69 @@
   box-shadow: none;
 }
 
+.kredit__form-body--tech {
+  width: 690px;
+
+  & .calc__tech-form {
+    width: 100%;
+  }
+
+  & .calc__tech-result {
+    color: #0D4689;
+    padding: 20px;
+    margin-top: 32px;
+    float: right;
+    width: 255px;
+  }
+
+  & .calc__star-result  {
+    clear: none;
+  }
+
+  & .button--red {
+    margin-bottom: 20px;
+  }
+
+  & .text-mute {
+    width: 600px;
+    max-width: 100%;
+  }
+}
+
+.rating__box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.calc__item-download {
+  margin-bottom: 50px;
+
+  & .calc__label--accent {
+    margin-bottom: 27px;
+  }
+}
+
+.calc__item-download .calc__clock-file--psevdo {
+  width: 127px;
+  height: 112px;
+
+  & .calc__clock-file {
+    width: 127px;
+    height: 112px;
+  }
+}
+
+.calc__clock-form .calc__input:not(.calc__input--long), 
+.calc__clock-form .calc__select {
+  width: 225px;
+}
+
+@media (max-width: 991px) {
+  .kredit__form-body--tech {
+    padding-right: 20px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .kredit__accent {
     padding: 20px 100px 20px 10px;
@@ -281,6 +347,34 @@
     top: 50%;
     right: -10px;
     transform: translateY(-50%);
+  }
+
+  .kredit__accent.kredit__accent--diamant::after {
+    width: 129px;
+    height: 89px;
+    top: -7px;
+    left: auto;
+    right: -13px;
+  }
+
+  .kredit__accent.kredit__accent--tech {
+    padding: 64px 10px 10px;
+  }
+
+  .kredit__accent.kredit__accent--tech::after {
+    width: 138px;
+    height: 73px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .kredit__accent.kredit__accent--clock::after {
+    width: 160px;
+    height: 220px;
+    top: -42px;
+    left: auto;
+    right: -54px;
   }
 
   .kredit__accent.kredit__accent--skupka::after {
@@ -338,5 +432,49 @@
   .calc__radio-box .filter__input-checkbox:checked+label::before, 
   .calc__radio-box .filter__input-checkbox:not(:checked)+label::before {
     margin-right: 5px;
+  }
+
+  .kredit__form-body--tech .calc__tech-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kredit__form-body--tech .calc__item--first {
+    order: -1;
+  }
+
+  .kredit__form-body--tech .rating,
+  .calc__clock-form .rating {
+    width: 155px;
+  }
+
+  .kredit__form-body--tech .calc__tech-result {
+    font-size: 12px;
+    padding: 14px 16px;
+    width: 209px;
+    margin: 0 auto 40px;
+    float: none;
+
+    & img {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .calc__item-download .calc__clock-file--psevdo, 
+  .calc__item-download .calc__clock-file--psevdo .calc__clock-file {
+    width: 102px;
+    height: 90px;
+  }
+
+  .calc__item-download {
+    margin-bottom: 30px;
+  }
+
+  .kredit__form-body .calc__item--long,
+  .calc__clock-form .calc__input:not(.calc__input--long), 
+  .calc__clock-form .calc__select {
+    width: 100%;
   }
 }

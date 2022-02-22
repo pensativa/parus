@@ -148,7 +148,24 @@
 
 .pay__instr-item--credit {
   background: #DDE9FE;
+ 
 }
+
+.pay__instr-item--card {
+  position: relative;
+}
+
+.pay__instr-item--card::after {
+  content: "або";
+  font-family: NotoSans,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 120px;
+  color: rgba(198, 195, 195, 0.15);
+  position: absolute;
+  right: -77px;
+  bottom: -11px;
+  z-index: 2;
+} 
 
 .pay__instr-title {
   font-weight: 600;
@@ -317,6 +334,13 @@ a.pay__instr-download {
 
   .pay__instr-item {
     padding: 20px 14px;
+  }
+
+  .pay__instr-item--card::after {
+    font-size: 90px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -80px;
   }
 
   .pay__instr-title,

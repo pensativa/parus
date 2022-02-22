@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"uk",
+"title":"Оцінка швейцарських годинників",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<section class="kredit">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+          <ol class="breadcrumb page__breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Оцінка швейцарських годинників</li>
+          </ol>
+        </nav>
+				<h1 class="page__title">Кредит під заставу годинників</h1>
+        <div class="kredit__accent kredit__accent--clock">
+          <p>Ломбард “ПАРУС” видає кредити під заставу швейцарських годинників. Ви маєте можливість отримати кредит у найкоротший час! Для цього Вам потрібні лише:</p>
+          <ul>
+            <li>годинник, який Ви заставляєте</li>
+            <li>ІПН</li>
+            <li>паспорт або інший документ, який ідентифікує особу</li>
+          </ul>
+        </div>
+        <div class="kredit__form">
+          <h2 class="kredit__form-title">Завка на оцінку діамантів</h2>
+          <div class="kredit__form-body">
+            <div class="accordion calc__accordion" id="accordionCalc">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    Як оформити кредит?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="calc__clock-form">
+              <div class="calc__item calc__item--long">
+                <label class="calc__label" for="userpib">ПІБ</label>
+                <input class="calc__input calc__input--long" id="userpib" type="text" placeholder="ПІБ">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="usertel">Телефон</label>
+                <input class="calc__input" id="usertel" type="tel" placeholder="Телефон">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="useremail">Email</label>
+                <input class="calc__input" id="useremail" type="email">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="clock-brend">Бренд, модель</label>
+                <input class="calc__input" id="clock-brend" type="text">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="clock-model">Модель або ref-номер</label>
+                <input class="calc__input" id="clock-model" type="text">
+              </div>
+              <div class="calc__item">
+                <label class="calc__label" for="clock-docs">Документи</label>
+                <input class="calc__input" id="clock-docs" type="text">
+              </div>
+              <div class="calc__item calc__item--viddel">
+                <label class="calc__label">Відділення</label>
+                <select class="form-select calc__select" aria-label="Відділення">
+                  <option selected>Не обрано</option>
+                  <option value="1">вул. Свободи, буд.34/2</option>
+                  <option value="2">вул. Свободи, буд.34/2</option>
+                  <option value="3">вул. Свободи, буд.34/2</option>
+                  <option value="4">вул. Свободи, буд.34/2</option>
+                  <option value="5">вул. Свободи, буд.34/2</option>
+                  <option value="6">вул. Свободи, буд.34/2</option>
+                </select>
+                <a href="http://localhost:3000/viddilenia.html" class="kredit__link-viddels pay__block-link" target="_blanc">Відділення</a>
+              </div>
+              <fieldset class="rating calc__item">
+                <p class="rating-name calc__label">Стан</p>
+                <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+              </fieldset>
+              <div class="calc__item calc__item--long">
+                <p class="calc__label">Оригінальна коробка</p>
+                <div class="calc__radio-box">
+                  <input id="e" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio" checked>
+                  <label for="e" class="filter__label">Є</label>
+                  <input id="ni" class="filter__input-checkbox visually-hidden" name="sertificat" type="radio">
+                  <label for="AGS" class="filter__label">Ні</label>
+                </div>
+              </div>
+              <div class="calc__item calc__item-download">
+                <label class="calc__label" for="clock-file">Додати фото </label>
+                <p class="calc__label calc__label--accent">*Обов'язково читабельні фото фронтального та зворотного боків</p>
+                <div class="calc__clock-file--psevdo">
+                  <input class="calc__clock-file" name="clock-file" type="file">
+                </div>
+                <div class="calc__clock-file--psevdo">
+                  <input class="calc__clock-file" name="clock-file" type="file">
+                </div>
+              </div>
+              <div class="calc__item calc__item--long">
+                <label class="calc__label" for="clock-text">Додаткова інформація</label>
+                <textarea class="calc__input calc__input--long calc__textarea" name="clock-text" id="clock-text" rows="7"></textarea>
+              </div>
+              <div class="calc__item calc__item--long text-center">
+                <button class="button button--red">Відправити</button>
+              </div>
+            </form>
+          </div>
+        </div>
+			</div>
+		</section>
+    <section class="pay-block">
+      <div class="container">
+        <h2 class="front-title">Інші кредити під заставу</h2>
+        <ul class="pay-block__list">
+          @@loop('components/bem-blocks/_pay.html', 'components/bem-blocks/_pay-clock.json')
+        </ul>
+      </div>
+    </section>
+		@@include('components/page-blocks/_callback.html')
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

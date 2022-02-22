@@ -81,8 +81,18 @@
   display: block;
 }
 
-@media (min-width:991px) {
-  .nav-mobile {
-    display: none;
+@media (max-width: 991px) {
+  .main-menu .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .main-menu .navbar-nav .nav-link {
+    padding-left: 8px;
+  }
+
+  .main-menu .dropdown-menu {
+    box-shadow: none;
+    min-width: auto;
+    margin-top: 0;
   }
 }

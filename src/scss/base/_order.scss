@@ -248,6 +248,10 @@
   font-size: 24px;
   width: 570px;
   margin: 0 auto 50px;
+
+  & p {
+    margin-bottom: 20px;
+  }
 }
 
 .succsess__order {
@@ -334,6 +338,10 @@
   .success__text {
     font-size: 16px;
     width: 280px;
+
+    & p {
+      margin-bottom: 10px;
+    }
   }
 }
 

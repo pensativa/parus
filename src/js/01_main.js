@@ -32,6 +32,27 @@ const showFooterMenu = function() {
 };
 showFooterMenu();
 
+(function() {
+  const myCollapseEl = document.getElementById('navbarSupportedContent');
+
+  if (!myCollapseEl) {
+    return;
+  }
+  
+  const closedElements = document.querySelectorAll('.header .close.show');
+  myCollapseEl.addEventListener('shown.bs.collapse', function () {
+    for (let el of closedElements) { 
+      el.style.display = "block";
+    }
+  });
+  myCollapseEl.addEventListener('shown.collapsing.collapse', function () {
+    console.log('work');
+    for (let el of closedElements) { 
+      el.style.display = "none";
+    }
+  });
+})();
+
 //Button to top
 
 const scrollToTop = function() {
