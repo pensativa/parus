@@ -34,21 +34,23 @@ showFooterMenu();
 
 (function() {
   const myCollapseEl = document.getElementById('navbarSupportedContent');
-
   if (!myCollapseEl) {
     return;
   }
+
+  const navbar = document.querySelector('.header .navbar');
   
   const closedElements = document.querySelectorAll('.header .close.show');
-  myCollapseEl.addEventListener('shown.bs.collapse', function () {
-    for (let el of closedElements) { 
-      el.style.display = "block";
+  myCollapseEl.addEventListener('show.bs.collapse', function () {
+    navbar.classList.add("show");
+    for (let el of closedElements) {
+      el.classList.remove("close");
     }
   });
-  myCollapseEl.addEventListener('shown.collapsing.collapse', function () {
-    console.log('work');
-    for (let el of closedElements) { 
-      el.style.display = "none";
+  myCollapseEl.addEventListener('hide.bs.collapse', function () {
+    navbar.classList.remove("show");
+    for (let el of closedElements) {
+      el.classList.add("close");
     }
   });
 })();
@@ -278,17 +280,20 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
   },
 });
 
-(function() {
-  const tulipToggle = document.querySelector('.card__shops-link');
-  const tulipBody = document.querySelector('.card__shops-body');
 
-  if (tulipToggle) {
-    tulipToggle.onclick = function() {
-      tulipBody.classList.toggle('show');
+//Card Toolip
+(function() {
+  const toolipToggle = document.querySelector('.card__shops-link');
+  const toolipBody = document.querySelector('.card__shops-body');
+
+  if (toolipToggle) {
+    toolipToggle.onclick = function() {
+      toolipBody.classList.toggle('show');
     }
   }
 })();
 
+//Card add to favorit
 (function() {
   const addBtn = document.querySelector('.button--add');
 
@@ -305,6 +310,7 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
   }
 })();
 
+//Card counter
 (function() {
   const counter = document.querySelector('.card__add-counter');
 
@@ -339,9 +345,55 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
   }
 })();
 
+//Cart functions
+//Cart registration
+(function() {
+  const enterBlock = document.querySelector('.enter__block');
+  if (!enterBlock) {
+    return
+  }
+  const singinButton = document.querySelector('.enter__button-aut');
+  const singinBlock = document.querySelector('.enter__autorisaiton');
+  const singupButton = document.querySelector('.enter__button-reg');
+  const singupBlock = document.querySelector('.enter__registration');
+  const closeButton = document.querySelectorAll('button[data-bs-dismiss="modal"]');
+
+  singinButton.onclick = function() {
+    enterBlock.style.display = "none";
+    singinBlock.style.display = "block";
+  };
+  singupButton.onclick = function() {
+    enterBlock.style.display = "none";
+    singupBlock.style.display = "block";
+  };
+
+  for (let button of closeButton) {
+    button.onclick = function() {
+      enterBlock.style.display = "block";
+      singinBlock.style.display = "none";
+      singupBlock.style.display = "none";
+    }
+  }
+})();
+
+//Product Sum
+const sumFunction = function() {
+  const sum = document.querySelector('.cart__total-price > .sum');
+  const sumProduct = document.querySelectorAll('.cart__total');
+  let totalSum = 0;
+  for (let i = 0; i < sumProduct.length; i+=1) {
+    totalSum = totalSum + Number(sumProduct[i].innerHTML.replace(/\D+/g,""));
+    console.log(totalSum);
+  }
+  sum.innerHTML = totalSum + ' грн.';
+};
+
 (function() {
   const counters = document.querySelectorAll('.cart__row--product');
-  const cartTotal = document.querySelector('.cart__total-price > .sum');
+
+  if (!counters) {
+    return;
+  }
 
   for (let counter of counters) {
     const btnPlus = counter.querySelector('.card__add-btn.plus');
@@ -351,14 +403,10 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
     const sale = counter.querySelector('.cart__sale').innerHTML.replace(/\D+/g,"")/100;
     const total = counter.querySelector('.cart__total');
     let sum = price;
-    let sumTotal = cartTotal.innerHTML.replace(/\D+/g,"");
-    const del = counter.querySelector('.button--del');
 
     const cartSum = function() {
       sum = (price - (price*sale))*input.value;
       total.innerHTML = Math.round(sum) + ' грн.';
-      sumTotal = Number(sumTotal) + Math.round(sum);
-      cartTotal.innerHTML = sumTotal + ' грн.'
     };
 
     btnPlus.onclick = function() {
@@ -368,6 +416,7 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
         input.value = 100;
       }
       cartSum();
+      sumFunction();
     };
 
     btnPMinus.onclick = function() {
@@ -377,6 +426,7 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
         input.value = 1;
       }
       cartSum();
+      sumFunction();
     };
 
     input.oninput = function() {
@@ -388,11 +438,39 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
       }
       cartSum();
     };
-
-    del.onclick = function() {
-      counter.remove();
-    };
   }
+})();
+
+//Cart sum 
+(function() {
+  const counters = document.querySelectorAll('.card__count');
+  if (!counters) {
+    return;
+  }
+  const btns = document.querySelectorAll('.card__add-btn');
+  
+
+  for (let count of counters) {
+    count.oninput = function() {
+      sumFunction();
+    }
+  }
+})();
+
+//Del card
+
+(function() {
+  const products = document.querySelectorAll('.cart__row--product');
+  if (!products) {
+    return;
+  }
+   for (let product of products) {
+    const del = product.querySelector('.button--del');
+    del.onclick = function() {
+      product.remove();
+      sumFunction();
+    }
+  };
 })();
 
 (function() {
@@ -402,6 +480,7 @@ var swiper3 = new Swiper(".catalog-plus__slider", {
     return;
   }
 
+  //Pay add comment
   const textShowButton = payForm.querySelector('.order__label--text');
   const buttonSymbol = textShowButton.querySelector('.symbol');
   const textarea = payForm.querySelector('.order__textarea');

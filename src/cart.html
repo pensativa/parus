@@ -74,11 +74,82 @@
 				</div>
 				<div class="cart__buttons">
 					<a href="mikrohvilovy-pechi.html" class="button--sec">Продовжити покупки</a>
-					<a href="order.html" class="button">Оформити замовлення</a>
+					<a href="order.html" class="button" data-bs-toggle="modal" data-bs-target="#enterModal">Оформити замовлення</a>
 				</div>
 			</div>
 		</section>
 	</main>
+	<div class="modal fade" id="enterModal" tabindex="-1" aria-labelledby="enterModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo.svg" alt="Парус логотип" width="122" height="51">
+					</a>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body enter">
+					<div class="enter__block">
+						<p class="modal-text modal-text--accent">Для продовження оформлення замовлення Ви маєте пройти авторизацію або зареєструватись</p>
+						<button class="button enter__button-aut" type="button">Увійти</button>
+						<p class="button-prim">Ви вже маєте профіль?</p>
+						<button class="button button--red enter__button-reg" type="button">Зареєструватись</button>
+						<p class="button-prim">Ви ще не зареєструвались?</p>
+					</div>
+					<div class="enter__registration" style="display: none;">
+						<p class="modal-text">Для завершення оформлення замовлення, Ви маєте бути зареєстровані.</p>
+						<form class="enter__form">
+							<div class="modal-form__item">
+								<label for="fio">ПІБ</label>
+								<input id="fio" name="fio" type="text" placeholder="Авраменко Сергій Миколайович">
+							</div>							
+							<div class="modal-form__item">
+								<label for="misto">Місто</label>
+								<input id="misto" name="misto" type="text" placeholder="Київ">
+							</div>
+							<div class="modal-form__item">
+								<label for="adresa">Адреса проживання</label>
+								<input id="adresa" name="adresa" type="text" placeholder="вул. Квиткова, буд.43">
+							</div>
+							<div class="modal-form__item">
+								<label for="phone">Телефон</label>
+								<input id="phone" name="phone" type="text" placeholder="+38 (097) ...   ..   ..">
+							</div>
+							<div class="modal-form__item">
+								<label for="useremail">Email</label>
+								<input id="useremail" name="useremail" type="email" placeholder="avramenko@gmail.com">
+							</div>
+							<div class="modal-form__item modal-form__item--password">
+								<label for="password">Пароль</label>
+								<input id="password" name="password" type="password" placeholder="**********">
+							</div>
+							<div class="enter__form-buttons">
+								<button type="button" class="button--sec" data-bs-dismiss="modal">Повернутись до кошика</button>
+								<a href="order.html" class="button button--red">Зареєструватись</a>
+							</div>
+						</form>
+					</div>
+					<div class="enter__autorisaiton" style="display: none;">
+						<p class="modal-text">Пройдіть авторизацію</p>	
+						<form class="enter__form">					
+							<div class="modal-form__item">
+								<label for="login">Логін</label>
+								<input id="login" name="login" type="text" placeholder="bond@gmail.com">
+							</div>
+							<div class="modal-form__item modal-form__item--password">
+								<label for="password">Пароль</label>
+								<input id="password" name="password" type="password" placeholder="**********">
+							</div>
+							<div class="enter__form-buttons">
+								<button type="button" class="button--sec" data-bs-dismiss="modal">Повернутись до кошика</button>
+								<a href="order.html" class="button button--red">Увійти</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
 </body>
