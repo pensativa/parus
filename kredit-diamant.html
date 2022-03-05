@@ -39,7 +39,7 @@
         <button class="btn-search" type="submit">Search</button>
       </form>
       <div class="nav-buttons close show">
-        <div class="nav-button enter">Профиль</div>
+        <button type="button" class="nav-button enter" data-bs-toggle="modal" data-bs-target="#profilModal">Профиль</button>
         <a href="cart.html" class="nav-button cart">Карзина</a>
         <div class="nav-button like-list">Избранные</div>
       </div>
@@ -539,6 +539,50 @@
     </div>
   </div>
 </footer>
+<div class="modal fade" id="profilModal" tabindex="-1" aria-labelledby="profilModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="row profil">
+        <div class="col-12 col-md-7 profil__block profil__block--form">
+          <button type="button" class="btn-close btn-close-left" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h4 class="profil__title">Вхід в особистий кабінет</h4>
+          <form class="profil__form">
+            <div class="profil__form-item">
+              <label class="calc__label" for="profil-login">Логін</label>
+              <input class="calc__input calc__input--long" id="profil-login" type="text" placeholder="bond@gmail.com">
+            </div>
+            <div class="profil__form-item">
+              <label class="calc__label" for="profil-password">Пароль</label>
+              <input class="calc__input calc__input--long" id="profil-password" type="password" placeholder="**********">
+            </div>
+            <div class="profil__abo">або за допомогою</div>
+            <div class="profil__btns">
+              <button type="button" class="button--sec profil__btn-google">
+                <img src="img/google.png" alt="google account" width="23" height="23">
+              </button>
+              <a href="profil.html" class="button--sec profil__btn-submit">Увійти</a>
+            </div>
+          </form>
+        </div>
+        <div class="col-collapse col-md-5 profil__block profil__block--accent">
+          <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo-w.svg" alt="Парус логотип" width="79" height="29">
+            </a>
+            <button type="button" class="btn-close btn-close-white btn-close-right" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="profil__list">
+            <div class="profil__item">можливість оплати обраного Вами товару частинами</div>
+            <div class="profil__item">зручна система пошуку товарів та можливість налаштування фільтрів</div>
+            <div class="profil__item">постійні знижки та бонуси за покупки</div>
+            <div class="profil__item">зручна система оплати будь-яким зручним для Вас способом</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="to-top">
   <img src="img/to-top.svg" alt="вверх" width="42" height="42">
 </div>

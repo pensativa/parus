@@ -1,0 +1,154 @@
+.profil__block {
+  padding: 25px 25px 35px;
+}
+
+.profil__block--form {
+  padding-left: 50px;
+}
+
+.profil__block--accent {
+  background-color: $prime-color;
+  color: #fff;
+}
+
+.btn-close-left {
+  display: none;
+}
+
+.profil__form-item {
+  margin-bottom: 15px;
+
+  & .calc__label {
+    color: #4F597C;
+  }
+
+  & .calc__input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.profil__abo {
+  color: #7E7E7E;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  white-space: nowrap;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #7E7E7E;
+  }
+
+  &::before {
+    margin-right: 10px;
+  }
+
+  &::after {
+    margin-left: 10px;
+  }
+}
+
+.profil__btns {
+  text-align: center;
+}
+
+.profil__btn-google {
+  width: 100%;
+  margin-bottom: 40px;
+  border: 1px solid rgba(112, 170, 239, 0.38);
+  padding: 8px;
+}
+
+.profil__btn-submit {
+  font-size: 14px;
+  padding: 6px 45px;
+}
+
+.profil__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.profil__list {
+  margin-top: 20px;
+}
+
+.profil__item {
+  padding-left: 70px;
+  font-size: 14px;
+  margin-top: 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+
+
+  &:nth-of-type(1) {
+    background-image: url('../img/part.svg');
+  }
+
+  &:nth-of-type(2) {
+    background-image: url('../img/setting.svg');
+  }
+
+  &:nth-of-type(3) {
+    background-image: url('../img/percent.svg');
+  }
+
+  &:nth-of-type(4) {
+    background-image: url('../img/card.svg');
+  }
+}
+
+.profil__row {
+  background-color: #F7F7F7;
+  background-repeat: no-repeat;
+  background-image: url(../img/pay-bg-right.svg),url(../img/pay-bg.svg);
+  background-position: top right,bottom left;
+  padding: 60px 0;
+}
+
+.profil-box {
+  background: #FFFFFF;
+  border: 1px solid rgba(180, 180, 180, 0.33);
+  box-shadow: 0px 2px 16px rgba(91, 153, 226, 0.08);
+  border-radius: 10px;
+}
+
+.profil__nav {
+  margin-right: 3.5%;
+}
+
+.profil-data {
+  padding: 20px 15px;
+}
+
+.profil-data__dname {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profil-data__userpic {
+  flex-shrink: 1;
+  margin-right: 20px;
+}
+
+.profil-data__name {
+  font-weight: 400;
+  color: $prime-color;
+}
+
+.profil__nav-link {
+  padding: 13px 6px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid rgba(128, 181, 243, 0.4);
+  }
+}
