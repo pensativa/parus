@@ -8,3 +8,4 @@ folders.txt
 gulpfile.js
 .vscode
 build/
+res/
