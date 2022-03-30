@@ -16011,6 +16011,11 @@
     .partner__title {
       font-size: 13px
     }
+    #to-top {
+      bottom: 0;
+      right: 0;
+      width: 30px;
+    }
   }
   
   .header {
@@ -19098,6 +19103,81 @@
   width: 100%;
 }
 
+.history-oder__item {
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(128, 181, 243, 0.2);
+  padding: 15px 0;
+}
+
+.history-oder__num {
+  width: 100%;
+  color: #1D61B1;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.history-oder__num span {
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.history-oder__price p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 10px;
+  color: #7E7E7E;
+  width: 165px;
+  margin-bottom: 5px;
+}
+
+.history-oder__price p span {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.history-oder__price .profil-order__more {
+  color: #1672DE;
+  font-size: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.history-oder__mark {
+  background: rgba(221, 233, 254, 0.18);
+  border: 0.5px solid rgba(41, 134, 243, 0.59);
+  border-radius: 3px;
+  padding: 6px 45px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.history-oder__info {
+  margin-left: auto;
+  margin-right: 107px;
+}
+
+.history-oder__info td {
+  padding: 4px 0;
+  min-width: 100px;
+  font-weight: 400;
+  font-size: 10px;
+  color: #7E7E7E;
+}
+
+.history-oder__info td:nth-of-type(even) {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .history-oder__info {
+    margin-right: 63px;
+  }
+}
+
   @media (max-width: 992px) {
     .profil__nav {
       margin-right: 1%;
@@ -19124,6 +19204,19 @@
     .catalog-item--wishlist {
       width: 48%;
       margin-left: 2%;
+    }
+
+    .history-oder__info {
+      margin-right: 0;
+    }
+
+    .history-oder__mark {
+      order: -1;
+    }
+
+    .history-oder__num {
+      order: -2;
+      width: 60%;
     }
   }
 
@@ -19190,6 +19283,31 @@
     .catalog-item--wishlist .catalog-item__value {
       padding-left: 5px;
       font-size: 13px;
+    }
+
+    .history-oder__item {
+      padding: 10px 0;
+    }
+
+    .history-oder__num {
+      width: 75%;
+    }
+
+    .history-oder__item .order__data-info {
+      width: auto;
+    }
+
+    .history-oder__price {
+      margin: 10px 0;
+    }
+
+    .history-oder__mark {
+      padding: 4px 10px;
+      font-size: 10px;
+    }
+
+    .history-oder__item .profil-oder__body {
+      padding: 10px 0;
     }
   }
   
