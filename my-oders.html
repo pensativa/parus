@@ -259,7 +259,7 @@
 								<a class="profil__nav-link" href="bonuses.html">Мої бонуси</a>
 							</div>
 							<div class="profil__nav-item">
-								<a class="profil__nav-link active" href="profil.html">Особисті дані</a>
+								<a class="profil__nav-link" href="profil.html">Особисті дані</a>
 							</div>
 							<div class="profil__nav-item">
 								<a class="profil__nav-link" href="credits.html">Кредити та погашення</a>
@@ -267,7 +267,7 @@
 						</div>
 						<div class="profil__nav-history profil-box">
               <div class="profil__nav-item">
-								<a class="profil__nav-link profil__nav-link--oder" href="my-oders.html">Мої замовлення</a>
+								<a class="profil__nav-link profil__nav-link--oder active" href="my-oders.html">Мої замовлення</a>
 							</div>
               <div class="profil__nav-item">
 								<a class="profil__nav-link profil__nav-link--history" href="history-oders.html">Історія замовлень</a>
@@ -284,37 +284,157 @@
             </div>
 					</div>
 					<div class="profil__body profil-box">
-            <h2 class="profil__body-title">Особисті дані</h2>
-            <form class="profil-form">
-              <div class="profil-form__item">
-                <label for="profil-name" class="profil-form__label">Ім’я</label>
-                <input id="profil-name" type="text" class="profil-form__input" value="Сергій">
+            <h2 class="profil__body-title">Замовлення</h2>
+            <div class="order__data-item profil-oder__item">
+                <a href="card.html" class="order__img">
+                  <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung  22Y3" width="46" height="37">
+                </a>
+                <div class="order__data-info">
+                  <h4 class="order__data-title"><a href="card.html">Мікрохвильова піч Samsung  22Y3</a></h4>
+                  <p class="order__data-article">Артикул: 06780645КК</p>
+                  <p class="order__data-num">Замовлення № 2346555</p>
+                </div>
+                <div class="order__price">
+                  3399 грн.
+                </div>
+                <button class="profil-order__more" data-bs-toggle="collapse" data-bs-target="#oder1" aria-expanded="false" aria-controls="oder1">Детальна Інформація</button>
+                <div class="profil-oder__body collapse" id="oder1">
+                    <table class="profil-oder__info">
+                        <tr>
+                            <td>Спосіб оплати</td>
+                            <td>Банківська карта</td>
+                        </tr>
+                        <tr>
+                            <td>Спосіб доставки</td>
+                            <td>Самовивіз</td>
+                        </tr>
+                        <tr>
+                            <td>ПІБ покупця</td>
+                            <td>Тарасенко С.М.</td>
+                        </tr>
+                        <tr>
+                            <td>Телефон</td>
+                            <td>+38 (097) 342 45 50</td>
+                        </tr>
+                        <tr>
+                            <td>Адреса пункта самовивізу</td>
+                            <td>м.Київ, вул. Соборна, буд. 32/1</td>
+                        </tr>
+                        <tr>
+                            <td>Дата покупки</td>
+                            <td>12.12.2021</td>
+                        </tr>
+                        <tr>
+                            <td>Ел.пошта</td>
+                            <td>tarasenko@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Коментар</td>
+                            <td>Покупка до дня народження. Прошу доставити після 18:00 години.</td>
+                        </tr>
+                    </table>
+                </div>
               </div>
-              <div class="profil-form__item">
-                <label for="profil-surname" class="profil-form__label">Призвище</label>
-                <input id="profil-surname" type="text" class="profil-form__input" value="Тарасенко">
+              <div class="order__data-item profil-oder__item">
+                <a href="card.html" class="order__img">
+                  <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung  22Y3" width="46" height="37">
+                </a>
+                <div class="order__data-info">
+                  <h4 class="order__data-title"><a href="card.html">Мікрохвильова піч Samsung  22Y3</a></h4>
+                  <p class="order__data-article">Артикул: 06780645КК</p>
+                  <p class="order__data-num">Замовлення № 2346555</p>
+                </div>
+                <div class="order__price">
+                  3399 грн.
+                </div>
+                <button class="profil-order__more" data-bs-toggle="collapse" data-bs-target="#oder2" aria-expanded="false" aria-controls="oder2">Детальна Інформація</button>
+                <div class="profil-oder__body collapse" id="oder2">
+                    <table class="profil-oder__info">
+                        <tr>
+                            <td>Спосіб оплати</td>
+                            <td>Банківська карта</td>
+                        </tr>
+                        <tr>
+                            <td>Спосіб доставки</td>
+                            <td>Самовивіз</td>
+                        </tr>
+                        <tr>
+                            <td>ПІБ покупця</td>
+                            <td>Тарасенко С.М.</td>
+                        </tr>
+                        <tr>
+                            <td>Телефон</td>
+                            <td>+38 (097) 342 45 50</td>
+                        </tr>
+                        <tr>
+                            <td>Адреса пункта самовивізу</td>
+                            <td>м.Київ, вул. Соборна, буд. 32/1</td>
+                        </tr>
+                        <tr>
+                            <td>Дата покупки</td>
+                            <td>12.12.2021</td>
+                        </tr>
+                        <tr>
+                            <td>Ел.пошта</td>
+                            <td>tarasenko@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Коментар</td>
+                            <td>Покупка до дня народження. Прошу доставити після 18:00 години.</td>
+                        </tr>
+                    </table>
+                </div>
               </div>
-              <div class="profil-form__item">
-                <label for="profil-father" class="profil-form__label">По-батькові</label>
-                <input id="profil-father" type="text" class="profil-form__input" placeholder="Вкажіть по-батькові">
+              <div class="order__data-item profil-oder__item">
+                <a href="card.html" class="order__img">
+                  <img src="img/pech-1.webp" alt="Мікрохвильова піч Samsung  22Y3" width="46" height="37">
+                </a>
+                <div class="order__data-info">
+                  <h4 class="order__data-title"><a href="card.html">Мікрохвильова піч Samsung  22Y3</a></h4>
+                  <p class="order__data-article">Артикул: 06780645КК</p>
+                  <p class="order__data-num">Замовлення № 2346555</p>
+                </div>
+                <div class="order__price">
+                  3399 грн.
+                </div>
+                <button class="profil-order__more" data-bs-toggle="collapse" data-bs-target="#oder3" aria-expanded="false" aria-controls="oder3">Детальна Інформація</button>
+                <div class="profil-oder__body collapse" id="oder3">
+                    <table class="profil-oder__info">
+                        <tr>
+                            <td>Спосіб оплати</td>
+                            <td>Банківська карта</td>
+                        </tr>
+                        <tr>
+                            <td>Спосіб доставки</td>
+                            <td>Самовивіз</td>
+                        </tr>
+                        <tr>
+                            <td>ПІБ покупця</td>
+                            <td>Тарасенко С.М.</td>
+                        </tr>
+                        <tr>
+                            <td>Телефон</td>
+                            <td>+38 (097) 342 45 50</td>
+                        </tr>
+                        <tr>
+                            <td>Адреса пункта самовивізу</td>
+                            <td>м.Київ, вул. Соборна, буд. 32/1</td>
+                        </tr>
+                        <tr>
+                            <td>Дата покупки</td>
+                            <td>12.12.2021</td>
+                        </tr>
+                        <tr>
+                            <td>Ел.пошта</td>
+                            <td>tarasenko@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Коментар</td>
+                            <td>Покупка до дня народження. Прошу доставити після 18:00 години.</td>
+                        </tr>
+                    </table>
+                </div>
               </div>
-              <div class="profil-form__item">
-                <label for="profil-email" class="profil-form__label">E-mail</label>
-                <input id="profil-email" type="email" class="profil-form__input" value="tarasov@gmail.com">
-              </div>
-              <div class="profil-form__item">
-                <label for="profil-parol" class="profil-form__label">Новий пароль</label>
-                <input id="profil-parol" type="password" class="profil-form__input" placeholder="Новий пароль (*мінімум 6 символів)">
-              </div>
-              <div class="profil-form__item">
-                <label for="profil-sparol" class="profil-form__label">Підтвердіть пароль</label>
-                <input id="profil-sparol" type="password" class="profil-form__input" placeholder="Введіть пароль повторно">
-              </div>
-              <div class="profil-form__item profil-form__item-buttons">
-                <button class="button profil__btn-submit">Зберегти</button>
-                <button class="button--sec profil__btn-submit">Відмінити</button>
-              </div>
-            </form>
           </div>
 				</div>
 			</section>
