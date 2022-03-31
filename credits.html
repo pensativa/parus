@@ -294,6 +294,47 @@
                     <li><a class="dropdown-item" href="#">За датою закінчення (від нових до старих)</a></li>
                     <li><a class="dropdown-item" href="#">За датою закінчення (від старих до нових)</a></li>
                   </ul>
+                  <button class="profil-btn profil-btn-filter" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    Фільтр
+                  </button>
+                  <div class="profil-sort-menu dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                    <p class="dropdown-item disabled">Фільтр</p>
+                    <form class="profil__filter-form">
+                      <div class="profil__filter-item">
+                        <p class="profil__filter-name">За типом майна</p>
+                        <div class="filter__checkbox profil__filter-checkbox">
+                          <input id="zoloto" class="filter__input-checkbox visually-hidden" name="oplata" type="radio" checked="">
+                          <label for="zoloto" class="filter__label">Золото</label>
+                          <input id="sriblo" class="filter__input-checkbox visually-hidden" name="oplata" type="radio">
+                          <label for="sriblo" class="filter__label">Срібло</label>
+                          <input id="technika" class="filter__input-checkbox visually-hidden" name="oplata" type="radio">
+                          <label for="technika" class="filter__label">Техніка</label>
+                        </div>
+                      </div>
+                      <div class="profil__filter-item">
+                        <p class="profil__filter-name">За станом договору</p>
+                        <div class="filter__checkbox profil__filter-checkbox">
+                          <input id="ne-prostocheni" class="filter__input-checkbox visually-hidden" name="stan" type="radio" checked="">
+                          <label for="ne-prostocheni" class="filter__label">Не прострочені</label>
+                          <input id="prostrocheni" class="filter__input-checkbox visually-hidden" name="stan" type="radio">
+                          <label for="prostrocheni" class="filter__label">Прострочені</label>
+                        </div>
+                      </div>
+                      <div class="profil__filter-item">
+                        <p class="profil__filter-name">За датою закінчення</p>
+                        <div class="filter__checkbox profil__filter-checkbox">
+                          <input id="today" class="filter__input-checkbox visually-hidden" name="date" type="radio" checked="">
+                          <label for="today" class="filter__label">Сьогодні</label>
+                          <input id="days" class="filter__input-checkbox visually-hidden" name="date" type="radio">
+                          <label for="days" class="filter__label">Через два дні та менше</label>
+                        </div>
+                      </div>
+                      <div class="profil__filter-btns">
+                        <button class="btn btn__red">Скасувати</button>
+                        <button class="btn btn__blue">Примінити</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               <div class="credit__item">
                   <table class="credit__table">

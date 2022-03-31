@@ -19214,8 +19214,13 @@
   background: #4A8FE0;
 }
 
+.profil__body-title--filters {
+  display: flex;
+  align-items: center;
+}
+
 .profil__body-title--filters h2 {
-  display: inline-block;
+  flex: 1;
   font-weight: 600;
   font-size: 20px;
 }
@@ -19235,7 +19240,6 @@
   font-size: 15px;
   color: #4A8FE0;
   margin-left: 50px;
-  float: right;
 }
 
 .profil-btn::before {
@@ -19253,6 +19257,10 @@
 
 .profil-btn.profil-btn-sort::before {
   background-image: url('../img/sort-arrows.png');
+}
+
+.profil-btn.profil-btn-filter::before {
+  background-image: url('../img/filter-setting.svg');
 }
 
 .profil-sort-menu {
@@ -19319,6 +19327,64 @@
   border-bottom: 1px solid rgba(140, 190, 250, 0.14);
 }
 
+.profil__filter-item {
+  width: 264px;
+  border-bottom: 1px solid rgba(140, 190, 250, 0.14);
+  padding-bottom: 15px;
+}
+
+.profil__filter-name {
+  font-weight: 400;
+  font-size: 12px;
+  color: #4A8FE0;
+  margin-bottom: 15px;
+}
+
+.profil__filter-checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+.profil__filter-checkbox .filter__label {
+  font-weight: 300;
+  font-size: 12px;
+  color: #7E7E7E;
+  margin-right: 22px;
+}
+
+.profil__filter-checkbox .filter__input-checkbox:checked+label::before, 
+.profil__filter-checkbox .filter__input-checkbox:not(:checked)+label::before {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.profil__filter-checkbox .filter__input-checkbox:checked+label::after {
+  width: 6px;
+  height: 6px;
+  top: 6px;
+  left: 4px;
+}
+
+.profil__filter-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.profil__filter-btns .btn {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.btn__red {
+  color: #C83138;
+}
+
+.btn__blue {
+  color: #1B5AA3;
+}
+
 @media (max-width: 1200px) {
   .history-oder__info {
     margin-right: 63px;
@@ -19378,6 +19444,15 @@
   }
 
   @media (max-width: 768px) {
+    .profil__block--accent{
+      display: none;
+    }
+
+    .btn-close-left {
+      display: block;
+      float: right;
+    }
+
     .profil__nav {
       margin-right: 0;
       width: 100%;
@@ -19386,10 +19461,6 @@
     .profil__body {
       padding: 15px;
       width: 100%;
-    }
-
-    .profil-form__item {
-      flex-direction: column;
     }
 
     .profil-form__item-buttons {
@@ -19403,8 +19474,8 @@
     }
 
     .profil-form__input {
-      max-width: 100%;
-      margin-top: 10px;
+      max-width: 70%;
+      font-size: 12px;
     }
 
     .profil-bonus__sale {
@@ -19466,7 +19537,24 @@
     .history-oder__item .profil-oder__body {
       padding: 10px 0;
     }
+
+    .profil-btn {
+      font-size: 0;
+      margin-left: 5px;
+    }
+
+    .profil__filter-item {
+      width: 246px;
+    }
+
+    .profil__filter-checkbox .filter__label {
+      margin-right: 12px;
+    }
+
+  .profil-sort-menu .dropdown-item {
+      white-space: normal;
   }
+}
 
   @media (max-width: 500px) {
     .credit__table td {
