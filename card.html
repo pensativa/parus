@@ -20,6 +20,8 @@
 				type="image/x-icon">
 	<link rel="stylesheet"
 				href="css/swiper.min.css">
+  <link rel="stylesheet"
+				href="js/keen-slider.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
 	<title>Мікрохвильова піч Samsung 22Y3</title>
@@ -249,44 +251,74 @@
           </ol>
         </nav>
         <div class="row d-flex flex-wrap cards">
+          
           <div class="col-md-2 col-lg-2 card__thumbs">
-            <div thumbsSlider="" class="swiper card__thumbs-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="img/pech-full.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/pech-part-1.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/pech-part-2.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/pech-part-3.webp" alt="">
-                </div>
+            <div id="thumbnails" class="keen-slider thumbnail">
+              <div class="keen-slider__slide">
+                <img src="img/pech-full.webp" alt="">
+              </div>
+              <div class="keen-slider__slide">
+                <img src="img/pech-part-1.webp" alt="">
+              </div>
+              <div class="keen-slider__slide">
+                <img src="img/pech-part-2.webp" alt="">
+              </div>
+              <div class="keen-slider__slide">
+                <img src="img/pech-part-3.webp" alt="">
               </div>
             </div>
           </div>
           <div class="col-md-5 col-lg-4 card__sliders">
-            <div class="swiper card__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="img/pech-full.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/pech-part-1.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/pech-part-2.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/pech-part-3.webp" alt="">
-                </div>
+            <div id="my-keen-slider" class="keen-slider">
+              <div class="keen-slider__slide">
+                <img src="img/pech-full.webp" alt="">
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="keen-slider__slide">
+                <img src="img/pech-part-1.webp" alt="">
+              </div>
+              <div class="keen-slider__slide">
+                <img src="img/pech-part-2.webp" alt="">
+              </div>
+              <div class="keen-slider__slide">
+                <img src="img/pech-part-3.webp" alt="">
+              </div>
             </div>
           </div>
+          <!--<div class="col-md-2 col-lg-2 card__thumbs">
+            <div class="card__thumbs-slider keen-slider thumbnail">
+
+                <div class="swiper-slide keen-slider__slide">
+                  
+                </div>
+                <div class="swiper-slide keen-slider__slide">
+                  
+                </div>
+                <div class="swiper-slide keen-slider__slide">
+                  
+                </div>
+                <div class="swiper-slide keen-slider__slide">
+                  
+                </div>
+              </div>
+
+          </div>
+          <div class="col-md-5 col-lg-4 card__sliders">
+            <div class="card__slider keen-slider">
+
+                <div class="swiper-slide keen-slider__slide">
+                  <img src="img/pech-full.webp" alt="">
+                </div>
+                <div class="swiper-slide keen-slider__slide">
+                  <img src="img/pech-part-1.webp" alt="">
+                </div>
+                <div class="swiper-slide keen-slider__slide">
+                  <img src="img/pech-part-2.webp" alt="">
+                </div>
+                <div class="swiper-slide keen-slider__slide">
+                  <img src="img/pech-part-3.webp" alt="">
+                </div>
+            </div>
+          </div>-->
           <div class="col-md-5 col-lg-6">
             <h1 class="page__title page__title--card">Мікрохвильова піч Samsung 22Y3</h1>
             <p class="card__article">Артикул: 06780645КК</p>
@@ -949,6 +981,7 @@
 	<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="js/keen-slider.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 
