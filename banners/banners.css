@@ -1,0 +1,245 @@
+/*New banners*/
+
+.ad-banner {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "A A A   B B B B" 
+                         "A A A   C C C C"
+                         "A A A   D D D D";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F7F7F7;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    max-width: 814px;
+    margin-left: auto;
+  }
+  
+  .ad-banner--about {
+    margin: 0 auto 100px;
+    background: #FFFFFF;
+    width: 914px;
+    max-width: 100%;
+  }
+  
+  .ad-banner__img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 268px;
+    height: 100%;
+    -o-object-fit: cover;
+      object-fit: cover;
+    grid-area: A
+  }
+  
+  .ad-banner__text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    padding: 20px 30px;
+    grid-area: C;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  .ad-banner__text p {
+    margin-bottom: 10px;
+  }
+  
+  .ad-banner__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    padding: 20px 30px 0;
+    font-size: 19px;
+    letter-spacing: -0.02em;
+    color: #4A8FE0;
+    margin: 0 0 10px;
+    grid-area: B
+  }
+  
+  .ad-banner__title .accent {
+    color: #C83138;
+  }
+  
+  .ad-banner__buttons {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-area: D;
+    padding: 0 30px 20px;
+  }
+  
+  .ad-banner__buttons .button {
+    margin-top: 10px;
+    margin-right: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 17px 16px 63px;
+    width: auto;
+    background-position: center left 15px;
+    background-repeat: no-repeat;
+  }
+  
+  .ad-banner__buttons .button.tele {
+    background-image: url('../img/telegram.svg');
+  }
+  
+  .ad-banner__buttons .button.vibe {
+    background-image: url('../img/viber-icon.svg');
+  }
+  
+  .ad-banner__buttons .button.insta {
+    background-image: url('../img/instagram.svg');
+  }
+  
+  .ad-banner__link {
+    font-size: 18px;
+    color: #1157A9;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+  
+  .ad-banner__modal {
+    width: 598px;
+    max-width: 96%;
+  }
+  
+  .ad-banner__modal .ad-banner__buttons {
+    padding: 0;
+  }
+  
+  .ad-banner__item {
+    border-bottom: 1px solid rgba(180, 180, 180, 0.35);
+    padding: 25px 0;
+    margin: 0 15px;
+  }
+  
+  .ad-banner__item {
+    border-bottom: none;
+    margin-bottom: 30px;
+  }
+  
+  .ad-banner__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .ad-banner__subtitle::before {
+    content: '';
+    width: 34px;
+    height: 25px;
+    background-position: left center;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .ad-banner__subtitle.tech::before {
+    background-image: url('../img/tv.svg');
+  }
+  
+  .ad-banner__subtitle.uv::before {
+    background-image: url('../img/ring.svg');
+  }
+  
+  .ad-banner__subtitle.clock::before {
+    background-image: url('../img/clock.svg');
+  }
+  
+  @media (max-width: 1200px) {
+    .ad-banner {
+      max-width: 100%;
+    }
+  
+    .ad-banner__buttons .button {
+      margin-right: 6px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .ad-banner {
+          grid-template-areas: "B B B B" 
+                           "A A  C C"
+                           "D D D D";
+      text-align: center;
+    }
+  
+    .ad-banner__img {
+      width: auto;
+      height: auto;
+    }
+  
+    .ad-banner__title {
+      font-size: 14px;
+    }
+  
+    .ad-banner__text {
+      padding: 10px;
+      font-size: 10px;
+      text-align: left;
+    }
+  
+    .ad-banner__buttons .button {
+      font-size: 0;
+      background-position: center;
+      padding: 20px 30px;
+      background-size: 50%;
+    }
+  
+    .ad-banner--about .ad-banner__buttons {
+      margin-top: 10px;
+      padding: 0 10px 20px;
+    }
+  
+    .ad-banner__link {
+      font-size: 12px;
+    }
+  
+    .ad-banner__item {
+      padding: 20px 0;
+      margin: 0 10px;
+      text-align: left;
+    }
+  
+    .ad-banner__subtitle {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    
+    .ad-banner__subtitle::before {
+      width: 18px;
+      height: 15px;
+      margin-right: 12px;
+      background-size: contain;
+    }
+    .ad-banner__img {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+    }
+    .ad-banner__text {
+      -ms-grid-row: 2;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 2;
+    }
+    .ad-banner__title {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+    }
+    .ad-banner__buttons {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+    }
+  }
