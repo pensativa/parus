@@ -22126,6 +22126,9 @@
   }
   
   @media (max-width: 768px) {
+    body {
+      background: transparent;
+    }
     .mob-block .navbar-brand img {
       max-width: 100px;
       margin-bottom: 22px;
