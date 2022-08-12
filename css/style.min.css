@@ -22089,6 +22089,7 @@
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
+      padding-bottom: 15px;
     }
     .nav-mobile .nav {
       display: none;
