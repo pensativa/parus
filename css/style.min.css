@@ -21971,6 +21971,7 @@
       width: 100%;
       padding: 0;
       margin-bottom: 15px;
+      text-transform: initial;
     }
     .nav-button span {
       display: none;
@@ -22136,7 +22137,7 @@
               justify-content: space-between;
     }
     .navbar.show .tel.show {
-      font-size: 12px;
+      font-size: 14px;
     }
     .navbar.show .tel.show::before {
       width: 11px;
