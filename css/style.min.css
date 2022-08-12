@@ -22123,6 +22123,11 @@
       font-size: 14px;
       margin-left: 20px;
     }
+    .social.social--mob {
+      position: absolute;
+      bottom: -26px;
+      left: 20px;
+    }
   }
   
   @media (max-width: 768px) {
@@ -22166,5 +22171,10 @@
     }
     .social__text {
       font-size: 10px;
+      max-width: 65%;
+      vertical-align: middle;
+    }
+    .social.social--mob {
+      bottom: -46px;
     }
   }
