@@ -16277,7 +16277,7 @@
     }
     .header .navbar>div {
       width: auto;
-      background: 0 0;
+      background: none;
       margin: 0
     }
     .header .navbar .nav-contacts {
@@ -22122,12 +22122,6 @@
       color: #8C8C8C;
       font-size: 14px;
       margin-left: 20px;
-    }
-    .social.social--mob {
-      position: absolute;
-      bottom: -26px;
-      left: 20px;
-      z-index: 2;
     }
   }
   
