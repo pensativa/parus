@@ -22123,6 +22123,9 @@
       font-size: 14px;
       margin-left: 20px;
     }
+    .scroll .social, .scroll .tel {
+      display: block;
+    }
   }
   
   @media (max-width: 768px) {
