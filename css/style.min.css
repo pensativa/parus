@@ -21911,7 +21911,8 @@
       overflow-y: auto;
       padding-bottom: 40px;
     }
-    .bg::-webkit-scrollbar {
+    .bg::-webkit-scrollbar,
+    .nav-mobile .nav-side.open::-webkit-scrollbar {
       width: 0;
       display: none
     }
@@ -22085,7 +22086,7 @@
       z-index: 1;
       min-height: 560px;
       max-height: 100vh;
-      overflow-y: auto;
+      overflow: auto;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
