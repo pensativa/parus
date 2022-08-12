@@ -21912,7 +21912,7 @@
       padding-bottom: 40px;
     }
     .bg::-webkit-scrollbar,
-    .nav-mobile .nav-side.open::-webkit-scrollbar {
+    .nav-mobile .nav-side::-webkit-scrollbar {
       width: 0;
       display: none
     }
