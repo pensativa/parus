@@ -22179,3 +22179,33 @@
       bottom: -46px;
     }
   }
+
+  #citylist {
+    position: absolute;
+    max-height: 75px;
+    padding: 5px 0;
+    border: 0 none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 10px lightgrey;
+    background-color: #fff;
+  }
+
+  #citylist::-webkit-scrollbar {
+    width: 0;
+    display: none
+  }
+  
+  #citylist option {
+    font-size: 0.8em;
+    padding: 0.3em 1em;
+    background-color: #fff;
+    color: #0d4689;
+    cursor: pointer;
+  }
+  
+  #citylist option:hover, 
+  #citylist option:focus {
+    background-color: #f0f4fc;
+    outline: 0 none;
+  }

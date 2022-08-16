@@ -256,11 +256,13 @@
                 <label for="nova-pochta" class="filter__label delivery-btn">Нова Почта</label>
                 <div class="pay__block">
                   <label for="pay-city">Оберіть місто </label>
-                  <select class="order__input form-control" name="pay-city" id="pay-city">
-                    <option value="">Київ</option>
-                    <option value="">Дніпро</option>
-                    <option value="">Харків</option>
-                  </select>
+                  <input type="text" class="order__input form-control order__select" name="pay-city" id="pay-city" list="citylist"  autocomplete="off">
+                  <datalist id="citylist">
+                    <option>Київ</option>
+                    <option>Дніпро</option>
+                    <option>Харків</option>
+                  </datalist>
+                  <input type="text" class="visually-hidden" id="citydata">
                   <label for="pay-viddel">Оберіть відділеня</label>
                   <select class="order__input form-control" name="pay-viddel" id="pay-viddel">
                     <option value="">відділення №3243</option>
